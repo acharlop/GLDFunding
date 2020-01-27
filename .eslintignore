@@ -1,0 +1,7 @@
+
+
+dist/*
+__mocks__/*
+.vscode/*
+build/*
+node_modules/*
