@@ -13,7 +13,7 @@ export const Button = ({ disabled, children, full, rounded, ...props }) => {
         justifyContent: "center",
         alignItems: "center",
         width: full ? "100%" : "auto",
-        borderRadius: rounded ? "20px" : "4px"
+        borderRadius: rounded ? "30px" : "4px"
       }}
       as={tag}
       disabled={disabled && tag === "button" ? disabled : undefined}

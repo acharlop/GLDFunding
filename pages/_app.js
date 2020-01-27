@@ -1,5 +1,6 @@
 import React from "react";
 import App from "next/app";
+import Head from "next/head";
 import { ThemeProvider } from "emotion-theming";
 
 import theme from "../theme";
@@ -10,12 +11,15 @@ class AppComponent extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <React.Fragment>
+      <>
+        <Head>
+          <title>GLD Funding</title>
+        </Head>
         <GlobalStyles />
         <ThemeProvider theme={theme}>
           <Component {...pageProps} />
         </ThemeProvider>
-      </React.Fragment>
+      </>
     );
   }
 }

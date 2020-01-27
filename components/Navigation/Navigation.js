@@ -12,6 +12,7 @@ const HL = styled(RBLink)`
   text-decoration: none;
   transition: opacity 300ms;
   padding: 1em;
+  letter-spacing: 0.05em;
   &:hover {
     opacity: 1;
   }
@@ -63,6 +64,7 @@ const Open = styled(Box)`
   cursor: pointer;
   width: 20px;
   height: 15px;
+  color: white;
   div {
     margin-bottom: 4.25px;
     background-color: CurrentColor;
@@ -71,7 +73,7 @@ const Open = styled(Box)`
 `;
 export const Navigation = ({ open, setOpen }) => {
   return (
-    <React.Fragment>
+    <>
       <Open
         onClick={() => {
           setOpen(!open);
@@ -107,6 +109,9 @@ export const Navigation = ({ open, setOpen }) => {
             <HL>What is MCA?</HL>
           </Link>
           <Link href="./" passHref>
+            <HL>About us</HL>
+          </Link>
+          <Link href="./" passHref>
             <HL>Contact</HL>
           </Link>
         </Flex>
@@ -120,6 +125,6 @@ export const Navigation = ({ open, setOpen }) => {
           </Button>
         </Flex>
       </Nav>
-    </React.Fragment>
+    </>
   );
 };

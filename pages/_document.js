@@ -11,7 +11,6 @@ export default class AppDocument extends Document {
             type="image/x-icon"
             href="/static/images/favicon.png"
           />
-          <title>GLD Funding</title>
         </Head>
         <body>
           <Main />
