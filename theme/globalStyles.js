@@ -65,7 +65,10 @@ const styles = css`
     color: inherit;
   }
   .fadeIn {
-    animation: ${fadeIn} 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: scale(1.05);
+    animation: ${fadeIn} 600ms cubic-bezier(0.4, 0, 0.2, 1) 0s 1 ;
+    animation-fill-mode: forwards;
   }
   ${theme.mq[2]} {
     .hide-md {
