@@ -1,21 +1,21 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState } from 'react';
 
 export const ModalContext = createContext({
-  openModalId: "",
+  openModalId: '',
   openModal: () => {},
-  closeModal: () => {}
+  closeModal: () => {},
 });
 
 export const useModalContext = () => useContext(ModalContext);
 
 export const ModalProvider = ({ children }) => {
-  const [openModalId, setOpenModalId] = useState("");
+  const [openModalId, setOpenModalId] = useState('');
   const openModal = id => {
     setOpenModalId(id);
   };
 
   const closeModal = () => {
-    setOpenModalId("");
+    setOpenModalId('');
   };
 
   return (
@@ -23,7 +23,7 @@ export const ModalProvider = ({ children }) => {
       value={{
         openModalId,
         openModal,
-        closeModal
+        closeModal,
       }}
     >
       {children}

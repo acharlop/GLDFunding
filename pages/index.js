@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react';
 
-import { Home } from "../screens";
+import { Home } from '../screens';
 
 export default () => <Home />;

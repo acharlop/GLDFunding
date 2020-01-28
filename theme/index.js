@@ -1,8 +1,8 @@
-import { fonts, lineHeights, fontSizes, fontWeights } from "./typography";
-import { colors } from "./colors";
-import { space } from "./space";
-import { buttons } from "./buttons";
-import { breakpoints, mq } from "./breakpoints";
+import { fonts, lineHeights, fontSizes, fontWeights } from './typography';
+import { colors } from './colors';
+import { space } from './space';
+import { buttons } from './buttons';
+import { breakpoints, mq } from './breakpoints';
 
 const theme = {
   fonts,
@@ -13,7 +13,7 @@ const theme = {
   space,
   buttons,
   breakpoints,
-  mq
+  mq,
 };
 
 export default theme;

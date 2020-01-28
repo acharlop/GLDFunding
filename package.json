@@ -21,11 +21,6 @@
     "build-storybook": "build-storybook",
     "pretty-quick": "pretty-quick --staged"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm-run-all pretty-quick"
-    }
-  },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "@emotion/core": "^10.0.27",

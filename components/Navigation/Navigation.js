@@ -1,10 +1,10 @@
-import React from "react";
-import Link from "next/link";
-import styled from "@emotion/styled";
-import { Flex, Link as RBLink, Box } from "rebass";
-import { IoIosClose } from "react-icons/io";
-import { Button } from "../Button";
-import theme from "../../theme";
+import React from 'react';
+import Link from 'next/link';
+import styled from '@emotion/styled';
+import { Flex, Link as RBLink, Box } from 'rebass';
+import { IoIosClose } from 'react-icons/io';
+import { Button } from '../Button';
+import theme from '../../theme';
 
 const HL = styled(RBLink)`
   opacity: 0.7;
@@ -34,7 +34,7 @@ const Nav = styled(Flex)`
     flex-direction: column;
     justify-content: center;
     transition: opacity 450ms cubic-bezier(0.23, 1, 0.32, 1);
-    opacity: ${({ open }) => (open ? "1" : "0")};
+    opacity: ${({ open }) => (open ? '1' : '0')};
     background: linear-gradient(
       to top left,
       ${theme.colors.blue200} 0%,

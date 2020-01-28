@@ -1,7 +1,7 @@
-import React from "react";
-import { Global, css, keyframes } from "@emotion/core";
-import emotionNormalize from "emotion-normalize";
-import theme from "./index";
+import React from 'react';
+import { Global, css, keyframes } from '@emotion/core';
+import emotionNormalize from 'emotion-normalize';
+import theme from './index';
 
 const fadeIn = keyframes`
   from {

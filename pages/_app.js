@@ -1,10 +1,10 @@
-import React from "react";
-import App from "next/app";
-import Head from "next/head";
-import { ThemeProvider } from "emotion-theming";
+import React from 'react';
+import App from 'next/app';
+import Head from 'next/head';
+import { ThemeProvider } from 'emotion-theming';
 
-import theme from "../theme";
-import { GlobalStyles } from "../theme/globalStyles";
+import theme from '../theme';
+import { GlobalStyles } from '../theme/globalStyles';
 
 class AppComponent extends App {
   render() {

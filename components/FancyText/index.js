@@ -1,1 +1,1 @@
-export * from "./FancyText";
+export * from './FancyText';

@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "@emotion/styled";
-import { keyframes } from "@emotion/core";
-import { Box } from "rebass";
+import React from 'react';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/core';
+import { Box } from 'rebass';
 
 const spin = keyframes`
   0%,20% { transform: translateY(65%) rotateX(-95deg); opacity: 0; }
@@ -30,9 +30,9 @@ export const FancyText = ({ words, ...etc }) => {
         <Animated
           first={i === 0}
           css={{
-            position: i > 0 ? "absolute" : "relative",
-            left: i > 0 ? "0" : "auto",
-            animation: `${spin} 4s ease-in-out ${i > 0 ? "2s" : "0s"} infinite`
+            position: i > 0 ? 'absolute' : 'relative',
+            left: i > 0 ? '0' : 'auto',
+            animation: `${spin} 4s ease-in-out ${i > 0 ? '2s' : '0s'} infinite`,
           }}
         >
           {el}

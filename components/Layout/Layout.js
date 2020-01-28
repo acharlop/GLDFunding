@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import styled from "@emotion/styled";
-import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
-import { Box, Image, Link as RBLink, Flex, Text } from "rebass";
-import { ModalProvider } from "../modals";
-import theme from "../../theme";
-import { Navigation } from "../index";
+import React, { useState } from 'react';
+import styled from '@emotion/styled';
+import Link from 'next/link';
+import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { Box, Image, Link as RBLink, Text } from 'rebass';
+import { ModalProvider } from '../modals';
+import theme from '../../theme';
+import { Navigation } from '../index';
 
 const HL = styled(RBLink)`
   opacity: 0.7;
@@ -37,11 +37,11 @@ const Wrapper = styled(Box)`
   transform: translate(0%, 0%);
   ${theme.mq[2]} {
     transform: ${({ open }) =>
-      open ? "translate(-500px,0%)" : "translate(0%,0%)"};
+    open ? 'translate(-500px,0%)' : 'translate(0%,0%)'};
   }
   ${theme.mq[0]} {
     transform: ${({ open }) =>
-      open ? "translate(-270px,0%)" : "translate(0%,0%)"};
+    open ? 'translate(-270px,0%)' : 'translate(0%,0%)'};
   }
 `;
 const Footer = styled(Box)`
@@ -68,7 +68,7 @@ export const Layout = ({ children }) => {
             width={[1, 1, 10 / 12]}
             alignItems="center"
             flexWrap="wrap"
-            css={{ display: "inline-block" }}
+            css={{ display: 'inline-block' }}
           >
             <Image
               src="/static/images/mcafee.png"
@@ -76,50 +76,50 @@ export const Layout = ({ children }) => {
               maxHeight="32px"
               margin="auto"
               css={{
-                objectFit: "contain",
-                verticalAlign: "middle",
-                objectPosition: "left"
+                objectFit: 'contain',
+                verticalAlign: 'middle',
+                objectPosition: 'left',
               }}
-              width={[1, 1, "auto"]}
+              width={[1, 1, 'auto']}
               mb={[1, 0]}
               px={[1, 2]}
             />
             <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={2} width={[1 / 2, "auto"]}>
+              <HL color="white" p={1} fontSize={2} width={[1 / 2, 'auto']}>
                 Apply Now
               </HL>
             </Link>
             <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={2} width={[1 / 2, "auto"]}>
-                {" "}
+              <HL color="white" p={1} fontSize={2} width={[1 / 2, 'auto']}>
+                {' '}
                 What is MCA?
               </HL>
             </Link>
             <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={2} width={[1 / 2, "auto"]}>
+              <HL color="white" p={1} fontSize={2} width={[1 / 2, 'auto']}>
                 About us
               </HL>
             </Link>
             <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={2} width={[1 / 2, "auto"]}>
+              <HL color="white" p={1} fontSize={2} width={[1 / 2, 'auto']}>
                 Contact
               </HL>
             </Link>
             <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={2} width={[1 / 2, "auto"]}>
+              <HL color="white" p={1} fontSize={2} width={[1 / 2, 'auto']}>
                 Login
               </HL>
             </Link>
           </Box>
           <Text
             width={[1, 1, 2 / 12]}
-            textAlign={["center", "right"]}
-            css={{ display: "inline-block" }}
+            textAlign={['center', 'right']}
+            css={{ display: 'inline-block' }}
           >
             <Link href="./" passHref>
               <HL color="white" p={1} fontSize={[2]}>
-                {" "}
-                <FaFacebookF />{" "}
+                {' '}
+                <FaFacebookF />{' '}
               </HL>
             </Link>
             <Link href="./" passHref>

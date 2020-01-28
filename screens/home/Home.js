@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "@emotion/styled";
-import { keyframes } from "@emotion/core";
-import { Box, Image, Text, Flex } from "rebass";
-import { withTheme } from "emotion-theming";
-import { FaYoutube } from "react-icons/fa";
-import { colors } from "../../theme/colors";
-import { Layout, Button, FancyText } from "../../components";
+import React from 'react';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/core';
+import { Box, Image, Text, Flex } from 'rebass';
+import { withTheme } from 'emotion-theming';
+import { FaYoutube } from 'react-icons/fa';
+import { colors } from '../../theme/colors';
+import { Layout, Button, FancyText } from '../../components';
 
 const Header = styled(Flex)`
   height: 85vh;
@@ -101,7 +101,7 @@ export const Home = withTheme(({ theme }) => (
           </Flex>
           <Text as="h1" color="white" fontSize={[5, 6]}>
             We help your business
-            <FancyText words={["Grow", "Succeed"]} />
+            <FancyText words={['Grow', 'Succeed']} />
           </Text>
           <Button rounded fontSize={[3, 4]} mt={3}>
             Apply Now
@@ -115,7 +115,7 @@ export const Home = withTheme(({ theme }) => (
           width={[1, 1 / 2, 1 / 4]}
           px={2}
           py={2}
-          css={{ display: "inline-block" }}
+          css={{ display: 'inline-block' }}
         >
           <Icon width="125px" height="125px" bg="white" mx="auto" mb={2}>
             <Animated
