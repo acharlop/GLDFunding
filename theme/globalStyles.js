@@ -1,7 +1,18 @@
 import React from "react";
-import { Global, css } from "@emotion/core";
+import { Global, css, keyframes } from "@emotion/core";
 import emotionNormalize from "emotion-normalize";
 import theme from "./index";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
 
 const styles = css`
   @font-face {
@@ -33,7 +44,6 @@ const styles = css`
     font-size: 1rem;
     background-color: #ffffff;
     color: ${theme.colors.gray300};
-    overflow: hidden;
   }
   .ReactModal__Overlay {
     opacity: 0;
@@ -53,6 +63,9 @@ const styles = css`
   }
   a {
     color: inherit;
+  }
+  .fadeIn {
+    animation: ${fadeIn} 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   ${theme.mq[2]} {
     .hide-md {

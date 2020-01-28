@@ -8,7 +8,6 @@ import theme from "../../theme";
 
 const HL = styled(RBLink)`
   opacity: 0.7;
-  color: white;
   text-decoration: none;
   transition: opacity 300ms;
   padding: 1em;
@@ -29,8 +28,8 @@ const Nav = styled(Flex)`
     position: fixed;
     left: 100%;
     top: 0;
-    bottom: 0;
-    width: 75%;
+    width: 500px;
+    height: 100vh;
     margin: 0;
     flex-direction: column;
     justify-content: center;
@@ -47,6 +46,9 @@ const Nav = styled(Flex)`
       max-width: 300px;
     }
   }
+  ${theme.mq[0]} {
+    width: 270px;
+  }
 `;
 const Close = styled(Box)`
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -55,21 +57,14 @@ const Close = styled(Box)`
   top: 10%;
   right: 15px;
   cursor: pointer;
-  color: white;
 `;
 const Open = styled(Box)`
   position: absolute;
-  top: 35px;
+  top: 40px;
   right: 15px;
   cursor: pointer;
-  width: 20px;
-  height: 15px;
-  color: white;
-  div {
-    margin-bottom: 4.25px;
-    background-color: CurrentColor;
-    height: 2px;
-  }
+  padding: 5px;
+  opacity: 0.7;
 `;
 export const Navigation = ({ open, setOpen }) => {
   return (
@@ -79,15 +74,15 @@ export const Navigation = ({ open, setOpen }) => {
           setOpen(!open);
         }}
         className="show-md"
-        open={open}
+        color="white"
       >
-        <Box width="20px" />
-        <Box width="16px" />
-        <Box width="20px" />
+        <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
+        <Box width="16px" mb="5px" height="2px" bg="CurrentColor" />
+        <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
       </Open>
       <Nav
         as="nav"
-        mt="23px"
+        mt="14px"
         alignItems="center"
         justifyContent="space-between"
         width={1}
@@ -96,6 +91,7 @@ export const Navigation = ({ open, setOpen }) => {
         <Close
           as={IoIosClose}
           className="show-md"
+          color="white"
           onClick={() => {
             setOpen(!open);
           }}
@@ -103,21 +99,23 @@ export const Navigation = ({ open, setOpen }) => {
         />
         <Flex>
           <Link href="./" passHref>
-            <HL>Apply Now</HL>
+            <HL color="white">Apply Now</HL>
           </Link>
           <Link href="./" passHref>
-            <HL>What is MCA?</HL>
+            <HL color="white"> What is MCA?</HL>
           </Link>
           <Link href="./" passHref>
-            <HL>About us</HL>
+            <HL color="white">About us</HL>
           </Link>
           <Link href="./" passHref>
-            <HL>Contact</HL>
+            <HL color="white">Contact</HL>
           </Link>
         </Flex>
         <Flex alignItems="center">
-          <HL href="tel:1(877)498-4344">Call Now 1(877)498-4344</HL>
-          <HL href="tel:1(877)498-4344" className="show-md">
+          <HL href="tel:1(877)498-4344" color="white">
+            Call Now 1(877)498-4344
+          </HL>
+          <HL href="tel:1(877)498-4344" className="show-md" color="white">
             Login
           </HL>
           <Button rounded href="tel:1(877)498-4344" ml={3} className="hide-md">

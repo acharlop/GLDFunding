@@ -1,14 +1,13 @@
-import { rem } from "polished";
-
 import { colors } from "./colors";
+
 const hoverSelector = ":hover:not(:disabled)";
 
 // Common styles for buttons.
 const buttonStyles = {
   cursor: "pointer",
   transition: "all 0.2s",
-  px: 4,
-  py: rem(12),
+  px: "1em",
+  py: ".7em",
   minHeight: 30,
   outline: "none",
   color: "white",
