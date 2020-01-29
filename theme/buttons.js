@@ -1,7 +1,6 @@
 import { colors } from './colors';
 const hoverSelector = ':hover:not(:disabled)';
 
-// Common styles for buttons.
 const buttonStyles = {
   cursor: 'pointer',
   transition: 'all 0.2s',

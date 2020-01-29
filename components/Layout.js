@@ -3,13 +3,12 @@ import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
 import Link from 'next/link';
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
-import { Box, Image, Link as RBLink, Text } from 'rebass';
+import { Box, Image, Link as RBLink, Text, Flex } from 'rebass';
 import { ModalProvider } from './';
 import { Navigation } from './';
 
 const HL = styled(RBLink)`
   opacity: 0.7;
-  display: inline-block;
   text-decoration: none;
   transition: opacity 300ms;
   letter-spacing: 0.05em;
@@ -36,7 +35,6 @@ const TopBar = styled(Box)`
 const Wrapper = styled(Box)`
   height: 100%;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  transform: translate(0%, 0%);
   ${({ theme, open }) => `
     ${theme.mq[2]}{
       transform: ${open ? 'translate(-500px,0%)' : 'translate(0%,0%)'};
@@ -48,14 +46,21 @@ const Wrapper = styled(Box)`
 `;
 
 const Footer = styled(Box)`
-  border-top: 2px solid rgb(76, 81, 90);
+  border-top: 1px solid rgb(76, 81, 90);
 `;
 
 export const Layout = withTheme(({ theme, children }) => {
   const [open, setOpen] = useState(false);
+
+  const Toggle = () => {
+    setOpen(!open);
+    if (window) {
+      window.document.body.style.overflow = !open ? 'hidden hidden' : 'hidden auto';
+    }
+  };
   return (
     <Wrapper open={open} theme={theme}>
-      <TopBar px={3} pt={2} maxWidth="1700px">
+      <TopBar px={3} pt={2} maxWidth="1700px" open={open} theme={theme}>
         <Image
           src="/static/images/logo-white.svg"
           alt="GLD Funding logo"
@@ -63,22 +68,17 @@ export const Layout = withTheme(({ theme, children }) => {
           alignSelf="flex-start"
           justifySelf="flex-start"
         />
-        <Navigation open={open} setOpen={setOpen} />
+        <Navigation open={open} toggle={Toggle} />
       </TopBar>
       <ModalProvider>{children}</ModalProvider>
       <Footer bg="gray800">
-        <Box maxWidth="1200px" margin="auto" px={[1, 2]} py={4}>
-          <Box
-            width={[1, 1, 10 / 12]}
-            alignItems="center"
-            flexWrap="wrap"
-            css={{ display: 'inline-block' }}
-          >
+        <Flex flexWrap="wrap" maxWidth="1200px" margin="auto" px={[1, 2]} py={4}>
+          <Flex width={[1, 1, 10 / 12]} alignItems="center" flexWrap="wrap">
             <Image
               src="/static/images/mcafee.png"
               alt="McAfee SECURE"
               maxHeight="32px"
-              margin="auto"
+              margin={['auto', 0]}
               css={{
                 objectFit: 'contain',
                 verticalAlign: 'middle',
@@ -114,12 +114,8 @@ export const Layout = withTheme(({ theme, children }) => {
                 Login
               </HL>
             </Link>
-          </Box>
-          <Text
-            width={[1, 1, 2 / 12]}
-            textAlign={['center', 'right']}
-            css={{ display: 'inline-block' }}
-          >
+          </Flex>
+          <Flex width={[1, 1, 2 / 12]} justifyContent={['center', 'flex-end']}>
             <Link href="./" passHref>
               <HL color="white" p={1} fontSize={[2]}>
                 {' '}
@@ -136,8 +132,8 @@ export const Layout = withTheme(({ theme, children }) => {
                 <FaYoutube />
               </HL>
             </Link>
-          </Text>
-        </Box>
+          </Flex>
+        </Flex>
       </Footer>
     </Wrapper>
   );

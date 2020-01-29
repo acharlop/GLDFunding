@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button as BaseButton } from 'rebass';
 
-export const Button = ({ disabled, children, full, rounded, ...props }) => {
+export const Button = ({ disabled, children, rounded, ...props }) => {
   let tag;
   tag = props.href ? 'a' : 'button';
   tag = tag === 'a' && disabled ? 'span' : tag;
@@ -12,7 +12,6 @@ export const Button = ({ disabled, children, full, rounded, ...props }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: full ? '100%' : 'auto',
         borderRadius: rounded ? '30px' : '4px',
       }}
       as={tag}

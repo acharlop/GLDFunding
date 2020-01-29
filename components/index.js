@@ -5,3 +5,4 @@ export * from './Button';
 export * from './Navigation';
 export * from './FancyText';
 export * from './Navigation';
+export * from './Carousel';

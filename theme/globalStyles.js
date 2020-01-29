@@ -44,6 +44,7 @@ const styles = css`
     font-size: 1rem;
     background-color: #ffffff;
     color: ${theme.colors.gray300};
+    overflow: hidden auto;
   }
   .ReactModal__Overlay {
     opacity: 0;
