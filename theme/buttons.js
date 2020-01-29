@@ -1,5 +1,4 @@
 import { colors } from './colors';
-
 const hoverSelector = ':hover:not(:disabled)';
 
 // Common styles for buttons.

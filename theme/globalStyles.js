@@ -70,6 +70,9 @@ const styles = css`
     animation: ${fadeIn} 600ms cubic-bezier(0.4, 0, 0.2, 1) 0s 1 ;
     animation-fill-mode: forwards;
   }
+  .gradient{
+    linear-gradient(to right, ${theme.colors.blue200} 0%, ${theme.colors.green500}  100%)
+  }
   ${theme.mq[2]} {
     .hide-md {
       display: none !important;

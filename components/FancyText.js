@@ -28,6 +28,7 @@ export const FancyText = ({ words, ...etc }) => {
     <Wrapper {...etc}>
       {words.map((el, i) => (
         <Animated
+          key={i}
           first={i === 0}
           css={{
             position: i > 0 ? 'absolute' : 'relative',

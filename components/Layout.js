@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
+import { withTheme } from 'emotion-theming';
 import Link from 'next/link';
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { Box, Image, Link as RBLink, Text } from 'rebass';
-import { ModalProvider } from '../modals';
-import theme from '../../theme';
-import { Navigation } from '../index';
+import { ModalProvider } from './';
+import { Navigation } from './';
 
 const HL = styled(RBLink)`
   opacity: 0.7;
@@ -17,6 +17,7 @@ const HL = styled(RBLink)`
     opacity: 1;
   }
 `;
+
 const TopBar = styled(Box)`
   display: grid;
   grid-template-columns: auto 1fr;
@@ -31,26 +32,29 @@ const TopBar = styled(Box)`
   transform: translateX(-50%);
   z-index: 3;
 `;
+
 const Wrapper = styled(Box)`
   height: 100%;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   transform: translate(0%, 0%);
-  ${theme.mq[2]} {
-    transform: ${({ open }) =>
-    open ? 'translate(-500px,0%)' : 'translate(0%,0%)'};
-  }
-  ${theme.mq[0]} {
-    transform: ${({ open }) =>
-    open ? 'translate(-270px,0%)' : 'translate(0%,0%)'};
-  }
+  ${({ theme, open }) => `
+    ${theme.mq[2]}{
+      transform: ${open ? 'translate(-500px,0%)' : 'translate(0%,0%)'};
+    }
+    ${theme.mq[0]}{
+      transform: ${open ? 'translate(-270px,0%)' : 'translate(0%,0%)'};
+    }
+  `}
 `;
+
 const Footer = styled(Box)`
   border-top: 2px solid rgb(76, 81, 90);
 `;
-export const Layout = ({ children }) => {
+
+export const Layout = withTheme(({ theme, children }) => {
   const [open, setOpen] = useState(false);
   return (
-    <Wrapper open={open}>
+    <Wrapper open={open} theme={theme}>
       <TopBar px={3} pt={2} maxWidth="1700px">
         <Image
           src="/static/images/logo-white.svg"
@@ -137,4 +141,4 @@ export const Layout = ({ children }) => {
       </Footer>
     </Wrapper>
   );
-};
+});
