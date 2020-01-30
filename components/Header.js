@@ -2,7 +2,6 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { Box, Image, Text, Flex } from 'rebass';
 import { withTheme } from 'emotion-theming';
-import { FaYoutube } from 'react-icons/fa';
 
 import { Button, FancyText } from '../components';
 
@@ -24,24 +23,43 @@ const Background = styled(Image)`
   filter: brightness(0.3);
   z-index: -1;
 `;
-
+const Input = styled(Flex)`
+  position: relative;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  input {
+    background: transparent;
+    padding: 0.5em;
+    text-align: center;
+  }
+  &:focus-within {
+    border-color: white;
+  }
+`;
 export const Header = withTheme(({ theme }) => (
   <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
-    <Background src="./static/images/bg-1.jpeg" alt="" className="fadeIn" />
-    <Box maxWidth={theme.breakpoints[3]} width={1}>
-      <Box maxWidth="500px" mt={4}>
-        <Flex color="white300" fontSize={[1, 2, 3]} mb={3} alignItems="center">
-          <Text mr={1} color="white" as={FaYoutube} size={[30, 40]} />
-          Guaranteed financial solutions for your business.
-        </Flex>
-        <Text as="h1" color="white" fontSize={[5, 6]} fontFamily="heading">
-          We help your business
-          <FancyText words={['Grow', 'Succeed']} />
-        </Text>
-        <Button rounded fontSize={[3, 4]} mt={3}>
-          Apply Now
-        </Button>
-      </Box>
-    </Box>
+    <Background src="./static/images/bg-3.jpeg" alt="" className="fadeIn" />
+    <Flex
+      maxWidth={theme.breakpoints[3]}
+      width={1}
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="cebter"
+    >
+      <Text color="white300" fontSize={[3, 6]} mb={3} textAlign="center">
+        Funding Solutions for your business
+      </Text>
+      <Text as="h1" color="white" fontSize={[5, 6]} fontFamily="heading" textAlign="center">
+        We&apos;ll Help Your Business {` `}
+        <FancyText words={['Succeed', 'Grow']} />
+      </Text>
+      <Input maxWidth="300px" alignItems="center" justifyContent="center" my={[3, 8]}>
+        <Box fontSize={[3, 4]}>$</Box>
+        <Box as="input" placeholder="insert amount" fontSize={[3, 4]} type="number" />
+      </Input>
+      <Button rounded fontSize={[3, 4]}>
+        Apply Now
+      </Button>
+    </Flex>
   </Wrapper>
 ));

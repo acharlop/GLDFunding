@@ -4,7 +4,7 @@ const hoverSelector = ':hover:not(:disabled)';
 const buttonStyles = {
   cursor: 'pointer',
   transition: 'all 0.2s',
-  px: '1em',
+  px: '1.3em',
   py: '.7em',
   minHeight: 30,
   outline: 'none',

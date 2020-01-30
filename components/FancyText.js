@@ -10,6 +10,7 @@ const spin = keyframes`
 `;
 const Wrapper = styled(Box)`
   position: relative;
+  display: inline-block;
 `;
 const Animated = styled(Box)`
   transform-style: preserve-3d;
