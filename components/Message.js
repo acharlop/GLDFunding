@@ -83,8 +83,27 @@ export const Message = () => (
         p={2}
       >
         <Box as="form" maxWidth={250}>
-          <Box as="input" my={1} placeholder="email" type="email" required p={1} width={1} />
-          <Box as="input" my={1} placeholder="message" required p={1} width={1} />
+          <Box
+            as="input"
+            my={1}
+            placeholder="email"
+            type="email"
+            required
+            p={1}
+            width={1}
+            bg="white500"
+            color="#0f0b40"
+          />
+          <Box
+            as="input"
+            my={1}
+            placeholder="message"
+            required
+            p={1}
+            width={1}
+            bg="white500"
+            color="#0f0b40"
+          />
           <Button width={1} my={1}>
             SEND MESSAGE
           </Button>

@@ -55,7 +55,7 @@ const iconProps = {
   width: ['70px', '70px', '150px'],
   height: ['70px', '70px', '150px'],
   bg: 'white',
-  mt: ['-35px', '-35px', '-75px'],
+  mt: ['-40px', '-35px', '-75px'],
   mb: 2,
   mx: 'auto',
 };
@@ -79,12 +79,13 @@ const descriptionProps = {
   mt: 1,
   textAlign: 'center',
   width: 1,
+  mb: 3,
 };
 const Item = styled(Box)`
   p {
     transition: all 300ms;
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(20px);
   }
   &:hover p {
     opacity: 1;
@@ -100,8 +101,8 @@ const Item = styled(Box)`
 
 export const Features = () => (
   <Box as="section">
-    <Flex flexWrap="wrap" m="auto" maxWidth="1200px" pb={6}>
-      <Item width={[1 / 2, 1 / 4]} p={2}>
+    <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
+      <Item width={[1 / 2, 1 / 4]} px={2} pt={2}>
         <Icon {...iconProps}>
           <Animated as="svg" {...animatedProps}>
             <circle cx="6.6146" cy="7.2644" r="5.6226" />
