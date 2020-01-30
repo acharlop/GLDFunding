@@ -85,13 +85,13 @@ export const Navigation = ({ open, toggle }) => {
         <Close as={IoIosClose} className="show-md" onClick={toggle} size={40} />
         <Flex>
           <Link href="./" passHref>
-            <HL color="white">Apply Now</HL>
+            <HL color="white">About</HL>
           </Link>
           <Link href="./" passHref>
             <HL color="white"> What is MCA?</HL>
           </Link>
           <Link href="./" passHref>
-            <HL color="white">About us</HL>
+            <HL color="white">Apply</HL>
           </Link>
           <Link href="./" passHref>
             <HL color="white">Contact</HL>
@@ -99,7 +99,7 @@ export const Navigation = ({ open, toggle }) => {
         </Flex>
         <Flex>
           <HL href="tel:1(877)498-4344" color="white">
-            Call Now 1(877)498-4344
+            Call Now 1 (877) 498-4344
           </HL>
           <HL href="tel:1(877)498-4344" className="show-md" color="white">
             Login

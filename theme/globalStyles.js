@@ -39,6 +39,7 @@ const styles = css`
   .container {
     max-width: 1200px;
   }
+
   body {
     font-family: ${theme.fonts.body};
     font-size: 1rem;
@@ -84,6 +85,35 @@ const styles = css`
     .show-md {
       display: inherit !important;
     }
+  }
+  input{
+    color: currentColor;
+  }
+  *:focus{
+    outline: none;
+  }
+  ::-webkit-input-placeholder {
+    color: currentColor;
+    opacity: 0.5;
+  }
+  ::-moz-placeholder {
+    color: currentColor;
+    opacity: 0.5;
+  }
+  :-ms-input-placeholder {
+    color: currentColor;
+  }
+  :-moz-placeholder {
+    color: currentColor;
+    opacity: 0.5;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance:textfield;
   }
 `;
 export const GlobalStyles = () => {

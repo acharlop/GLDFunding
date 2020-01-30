@@ -88,7 +88,14 @@ export const Message = () => (
           <Button width={1} my={1}>
             SEND MESSAGE
           </Button>
-          <Text as="p" fontSize={[1, 2]} color="white500" textAlign="center" lineHeight="heading">
+          <Text
+            as="p"
+            fontSize={[1, 2]}
+            color="white500"
+            textAlign="center"
+            lineHeight="heading"
+            mt={3}
+          >
             Do you have a question? <br />
             Contact Us.
           </Text>
