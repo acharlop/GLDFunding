@@ -50,7 +50,7 @@ const PlayButton = styled(Button)`
 `;
 const titleProps = {
   fontSize: [4, 5],
-  color: 'gray500',
+  color: 'white',
   fontFamily: 'heading',
   mb: [1, 2],
 };
@@ -62,6 +62,7 @@ const imageProps = {
 const textProps = {
   fontSize: 2,
   lineHeight: 'heading',
+  color: 'white500',
 };
 export const Steps = withTheme(({ theme }) => (
   <Wrapper as="section" py={[5, 8]} to="left">

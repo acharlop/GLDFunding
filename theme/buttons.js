@@ -8,7 +8,7 @@ const buttonStyles = {
   py: '.7em',
   minHeight: 30,
   outline: 'none',
-  color: colors.gray300,
+  color: 'white',
   fontFamily: 'body',
   fontWeight: 3,
   minWidth: 100,

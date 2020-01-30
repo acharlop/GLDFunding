@@ -20,7 +20,6 @@ const HL = styled(RBLink)`
     width: calc(100% - 30px);
     opacity: 1;
     margin-left: 15px;
-    color: ${theme.colors.gray500};
   }
 `;
 
@@ -49,12 +48,13 @@ const Nav = styled(Flex)`
   }
 `;
 const Close = styled(Box)`
-  border: 2px solid rgba(29, 29, 29, 0.16);
+  border: 2px solid rgba(255, 255, 255, 0.28);
   border-radius: 50%;
   position: absolute;
   top: 10%;
   right: 15px;
   cursor: pointer;
+  color: white;
 `;
 const Open = styled(Box)`
   position: absolute;

@@ -2,8 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/core';
 import { Box, Text, Flex } from 'rebass';
-
-import { gradient } from '../theme/utils';
+import theme from '../theme';
 
 const dash = keyframes`
   0%{
@@ -16,29 +15,25 @@ const dash = keyframes`
 
 const Icon = styled(Box)`
   box-shadow: 0 17px 30px rgba(0, 0, 0, 0.07);
+  transition: background-position 300ms;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   position: relative;
-  &:after {
-    content: '';
-    ${gradient}
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 300ms;
-  }
+  cursor: pointer;
+  background: linear-gradient(
+    to top right,
+    ${theme.colors.blue200} 0%,
+    ${theme.colors.green500} 70%
+  );
+  background-size: 150% 100%;
+  background-position: 0% 0%;
+  color: ${theme.colors.white300};
   &:hover {
     color: white;
-    &:after {
-      opacity: 1;
-    }
+    background-position: 100% 0%;
     & svg {
       animation: ${dash} 450ms linear 0s 1 alternate;
     }

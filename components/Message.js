@@ -14,9 +14,7 @@ const Background = styled(Image)`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.3);
   z-index: -1;
-  objectposition: center;
 `;
 const titleProps = {
   fontSize: [4, 5, '44px'],
@@ -31,7 +29,7 @@ const textProps = {
 };
 export const Message = () => (
   <Wrapper as="section">
-    <Background src="./static/images/bg-3.jpeg" />
+    <Background src="./static/images/footer-image.jpg" />
     <Flex
       flexWrap="wrap"
       m="auto"
@@ -90,7 +88,7 @@ export const Message = () => (
           <Button width={1} my={1}>
             SEND MESSAGE
           </Button>
-          <Text as="p" fontSize={[1, 2]} color="white500" textAlign="center">
+          <Text as="p" fontSize={[1, 2]} color="white500" textAlign="center" lineHeight="heading">
             Do you have a question? <br />
             Contact Us.
           </Text>
