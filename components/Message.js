@@ -31,7 +31,7 @@ const textProps = {
 };
 export const Message = () => (
   <Wrapper as="section">
-    <Background src="/static/images/bg-3.jpeg" />
+    <Background src="./static/images/bg-3.jpeg" />
     <Flex
       flexWrap="wrap"
       m="auto"

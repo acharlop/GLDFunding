@@ -10,13 +10,14 @@
     "nextjs"
   ],
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "lint": "eslint --ext .js .",
     "lint:fix": "eslint --ext .js --fix .",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "heroku-postbuild": "npm run build",
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.27",

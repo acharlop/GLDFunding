@@ -8,4 +8,5 @@ dist
 npm-debug.log*
 node_modules
 build
+out
 __mocks__

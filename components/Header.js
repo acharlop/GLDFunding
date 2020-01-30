@@ -27,7 +27,7 @@ const Background = styled(Image)`
 
 export const Header = withTheme(({ theme }) => (
   <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
-    <Background src="/static/images/bg-1.jpeg" alt="" className="fadeIn" />
+    <Background src="./static/images/bg-1.jpeg" alt="" className="fadeIn" />
     <Box maxWidth={theme.breakpoints[3]} width={1}>
       <Box maxWidth="500px" mt={4}>
         <Flex color="white300" fontSize={[1, 2, 3]} mb={3} alignItems="center">

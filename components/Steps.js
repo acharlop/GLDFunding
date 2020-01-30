@@ -68,7 +68,7 @@ export const Steps = withTheme(({ theme }) => (
     <Flex flexWrap="wrap" m="auto" maxWidth="1200px" py={[5, 8]}>
       <Box width={[1, 1, 1, 1 / 2]}>
         <VideoThumb theme={theme}>
-          <Background src="/static/images/demo.jpg" />
+          <Background src="./static/images/demo.jpg" />
           <PlayButton width={8} height={8}>
             <FaPlay />
           </PlayButton>
@@ -78,7 +78,7 @@ export const Steps = withTheme(({ theme }) => (
         <Box width={[1, 1 / 2, 1 / 2]} p={2}>
           <Text as="h1" {...titleProps}>
             Apply
-            <Image src="/static/images/step1.svg" alt="step one" {...imageProps} />
+            <Image src="./static/images/step1.svg" alt="step one" {...imageProps} />
           </Text>
           <Text as="p" {...textProps}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
@@ -88,7 +88,7 @@ export const Steps = withTheme(({ theme }) => (
         <Box width={[1, 1 / 2, 1 / 2]} p={2}>
           <Text as="h1" {...titleProps}>
             Approve
-            <Image src="/static/images/step2.svg" alt="step two" {...imageProps} />
+            <Image src="./static/images/step2.svg" alt="step two" {...imageProps} />
           </Text>
           <Text as="p" {...textProps}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
@@ -98,7 +98,7 @@ export const Steps = withTheme(({ theme }) => (
         <Box width={1} p={2}>
           <Text as="h1" {...titleProps}>
             Get Funded
-            <Image src="/static/images/step3.svg" alt="step three" {...imageProps} />
+            <Image src="./static/images/step3.svg" alt="step three" {...imageProps} />
           </Text>
           <Text as="p" {...textProps}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent

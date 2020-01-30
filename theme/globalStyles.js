@@ -17,16 +17,16 @@ const fadeIn = keyframes`
 const styles = css`
   @font-face {
     font-family: "Cerebri Sans";
-    src: url("/static/fonts/cerebri-sans.woff2") format("woff2"),
-      url("/static/fonts/cerebri-sans.woff") format("woff");
+    src: url("./static/fonts/cerebri-sans.woff2") format("woff2"),
+      url("./static/fonts/cerebri-sans.woff") format("woff");
     font-weight: 400;
     font-style: normal;
   }
   @font-face {
     font-family: "neuzeit-grotesk";
-    src: url("/static/fonts/l") format("woff2"),
-      url("/static/fonts/d.woff") format("woff"),
-      url("/static/fonts/a") format("opentype");
+    src: url("./static/fonts/l") format("woff2"),
+      url("./static/fonts/d.woff") format("woff"),
+      url("./static/fonts/a") format("opentype");
     font-display: auto;
     font-weight: 700;
     font-style: normal;

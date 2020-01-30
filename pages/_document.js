@@ -6,7 +6,7 @@ export default class AppDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.png" />
+          <link rel="shortcut icon" type="image/x-icon" href="./static/images/favicon.png" />
         </Head>
         <body>
           <Main />

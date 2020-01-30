@@ -37,7 +37,7 @@ export const Footer = () => {
       <Flex flexWrap="wrap" maxWidth="1200px" margin="auto" px={[1, 2]} py={4}>
         <Flex width={[1, 1, 10 / 12]} alignItems="center" flexWrap="wrap">
           <Image
-            src="/static/images/mcafee.png"
+            src="./static/images/mcafee.png"
             alt="McAfee SECURE"
             maxHeight="32px"
             margin={['auto', 0]}

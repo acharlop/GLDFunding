@@ -46,7 +46,7 @@ export const Layout = withTheme(({ theme, children }) => {
     <Wrapper open={open} theme={theme}>
       <TopBar px={3} pt={2} maxWidth="1700px" open={open} theme={theme}>
         <Image
-          src="/static/images/logo-white.svg"
+          src="./static/images/logo-white.svg"
           alt="GLD Funding logo"
           maxWidth="180px"
           alignSelf="flex-start"
