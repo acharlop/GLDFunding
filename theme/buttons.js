@@ -8,15 +8,16 @@ const buttonStyles = {
   py: '.7em',
   minHeight: 30,
   outline: 'none',
-  color: 'white',
+  color: colors.gray300,
   fontFamily: 'body',
   fontWeight: 3,
+  minWidth: 100,
 };
 
 export const buttons = {
   primary: {
     ...buttonStyles,
-    background: `linear-gradient(to right, ${colors.blue200} 0%, ${colors.green500}  100%)`,
+    background: `linear-gradient(to right, ${colors.blue200} 0%, ${colors.green500}  50%)`,
     backgroundSize: '200% 100%',
     backgroundPosition: '10% 0%',
     [hoverSelector]: {

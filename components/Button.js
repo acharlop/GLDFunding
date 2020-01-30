@@ -12,7 +12,7 @@ export const Button = ({ disabled, children, rounded, ...props }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: rounded ? '30px' : '4px',
+        borderRadius: rounded ? '30px' : '2px',
       }}
       as={tag}
       disabled={disabled && tag === 'button' ? disabled : undefined}
