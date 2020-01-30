@@ -6,3 +6,8 @@ export * from './Navigation';
 export * from './FancyText';
 export * from './Navigation';
 export * from './Carousel';
+export * from './Header';
+export * from './Features';
+export * from './Steps';
+export * from './Message';
+export * from './Footer';

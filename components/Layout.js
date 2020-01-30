@@ -1,21 +1,9 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
-import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
-import { Box, Image, Link as RBLink, Text, Flex } from 'rebass';
-import { ModalProvider } from './';
-import { Navigation } from './';
+import { Box, Image } from 'rebass';
 
-const HL = styled(RBLink)`
-  opacity: 0.7;
-  text-decoration: none;
-  transition: opacity 300ms;
-  letter-spacing: 0.05em;
-  &:hover {
-    opacity: 1;
-  }
-`;
+import { ModalProvider, Navigation, Footer } from './';
 
 const TopBar = styled(Box)`
   display: grid;
@@ -45,10 +33,6 @@ const Wrapper = styled(Box)`
   `}
 `;
 
-const Footer = styled(Box)`
-  border-top: 1px solid rgb(76, 81, 90);
-`;
-
 export const Layout = withTheme(({ theme, children }) => {
   const [open, setOpen] = useState(false);
 
@@ -71,70 +55,7 @@ export const Layout = withTheme(({ theme, children }) => {
         <Navigation open={open} toggle={Toggle} />
       </TopBar>
       <ModalProvider>{children}</ModalProvider>
-      <Footer bg="gray800">
-        <Flex flexWrap="wrap" maxWidth="1200px" margin="auto" px={[1, 2]} py={4}>
-          <Flex width={[1, 1, 10 / 12]} alignItems="center" flexWrap="wrap">
-            <Image
-              src="/static/images/mcafee.png"
-              alt="McAfee SECURE"
-              maxHeight="32px"
-              margin={['auto', 0]}
-              css={{
-                objectFit: 'contain',
-                verticalAlign: 'middle',
-                objectPosition: 'left',
-              }}
-              width={[1, 1, 'auto']}
-              mb={[1, 0]}
-              px={[1, 2]}
-            />
-            <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={2} width={[1 / 2, 'auto']}>
-                Apply Now
-              </HL>
-            </Link>
-            <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={2} width={[1 / 2, 'auto']}>
-                {' '}
-                What is MCA?
-              </HL>
-            </Link>
-            <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={2} width={[1 / 2, 'auto']}>
-                About us
-              </HL>
-            </Link>
-            <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={2} width={[1 / 2, 'auto']}>
-                Contact
-              </HL>
-            </Link>
-            <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={2} width={[1 / 2, 'auto']}>
-                Login
-              </HL>
-            </Link>
-          </Flex>
-          <Flex width={[1, 1, 2 / 12]} justifyContent={['center', 'flex-end']}>
-            <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={[2]}>
-                {' '}
-                <FaFacebookF />{' '}
-              </HL>
-            </Link>
-            <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={[2]}>
-                <FaTwitter />
-              </HL>
-            </Link>
-            <Link href="./" passHref>
-              <HL color="white" p={1} fontSize={[2]}>
-                <FaYoutube />
-              </HL>
-            </Link>
-          </Flex>
-        </Flex>
-      </Footer>
+      <Footer />
     </Wrapper>
   );
 });
