@@ -27,7 +27,6 @@ const Input = styled(Flex)`
   position: relative;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  margin: 3rem 0;
   input {
     background: transparent;
     padding: 0.5em;
@@ -47,14 +46,14 @@ export const Header = withTheme(({ theme }) => (
       alignItems="center"
       justifyContent="cebter"
     >
-      <Text color="white300" fontSize={[5, 6]} mb={3} textAlign="center">
+      <Text color="white300" fontSize={[3, 6]} mb={3} textAlign="center">
         Funding Solutions for your business
       </Text>
       <Text as="h1" color="white" fontSize={[5, 6]} fontFamily="heading" textAlign="center">
         We&apos;ll Help Your Business {` `}
-        <FancyText words={['Grow', 'Succeed']} />
+        <FancyText words={['Succeed', 'Grow']} />
       </Text>
-      <Input maxWidth="300px" alignItems="center" justifyContent="center">
+      <Input maxWidth="300px" alignItems="center" justifyContent="center" my={[3, 8]}>
         <Box fontSize={[3, 4]}>$</Box>
         <Box as="input" placeholder="insert amount" fontSize={[3, 4]} type="number" />
       </Input>
