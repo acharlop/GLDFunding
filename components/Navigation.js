@@ -20,6 +20,7 @@ const HL = styled(RBLink)`
     width: calc(100% - 30px);
     opacity: 1;
     margin-left: 15px;
+    color: ${theme.colors.gray500};
   }
 `;
 
@@ -48,7 +49,7 @@ const Nav = styled(Flex)`
   }
 `;
 const Close = styled(Box)`
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(29, 29, 29, 0.16);
   border-radius: 50%;
   position: absolute;
   top: 10%;
@@ -62,6 +63,7 @@ const Open = styled(Box)`
   cursor: pointer;
   padding: 5px;
   opacity: 0.7;
+  z-index: 3;
 `;
 export const Navigation = ({ open, toggle }) => {
   return (
@@ -80,7 +82,7 @@ export const Navigation = ({ open, toggle }) => {
         open={open}
         to="top left"
       >
-        <Close as={IoIosClose} className="show-md" color="white" onClick={toggle} size={40} />
+        <Close as={IoIosClose} className="show-md" onClick={toggle} size={40} />
         <Flex>
           <Link href="./" passHref>
             <HL color="white">Apply Now</HL>
@@ -95,7 +97,7 @@ export const Navigation = ({ open, toggle }) => {
             <HL color="white">Contact</HL>
           </Link>
         </Flex>
-        <Flex alignItems="center">
+        <Flex>
           <HL href="tel:1(877)498-4344" color="white">
             Call Now 1(877)498-4344
           </HL>

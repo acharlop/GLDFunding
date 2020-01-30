@@ -46,6 +46,9 @@ const styles = css`
     color: ${theme.colors.gray300};
     overflow: hidden auto;
   }
+  input{
+    border: none;
+  }
   .ReactModal__Overlay {
     opacity: 0;
     transform: translateY(10px);
