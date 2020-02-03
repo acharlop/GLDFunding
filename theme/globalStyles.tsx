@@ -43,6 +43,7 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   body {
     font-family: ${theme.fonts.body};
     font-size: 1rem;
+    position:relative;
     background-color: #ffffff;
     color: ${theme.colors.gray300};
     overflow-x: hidden;

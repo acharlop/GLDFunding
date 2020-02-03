@@ -6,7 +6,7 @@ import { withTheme } from 'emotion-theming';
 import { Button, FancyText } from '../components';
 
 const Wrapper = styled(Flex)`
-  height: 87vh;
+  height: 89vh;
   position: relative;
   overflow: hidden;
 `;
