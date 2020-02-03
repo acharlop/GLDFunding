@@ -39,9 +39,9 @@ const Nav = styled(Flex)<{ theme: themeProptypes; open: boolean }>`
       }
       opacity: ${open ? '1' : '0'};
       background: linear-gradient(
-        top left,
-        ${theme.colors.blue200} 0%,
-        ${theme.colors.green500} 100%
+        to top right,
+        ${theme.colors.blue200}  0%,
+        ${theme.colors.green500} 100% 
       );
       & a{
         width: calc(100% - 30px);
