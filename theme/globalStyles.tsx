@@ -36,19 +36,19 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   #__next {
     height: 100%;
   }
+
+  html,body{
+    overflow-x: hidden;
+  }
+  body{
+    font-family: ${theme.fonts.body};
+    font-size: 1rem;
+    color: ${theme.colors.gray300};
+  }
   .container {
     max-width: 1200px;
   }
 
-  body {
-    font-family: ${theme.fonts.body};
-    font-size: 1rem;
-    position:relative;
-    background-color: #ffffff;
-    color: ${theme.colors.gray300};
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
   input{
     border: none;
   }
