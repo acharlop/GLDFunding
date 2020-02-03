@@ -21,7 +21,7 @@ const Animated = styled(Box)<{ first: boolean }>`
   ${({ first }) => !first && 'position: absolute; left: 0;'};
 `;
 
-type FancyTextProps = {
+export type FancyTextProps = {
   words: string[];
 };
 export const FancyText = ({ words, ...etc }: FancyTextProps) => {

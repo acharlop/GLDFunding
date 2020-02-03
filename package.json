@@ -17,9 +17,18 @@
     "lint:fix": "eslint --ext .js --fix .",
     "test": "jest",
     "test:watch": "jest --watch",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "type-check-watch": "tsc -p ./ --watch",
+    "type-check": "tsc -p ./",
+    "pretty-quick": "pretty-quick --staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm-run-all pretty-quick type-check test"
+    }
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "@babel/core": "^7.8.4",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@emotion/babel-preset-css-prop": "^10.0.27",
@@ -60,9 +69,12 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^3.0.5",
     "jest": "^24.9.0",
     "jest-emotion": "^10.0.27",
     "prettier": "^1.19.1",
+    "npm-run-all": "^4.1.5",
+    "pretty-quick": "^1.11.1",
     "typescript": "^3.7.5"
   }
 }

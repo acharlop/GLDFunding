@@ -29,8 +29,8 @@ const Icon = styled(Box)<{ theme: themeProptypes }>`
     to top right,
     ${theme.colors.blue200} 0%,
     ${theme.colors.green500} 70%
-    color: ${theme.colors.white300};
   );
+  color: ${theme.colors.white300};
 `}
 
   background-size: 150% 100%;
