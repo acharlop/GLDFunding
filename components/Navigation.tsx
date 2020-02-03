@@ -31,7 +31,6 @@ const Nav = styled(Flex)<{ theme: themeProptypes; open: boolean }>`
       margin: 0;
       flex-direction: column;
       justify-content: flex-start;
-      padding-top: 22vh;
       transition: opacity 450ms cubic-bezier(0.23, 1, 0.32, 1);
       div {
         flex-direction: column;
@@ -59,7 +58,7 @@ const Close = styled(Box)`
   border: 2px solid rgba(255, 255, 255, 0.28);
   border-radius: 50%;
   position: absolute;
-  top: 10%;
+  top: 35px;
   right: 15px;
   cursor: pointer;
   color: white;
@@ -89,6 +88,7 @@ export const Navigation = withTheme(({ theme, open, toggle }) => {
         width={1}
         open={open}
         theme={theme}
+        pt={['100px', '25vh', '25vh', '0']}
       >
         <Close as={IoIosClose} className="show-md" onClick={toggle} size={40} />
         <Flex>

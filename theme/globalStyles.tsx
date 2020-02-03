@@ -37,7 +37,7 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
     height: 100%;
   }
 
-  html,body{
+  html{
     overflow-x: hidden;
   }
   body{
