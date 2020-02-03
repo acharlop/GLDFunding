@@ -36,6 +36,9 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   #__next {
     height: 100%;
   }
+  html{
+    overflow: hidden;
+  }
   body{
     font-family: ${theme.fonts.body};
     font-size: 1rem;
