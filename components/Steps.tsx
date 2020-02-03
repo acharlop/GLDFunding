@@ -75,7 +75,7 @@ export const Steps = withTheme(({ theme }) => (
     <Flex flexWrap="wrap" m="auto" maxWidth="1200px" py={[5, 8]}>
       <Box width={[1, 1, 1, 1 / 2]}>
         <VideoThumb theme={theme}>
-          <Background src="./static/images/demo.jpg" />
+          <Background src="./static/images/demo.jpg" alt="video placeholder" />
           <PlayButton width={8} height={8}>
             <FaPlay />
           </PlayButton>

@@ -38,7 +38,7 @@ const Input = styled(Flex)`
 `;
 export const Header = withTheme(({ theme }) => (
   <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
-    <Background src="./static/images/bg-3.jpeg" alt="" className="fadeIn" />
+    <Background src="./static/images/bg-3.jpeg" alt="Hero background" className="fadeIn" />
     <Flex
       maxWidth={theme.breakpoints[3]}
       width={1}

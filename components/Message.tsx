@@ -31,9 +31,19 @@ const textProps = {
   fontFamily: 'heading',
 };
 
+const inputProps = {
+  as: 'input' as 'input',
+  my: 1,
+  required: true,
+  p: 1,
+  width: 1,
+  bg: 'white500',
+  color: '#0f0b40',
+};
+
 export const Message = () => (
   <Wrapper as="section">
-    <Background src="./static/images/footer-image.jpg" />
+    <Background src="./static/images/footer-image.jpg" alt="mountains background" />
     <Flex
       flexWrap="wrap"
       m="auto"
@@ -87,27 +97,14 @@ export const Message = () => (
         p={2}
       >
         <Box as="form" maxWidth={250}>
-          <Box
-            as="input"
-            my={1}
-            placeholder="email"
-            type="email"
-            required
-            p={1}
-            width={1}
-            bg="white500"
-            color="#0f0b40"
-          />
-          <Box
-            as="input"
-            my={1}
-            placeholder="message"
-            required
-            p={1}
-            width={1}
-            bg="white500"
-            color="#0f0b40"
-          />
+          <Box as="label" htmlFor="email" css={{ position: 'absolute', opacity: 0 }}>
+            email
+          </Box>
+          <Box {...inputProps} placeholder="email" type="email" name="email" />
+          <Box as="label" htmlFor="message" css={{ position: 'absolute', opacity: 0 }}>
+            Message
+          </Box>
+          <Box {...inputProps} placeholder="message" name="message" />
           <Button width={1} my={1}>
             SEND MESSAGE
           </Button>
