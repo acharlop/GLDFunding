@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import styled from '@emotion/styled';
+import { withTheme } from 'emotion-theming';
 import { Flex, Link as RBLink, Box } from 'rebass';
 import { IoIosClose } from 'react-icons/io';
+
 import { Button } from './';
-import theme from '../theme';
-import { gradient } from '../theme/utils';
+import { themeProptypes } from '../theme';
 
 const HL = styled(RBLink)`
   opacity: 0.7;
@@ -16,36 +17,42 @@ const HL = styled(RBLink)`
   &:hover {
     opacity: 1;
   }
-  ${theme.mq[2]} {
-    width: calc(100% - 30px);
-    opacity: 1;
-    margin-left: 15px;
-  }
 `;
 
-const Nav = styled(Flex)`
+const Nav = styled(Flex)<{ theme: themeProptypes; open: boolean }>`
   opacity: 1;
-  ${theme.mq[2]} {
-    position: absolute;
-    left: 100%;
-    top: 0;
-    width: 500px;
-    height: 100vh;
-    margin: 0;
-    flex-direction: column;
-    justify-content: center;
-    transition: opacity 450ms cubic-bezier(0.23, 1, 0.32, 1);
-    div {
+  ${({ theme, open }) => `
+    ${theme.mq[2]}{
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: 500px;
+      height: 100vh;
+      margin: 0;
       flex-direction: column;
-      width: 100%;
-      max-width: 300px;
+      justify-content: center;
+      transition: opacity 450ms cubic-bezier(0.23, 1, 0.32, 1);
+      div {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+      }
+      opacity: ${open ? '1' : '0'};
+      background: linear-gradient(
+        top left,
+        ${theme.colors.blue200} 0%,
+        ${theme.colors.green500} 100%
+      );
+      & a{
+        width: calc(100% - 30px);
+        opacity: 1;
+        margin-left: 15px;
+      }
     }
-    opacity: ${({ open }) => (open ? '1' : '0')};
-    ${gradient}
-  }
-  ${theme.mq[0]} {
-    width: 270px;
-  }
+    ${theme.mq[0]}{
+      width: 270px;
+    }            
+  `}
 `;
 const Close = styled(Box)`
   border: 2px solid rgba(255, 255, 255, 0.28);
@@ -65,7 +72,7 @@ const Open = styled(Box)`
   opacity: 0.7;
   z-index: 3;
 `;
-export const Navigation = ({ open, toggle }) => {
+export const Navigation = withTheme(({ theme, open, toggle }) => {
   return (
     <>
       <Open onClick={toggle} className="show-md" color="white">
@@ -80,7 +87,7 @@ export const Navigation = ({ open, toggle }) => {
         justifyContent="space-between"
         width={1}
         open={open}
-        to="top left"
+        theme={theme}
       >
         <Close as={IoIosClose} className="show-md" onClick={toggle} size={40} />
         <Flex>
@@ -111,4 +118,4 @@ export const Navigation = ({ open, toggle }) => {
       </Nav>
     </>
   );
-};
+});

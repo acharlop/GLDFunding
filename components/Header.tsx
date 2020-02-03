@@ -53,13 +53,15 @@ export const Header = withTheme(({ theme }) => (
         We&apos;ll Help Your Business {` `}
         <FancyText words={['Succeed', 'Grow']} />
       </Text>
-      <Input maxWidth="300px" alignItems="center" justifyContent="center" my={[3, 8]}>
-        <Box fontSize={[3, 4]}>$</Box>
-        <Box as="input" placeholder="insert amount" fontSize={[3, 4]} type="number" />
-      </Input>
-      <Button rounded fontSize={[3, 4]}>
-        Apply Now
-      </Button>
+      <Box as="form">
+        <Input maxWidth="300px" alignItems="center" justifyContent="center" my={[3, 8]}>
+          <Box fontSize={[3, 4]}>$</Box>
+          <Box as="input" placeholder="insert amount" fontSize={[3, 4]} type="number" required />
+        </Input>
+        <Button rounded fontSize={[3, 4]} m="auto">
+          Apply Now
+        </Button>
+      </Box>
     </Flex>
   </Wrapper>
 ));

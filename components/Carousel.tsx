@@ -1,5 +1,5 @@
-import React from 'react';
 import Carousel from 'react-multi-carousel';
+import { CarouselProps } from 'react-multi-carousel/lib/types';
 import styled from '@emotion/styled';
 
 const StyledCarousel = styled(Carousel)`
@@ -13,7 +13,7 @@ const StyledCarousel = styled(Carousel)`
     position: relative;
     will-change: transform, transition;
     height: 100%;
-    width: ${({ width }) => width}%;
+    width: ${(props: CarouselProps) => props.children.length * 100}%;
   }
 
   .react-multiple-carousel__arrow {
@@ -95,5 +95,5 @@ const StyledCarousel = styled(Carousel)`
     }
   }
 `;
-const Component = props => <StyledCarousel {...props} width={props.children.length * 100} />;
-export { Component as Carousel };
+
+export { StyledCarousel as Carousel };

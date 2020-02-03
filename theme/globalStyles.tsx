@@ -1,7 +1,6 @@
 import React from 'react';
-import { Global, css, keyframes } from '@emotion/core';
+import { Global, css, keyframes, SerializedStyles } from '@emotion/core';
 import emotionNormalize from 'emotion-normalize';
-import theme from './index';
 
 const fadeIn = keyframes`
   from {
@@ -14,7 +13,8 @@ const fadeIn = keyframes`
   }
 `;
 
-const styles = css`
+const styles = (theme: import('../theme').themeProptypes): SerializedStyles => css`
+  ${emotionNormalize};
   @font-face {
     font-family: "Cerebri Sans";
     src: url("./static/fonts/cerebri-sans.woff2") format("woff2"),
@@ -117,12 +117,5 @@ const styles = css`
   }
 `;
 export const GlobalStyles = () => {
-  return (
-    <Global
-      styles={css`
-        ${emotionNormalize}
-        ${styles}
-      `}
-    />
-  );
+  return <Global styles={styles} />;
 };

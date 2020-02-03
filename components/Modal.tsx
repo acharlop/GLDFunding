@@ -1,54 +1,59 @@
-import React from 'react';
-import Modal from 'react-modal';
+import React, { ReactNode } from 'react';
+import Modal, { Props as ReactModalProps } from 'react-modal';
+import { rgba } from 'polished';
 import { MdClose } from 'react-icons/md';
 
-const customStyles = {
+Modal.setAppElement('body');
+
+export type ModalProps = {
+  children: ReactNode;
+  showToggle?: boolean;
+} & Pick<ReactModalProps, 'isOpen' | 'onRequestClose'>;
+
+const styles = {
   content: {
-    position: 'relative',
+    position: 'relative' as 'relative',
     top: 'auto',
     left: 'auto',
     bottom: 'auto',
     right: 'auto',
-    padding: '0',
+    padding: 0,
     zIndex: 9999,
     width: 'auto',
     height: 'auto',
-    border: 'none',
-    borderRadius: '4px',
+    border: 0,
+    borderRadius: 4,
   },
   overlay: {
-    background: 'rgba(0, 0, 0, 0.5)',
-    position: 'fixed',
-    top: '0',
-    left: '0',
+    background: rgba('#000', 0.5),
+    position: 'fixed' as 'fixed',
+    top: 0,
+    left: 0,
     width: '100%',
     height: '100%',
-    zIndex: '110',
+    zIndex: 110,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
   },
 };
-Modal.setAppElement('body');
-const CustomModal = ({ children, toggle, show, full }) => {
-  customStyles.content.width = full ? '100%' : 'auto';
-  customStyles.content.height = full ? '100%' : 'auto';
-  customStyles.content.borderRadius = full ? '0' : '4px';
+
+const CustomModal = ({ children, onRequestClose, showToggle = true, ...etc }: ModalProps) => {
   return (
     <Modal
-      isOpen={show ? show : false}
       shouldFocusAfterRender
       shouldCloseOnOverlayClick
       shouldCloseOnEsc
       shouldReturnFocusAfterClose
-      onRequestClose={toggle}
-      style={customStyles}
+      onRequestClose={onRequestClose}
       closeTimeoutMS={300}
+      style={styles}
+      {...etc}
     >
-      {toggle && (
+      {showToggle && (
         <MdClose
           data-name="close-button"
-          onClick={toggle}
+          onClick={onRequestClose}
           style={{
             position: 'absolute',
             top: '1rem',

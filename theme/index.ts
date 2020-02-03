@@ -15,5 +15,6 @@ const theme = {
   breakpoints,
   mq,
 };
+export type themeProptypes = typeof theme;
 
 export default theme;

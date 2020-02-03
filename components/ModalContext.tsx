@@ -1,6 +1,12 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, ReactNode } from 'react';
 
-export const ModalContext = createContext({
+export type ModalContextType = {
+  openModalId: string;
+  openModal: (id: string) => void;
+  closeModal: () => void;
+};
+
+export const ModalContext = createContext<ModalContextType>({
   openModalId: '',
   openModal: () => {},
   closeModal: () => {},
@@ -8,9 +14,9 @@ export const ModalContext = createContext({
 
 export const useModalContext = () => useContext(ModalContext);
 
-export const ModalProvider = ({ children }) => {
+export const ModalProvider = ({ children }: { children: ReactNode }) => {
   const [openModalId, setOpenModalId] = useState('');
-  const openModal = id => {
+  const openModal = (id: string) => {
     setOpenModalId(id);
   };
 

@@ -4,11 +4,17 @@ import { Box, Image, Text, Flex } from 'rebass';
 import { withTheme } from 'emotion-theming';
 import { FaPlay } from 'react-icons/fa';
 
-import { gradient } from '../theme/utils';
+import { themeProptypes } from '../theme';
 import { Button } from '../components';
 
-const Wrapper = styled(Box)`
-  ${gradient}
+const Wrapper = styled(Box)<{ theme: themeProptypes }>`
+  ${({ theme }) => `
+    background: linear-gradient(
+      left,
+      ${theme.colors.blue200} 0%,
+      ${theme.colors.green500} 100%
+    );
+  `}
 `;
 const Background = styled(Image)`
   position: absolute;
@@ -21,7 +27,7 @@ const Background = styled(Image)`
   animation-duration: 450ms;
 `;
 
-const VideoThumb = styled(Box)`
+const VideoThumb = styled(Box)<{ theme: themeProptypes }>`
   position: relative;
   width: 100%;
   border-radius: 8px;
@@ -32,12 +38,12 @@ const VideoThumb = styled(Box)`
   padding-top: 80%;
   margin-top: -1.5rem;
   ${({ theme }) => `
-  ${theme.mq[2]}{
-    padding-top: 55%;
-    margin: 1rem;
-    width: calc(100% - 2rem);
-  }
-`}
+    ${theme.mq[2]}{
+      padding-top: 55%;
+      margin: 1rem;
+      width: calc(100% - 2rem);
+    }
+  `}
 `;
 const PlayButton = styled(Button)`
   position: absolute;
@@ -65,7 +71,7 @@ const textProps = {
   color: 'white500',
 };
 export const Steps = withTheme(({ theme }) => (
-  <Wrapper as="section" py={[5, 8]} to="left">
+  <Wrapper as="section" py={[5, 8]} theme={theme}>
     <Flex flexWrap="wrap" m="auto" maxWidth="1200px" py={[5, 8]}>
       <Box width={[1, 1, 1, 1 / 2]}>
         <VideoThumb theme={theme}>

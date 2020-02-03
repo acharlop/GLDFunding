@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/core';
+import { withTheme } from 'emotion-theming';
+import { themeProptypes } from '../theme';
 import { Box, Text, Flex } from 'rebass';
-import theme from '../theme';
 
 const dash = keyframes`
   0%{
@@ -13,7 +14,7 @@ const dash = keyframes`
   }
 `;
 
-const Icon = styled(Box)`
+const Icon = styled(Box)<{ theme: themeProptypes }>`
   box-shadow: 0 17px 30px rgba(0, 0, 0, 0.07);
   transition: background-position 300ms;
   border-radius: 50%;
@@ -23,14 +24,18 @@ const Icon = styled(Box)`
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  ${({ theme }) => `
   background: linear-gradient(
     to top right,
     ${theme.colors.blue200} 0%,
     ${theme.colors.green500} 70%
+    color: ${theme.colors.white300};
   );
+`}
+
   background-size: 150% 100%;
   background-position: 0% 0%;
-  color: ${theme.colors.white300};
+
   &:hover {
     color: white;
     background-position: 100% 0%;
@@ -69,19 +74,19 @@ const animatedProps = {
 };
 const titleProps = {
   color: 'gray500',
-  textAlign: 'center',
   width: 1,
   fontFamily: 'heading',
   fontSize: [2, 2, 3],
+  textAlign: 'center' as 'center',
 };
 const descriptionProps = {
   fontSize: [1, 1, 2],
   mt: 1,
-  textAlign: 'center',
   width: 1,
   mb: 3,
+  textAlign: 'center' as 'center',
 };
-const Item = styled(Box)`
+const Item = styled(Box)<{ theme: themeProptypes }>`
   p {
     transition: all 300ms;
     opacity: 0;
@@ -91,19 +96,21 @@ const Item = styled(Box)`
     opacity: 1;
     transform: translateX(0px);
   }
-  ${theme.mq[1]} {
-    p {
-      opacity: 1;
-      transform: translateX(0px);
+  ${({ theme }) => `
+    ${theme.mq[1]}{
+      p {
+        opacity: 1;
+        transform: translateX(0px);
+      }
     }
-  }
+  `}
 `;
 
-export const Features = () => (
-  <Box as="section">
+export const Features = withTheme(({ theme, ...etc }) => (
+  <Box as="section" {...etc}>
     <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
-      <Item width={[1 / 2, 1 / 4]} px={2} pt={2}>
-        <Icon {...iconProps}>
+      <Item width={[1 / 2, 1 / 4]} px={2} pt={2} theme={theme}>
+        <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
             <circle cx="6.6146" cy="7.2644" r="5.6226" />
             <circle cx="6.5581" cy="7.2362" r="4.0121" />
@@ -126,8 +133,8 @@ export const Features = () => (
           Funding is now faster and simpler than ever.
         </Text>
       </Item>
-      <Item width={[1 / 2, 1 / 4]} p={2}>
-        <Icon {...iconProps}>
+      <Item width={[1 / 2, 1 / 4]} p={2} theme={theme}>
+        <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
             <g transform="translate(0 -283.77)">
               <circle cx="6.6146" cy="290.39" r="6.1013" />
@@ -148,8 +155,8 @@ export const Features = () => (
           We give you ultimate payment flexibility.
         </Text>
       </Item>
-      <Item width={[1 / 2, 1 / 4]} p={2}>
-        <Icon {...iconProps}>
+      <Item width={[1 / 2, 1 / 4]} p={2} theme={theme}>
+        <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
             <rect x=".98491" y="2.9693" width="11.259" height="7.2906" rx=".89769" ry=".87407" />
             <path d="m0.98038 4.4412h11.268" />
@@ -167,8 +174,8 @@ export const Features = () => (
           Support, makes your experience faster and more accurate than ever.
         </Text>
       </Item>
-      <Item width={[1 / 2, 1 / 4]} p={2}>
-        <Icon {...iconProps}>
+      <Item width={[1 / 2, 1 / 4]} p={2} theme={theme}>
+        <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
             <path d="m3.0474 12.591v-10.772h5.5043l2.8703 2.8703v7.9257z" />
             <path d="m2.8348 11.552h-0.8032v-10.796h8.3863v2.9293" />
@@ -189,4 +196,4 @@ export const Features = () => (
       </Item>
     </Flex>
   </Box>
-);
+));

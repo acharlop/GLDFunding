@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { withTheme } from 'emotion-theming';
 import Link from 'next/link';
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { Box, Image, Link as RBLink, Flex } from 'rebass';

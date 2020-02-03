@@ -12,19 +12,19 @@ const Wrapper = styled(Box)`
   position: relative;
   display: inline-block;
 `;
-const Animated = styled(Box)`
+const Animated = styled(Box)<{ first: boolean }>`
   transform-style: preserve-3d;
   display: inline-block;
   backface-visibility: hidden;
   transform: translateY(65%) rotateX(-95deg);
   opacity: 0;
-  ${({ first }) =>
-    !first &&
-    `
-  position: absolute; left: 0;
- `};
+  ${({ first }) => !first && 'position: absolute; left: 0;'};
 `;
-export const FancyText = ({ words, ...etc }) => {
+
+type FancyTextProps = {
+  words: string[];
+};
+export const FancyText = ({ words, ...etc }: FancyTextProps) => {
   return (
     <Wrapper {...etc}>
       {words.map((el, i) => (

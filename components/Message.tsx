@@ -7,6 +7,7 @@ import { Button, Carousel } from '../components';
 const Wrapper = styled(Image)`
   position: relative;
 `;
+
 const Background = styled(Image)`
   position: absolute;
   top: 0;
@@ -16,17 +17,20 @@ const Background = styled(Image)`
   object-fit: cover;
   z-index: -1;
 `;
+
 const titleProps = {
   fontSize: [4, 5, '44px'],
   mb: [1, 2],
   color: 'white',
   fontFamily: 'heading',
 };
+
 const textProps = {
   fontSize: [3, 4, '44px'],
   color: 'green500',
   fontFamily: 'heading',
 };
+
 export const Message = () => (
   <Wrapper as="section">
     <Background src="./static/images/footer-image.jpg" />

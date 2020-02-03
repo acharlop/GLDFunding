@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
 import { Box, Image } from 'rebass';
+import { themeProptypes } from '../theme';
 
 import { ModalProvider, Navigation, Footer } from './';
 
@@ -20,7 +21,7 @@ const TopBar = styled(Box)`
   z-index: 3;
 `;
 
-const Wrapper = styled(Box)`
+const Wrapper = styled(Box)<{ theme: themeProptypes; open: boolean }>`
   height: 100%;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   ${({ theme, open }) => `
@@ -50,7 +51,9 @@ export const Layout = withTheme(({ theme, children }) => {
           alt="GLD Funding logo"
           maxWidth="180px"
           alignSelf="flex-start"
-          justifySelf="flex-start"
+          sx={{
+            justifySelf: 'flex-start',
+          }}
         />
         <Navigation open={open} toggle={Toggle} />
       </TopBar>

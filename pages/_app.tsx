@@ -15,8 +15,8 @@ class AppComponent extends App {
         <Head>
           <title>GLD Funding</title>
         </Head>
-        <GlobalStyles />
         <ThemeProvider theme={theme}>
+          <GlobalStyles />
           <Component {...pageProps} />
         </ThemeProvider>
       </>
