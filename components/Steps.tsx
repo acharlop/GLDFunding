@@ -10,7 +10,7 @@ import { Button } from '../components';
 const Wrapper = styled(Box)<{ theme: themeProptypes }>`
   ${({ theme }) => `
     background: linear-gradient(
-      left,
+      to left,
       ${theme.colors.blue200} 0%,
       ${theme.colors.green500} 100%
     );
