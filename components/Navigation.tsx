@@ -30,7 +30,8 @@ const Nav = styled(Flex)<{ theme: themeProptypes; open: boolean }>`
       height: 100vh;
       margin: 0;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
+      padding-top: 22vh;
       transition: opacity 450ms cubic-bezier(0.23, 1, 0.32, 1);
       div {
         flex-direction: column;
