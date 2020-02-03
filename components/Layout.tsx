@@ -40,7 +40,7 @@ export const Layout = withTheme(({ theme, children }) => {
   const Toggle = () => {
     setOpen(!open);
     if (window) {
-      window.document.body.style.overflow = !open ? 'hidden hidden' : 'hidden auto';
+      window.document.body.style.overflowY = !open ? 'hidden' : 'auto';
     }
   };
   return (

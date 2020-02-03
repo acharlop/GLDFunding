@@ -60,7 +60,6 @@ const iconProps = {
   width: ['70px', '70px', '150px'],
   height: ['70px', '70px', '150px'],
   bg: 'white',
-  mt: ['-40px', '-35px', '-75px'],
   mb: 2,
   mx: 'auto',
 };
@@ -86,6 +85,12 @@ const descriptionProps = {
   mb: 3,
   textAlign: 'center' as 'center',
 };
+const itemProps = {
+  mt: ['-50px', '-50px', '-75px'],
+  width: [1 / 2, 1 / 4],
+  mb: [2, 2, 0],
+  p: 2,
+};
 const Item = styled(Box)<{ theme: themeProptypes }>`
   p {
     transition: all 300ms;
@@ -109,7 +114,7 @@ const Item = styled(Box)<{ theme: themeProptypes }>`
 export const Features = withTheme(({ theme, ...etc }) => (
   <Box as="section" {...etc}>
     <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
-      <Item width={[1 / 2, 1 / 4]} px={2} pt={2} theme={theme}>
+      <Item {...itemProps} theme={theme}>
         <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
             <title>Timer icon</title>
@@ -134,7 +139,7 @@ export const Features = withTheme(({ theme, ...etc }) => (
           Funding is now faster and simpler than ever.
         </Text>
       </Item>
-      <Item width={[1 / 2, 1 / 4]} p={2} theme={theme}>
+      <Item {...itemProps} theme={theme}>
         <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
             <title>Money icon</title>
@@ -157,7 +162,7 @@ export const Features = withTheme(({ theme, ...etc }) => (
           We give you ultimate payment flexibility.
         </Text>
       </Item>
-      <Item width={[1 / 2, 1 / 4]} p={2} theme={theme}>
+      <Item {...itemProps} theme={theme}>
         <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
             <title>Credit card icon</title>
@@ -177,7 +182,7 @@ export const Features = withTheme(({ theme, ...etc }) => (
           Support, makes your experience faster and more accurate than ever.
         </Text>
       </Item>
-      <Item width={[1 / 2, 1 / 4]} p={2} theme={theme}>
+      <Item {...itemProps} theme={theme}>
         <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
             <title>Paperwork icon</title>

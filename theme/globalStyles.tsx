@@ -45,7 +45,8 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
     font-size: 1rem;
     background-color: #ffffff;
     color: ${theme.colors.gray300};
-    overflow: hidden auto;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   input{
     border: none;
