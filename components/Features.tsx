@@ -112,6 +112,7 @@ export const Features = withTheme(({ theme, ...etc }) => (
       <Item width={[1 / 2, 1 / 4]} px={2} pt={2} theme={theme}>
         <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
+            <title>Timer icon</title>
             <circle cx="6.6146" cy="7.2644" r="5.6226" />
             <circle cx="6.5581" cy="7.2362" r="4.0121" />
             <circle cx="6.5863" cy="7.2644" r=".59334" />
@@ -136,6 +137,7 @@ export const Features = withTheme(({ theme, ...etc }) => (
       <Item width={[1 / 2, 1 / 4]} p={2} theme={theme}>
         <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
+            <title>Money icon</title>
             <g transform="translate(0 -283.77)">
               <circle cx="6.6146" cy="290.39" r="6.1013" />
               <path d="m6.5969 294.48v-1.1437" />
@@ -158,6 +160,7 @@ export const Features = withTheme(({ theme, ...etc }) => (
       <Item width={[1 / 2, 1 / 4]} p={2} theme={theme}>
         <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
+            <title>Credit card icon</title>
             <rect x=".98491" y="2.9693" width="11.259" height="7.2906" rx=".89769" ry=".87407" />
             <path d="m0.98038 4.4412h11.268" />
             <path d="m0.98038 5.835h11.268" />
@@ -177,6 +180,7 @@ export const Features = withTheme(({ theme, ...etc }) => (
       <Item width={[1 / 2, 1 / 4]} p={2} theme={theme}>
         <Icon {...iconProps} theme={theme}>
           <Animated as="svg" {...animatedProps}>
+            <title>Paperwork icon</title>
             <path d="m3.0474 12.591v-10.772h5.5043l2.8703 2.8703v7.9257z" />
             <path d="m2.8348 11.552h-0.8032v-10.796h8.3863v2.9293" />
             <path d="m8.5753 1.7954v2.8112h2.764" />
