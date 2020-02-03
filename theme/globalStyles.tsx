@@ -36,14 +36,12 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   #__next {
     height: 100%;
   }
-
-  html{
-    overflow-x: hidden;
-  }
   body{
     font-family: ${theme.fonts.body};
     font-size: 1rem;
     color: ${theme.colors.gray300};
+    overflow-x: hidden;
+    position: relative;
   }
   .container {
     max-width: 1200px;
