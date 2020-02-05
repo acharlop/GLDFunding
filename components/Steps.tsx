@@ -64,7 +64,7 @@ const titleProps = {
 const textProps = {
   as: 'p' as 'p',
   fontSize: 2,
-  lineHeight: 'heading',
+  lineHeight: ['auto', 'heading'],
   color: 'white500',
 };
 const stepProps = {

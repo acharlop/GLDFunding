@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 import { Box, Image, Link as RBLink, Flex } from 'rebass';
 
 const HL = styled(RBLink)`
@@ -66,6 +66,11 @@ export const Footer = () => {
           </Link>
         </Flex>
         <Flex width={[1, 1, 2 / 12]} justifyContent={['center', 'flex-end']}>
+          <Link href="./" passHref>
+            <HL {...socialProps}>
+              <FaInstagram />
+            </HL>
+          </Link>
           <Link href="./" passHref>
             <HL {...socialProps}>
               <FaFacebookF />
