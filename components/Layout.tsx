@@ -49,7 +49,7 @@ export const Layout = withTheme(({ theme, children }) => {
         <Image
           src="./static/images/logo-white.svg"
           alt="GLD Funding logo"
-          maxWidth="180px"
+          maxWidth="100px"
           alignSelf="flex-start"
           sx={{
             justifySelf: 'flex-start',

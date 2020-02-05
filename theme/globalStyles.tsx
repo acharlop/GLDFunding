@@ -91,6 +91,8 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   }
   input{
     color: currentColor;
+    border-radius: 30px;
+    min-height: 30px;
   }
   *:focus{
     outline: none;

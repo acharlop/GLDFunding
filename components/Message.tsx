@@ -100,12 +100,12 @@ export const Message = () => (
           <Box as="label" htmlFor="email" css={{ position: 'absolute', opacity: 0 }}>
             email
           </Box>
-          <Box {...inputProps} placeholder="email" type="email" name="email" />
+          <Box {...inputProps} placeholder="email" type="email" name="email" px={2} />
           <Box as="label" htmlFor="message" css={{ position: 'absolute', opacity: 0 }}>
             Message
           </Box>
-          <Box {...inputProps} placeholder="message" name="message" />
-          <Button width={1} my={1}>
+          <Box {...inputProps} placeholder="message" name="message" px={2} />
+          <Button width={1} my={1} rounded>
             SEND MESSAGE
           </Button>
           <Text

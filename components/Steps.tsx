@@ -104,8 +104,8 @@ export const Steps = withTheme(({ theme }) => (
           <Box {...textContainerProps}>
             <Text {...titleProps}>Apply</Text>
             <Text {...textProps}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
-              porttitor ex felis, eget fermentum mi feugiat ut. Phasellus facilisis dolor massa.
+              Fill out an application today with your basic information. Once filled out, submit
+              along with your last 3 months of your business bank statements.
             </Text>
           </Box>
         </Flex>
@@ -116,8 +116,10 @@ export const Steps = withTheme(({ theme }) => (
           <Box {...textContainerProps}>
             <Text {...titleProps}>Approve</Text>
             <Text {...textProps}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
-              porttitor ex felis, eget fermentum mi feugiat ut. Phasellus facilisis dolor massa.
+              Our underwriting team will review your application and bank statements to develop a
+              solution specific to your business needs. They will then contact you and discuss your
+              offer. Repayments are flexible; there are no personal guarantees and minimal documents
+              required.
             </Text>
           </Box>
         </Flex>
@@ -128,8 +130,8 @@ export const Steps = withTheme(({ theme }) => (
           <Box {...textContainerProps}>
             <Text {...titleProps}>Get Funded</Text>
             <Text {...textProps}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
-              porttitor ex felis, eget fermentum mi feugiat ut. Phasellus facilisis dolor massa.
+              Once the contract is signed, you will receive your funds in your bank account the same
+              day.
             </Text>
           </Box>
         </Flex>

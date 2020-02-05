@@ -66,12 +66,12 @@ export const Footer = () => {
           </Link>
         </Flex>
         <Flex width={[1, 1, 2 / 12]} justifyContent={['center', 'flex-end']}>
-          <Link href="./" passHref>
+          <Link href="https://www.instagram.com/gldfunding/" passHref>
             <HL {...socialProps}>
               <FaInstagram />
             </HL>
           </Link>
-          <Link href="./" passHref>
+          <Link href="https://www.facebook.com/GLD-Funding-102567247876620/" passHref>
             <HL {...socialProps}>
               <FaFacebookF />
             </HL>

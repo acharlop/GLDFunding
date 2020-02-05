@@ -53,6 +53,7 @@ const Form = styled(Flex)`
     background-color: rgba(255, 255, 255, 0.3);
     padding: 0.5em 1.5rem;
     font-size: inherit;
+    border-radius: 0;
   }
   button {
     margin-left: -2rem;
