@@ -55,20 +55,36 @@ const PlayButton = styled(Button)`
   height: 100px;
 `;
 const titleProps = {
+  as: 'h1' as 'h1',
   fontSize: [4, 5],
   color: 'white',
   fontFamily: 'heading',
   mb: [1, 2],
 };
-const imageProps = {
-  verticalAlign: 'middle',
-  ml: 1,
-  width: [40, 50],
-};
+
 const textProps = {
+  as: 'p' as 'p',
   fontSize: 2,
   lineHeight: 'heading',
   color: 'white500',
+};
+const stepProps = {
+  width: [1],
+  p: 2,
+};
+const iconProps = {
+  as: 'span' as 'span',
+  width: [2 / 12, 3 / 12],
+  mr: 2,
+  justifyContent: 'center',
+  alignItems: 'center',
+};
+const numberProps = {
+  fontSize: [7, '8rem'],
+  fontFamily: 'heading',
+};
+const textContainerProps = {
+  width: [10 / 12, 9 / 12],
 };
 export const Steps = withTheme(({ theme }) => (
   <Wrapper as="section" py={[5, 8]} theme={theme}>
@@ -82,36 +98,42 @@ export const Steps = withTheme(({ theme }) => (
         </VideoThumb>
       </Box>
       <Flex flexWrap="wrap" width={[1, 1, 1, 1 / 2, 1 / 2]}>
-        <Box width={[1, 1 / 2, 1 / 2]} p={2}>
-          <Text as="h1" {...titleProps}>
-            Apply
-            <Image src="./static/images/step1.svg" alt="step one" {...imageProps} />
-          </Text>
-          <Text as="p" {...textProps}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
-            porttitor ex felis, eget fermentum mi feugiat ut. Phasellus facilisis dolor massa.
-          </Text>
-        </Box>
-        <Box width={[1, 1 / 2, 1 / 2]} p={2}>
-          <Text as="h1" {...titleProps}>
-            Approve
-            <Image src="./static/images/step2.svg" alt="step two" {...imageProps} />
-          </Text>
-          <Text as="p" {...textProps}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
-            porttitor ex felis, eget fermentum mi feugiat ut. Phasellus facilisis dolor massa.
-          </Text>
-        </Box>
-        <Box width={1} p={2}>
-          <Text as="h1" {...titleProps}>
-            Get Funded
-            <Image src="./static/images/step3.svg" alt="step three" {...imageProps} />
-          </Text>
-          <Text as="p" {...textProps}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
-            porttitor ex felis, eget fermentum mi feugiat ut. Phasellus facilisis dolor massa.
-          </Text>
-        </Box>
+        <Flex {...stepProps}>
+          <Flex {...iconProps} css={{ opacity: '0.5' }}>
+            <Text {...numberProps}>1</Text>
+          </Flex>
+          <Box {...textContainerProps}>
+            <Text {...titleProps}>Apply</Text>
+            <Text {...textProps}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
+              porttitor ex felis, eget fermentum mi feugiat ut. Phasellus facilisis dolor massa.
+            </Text>
+          </Box>
+        </Flex>
+        <Flex {...stepProps}>
+          <Flex {...iconProps} css={{ opacity: '0.7' }}>
+            <Text {...numberProps}>2</Text>
+          </Flex>
+          <Box {...textContainerProps}>
+            <Text {...titleProps}>Approve</Text>
+            <Text {...textProps}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
+              porttitor ex felis, eget fermentum mi feugiat ut. Phasellus facilisis dolor massa.
+            </Text>
+          </Box>
+        </Flex>
+        <Flex {...stepProps}>
+          <Flex {...iconProps}>
+            <Text {...numberProps}>3</Text>
+          </Flex>
+          <Box {...textContainerProps}>
+            <Text {...titleProps}>Get Funded</Text>
+            <Text {...textProps}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mattis sapien. Praesent
+              porttitor ex felis, eget fermentum mi feugiat ut. Phasellus facilisis dolor massa.
+            </Text>
+          </Box>
+        </Flex>
       </Flex>
     </Flex>
   </Wrapper>
