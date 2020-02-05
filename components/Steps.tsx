@@ -36,7 +36,6 @@ const VideoThumb = styled(Box)<{ theme: themeProptypes }>`
   width: 40vw;
   margin-left: -15vw;
   padding-top: 80%;
-  margin-top: -1.5rem;
   ${({ theme }) => `
     ${theme.mq[2]}{
       padding-top: 55%;
@@ -87,16 +86,16 @@ const textContainerProps = {
   width: [10 / 12, 9 / 12],
 };
 export const Steps = withTheme(({ theme }) => (
-  <Wrapper as="section" py={[5, 8]} theme={theme}>
-    <Flex flexWrap="wrap" m="auto" maxWidth="1200px" py={[5, 8]}>
-      <Box width={[1, 1, 1, 1 / 2]}>
+  <Wrapper as="section" py={[5, '5rem']} theme={theme}>
+    <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
+      <Flex width={[1, 1, 1, 1 / 2]} alignItems="center">
         <VideoThumb theme={theme}>
           <Background src="./static/images/demo.jpg" alt="video placeholder" />
           <PlayButton width={8} height={8}>
             <FaPlay />
           </PlayButton>
         </VideoThumb>
-      </Box>
+      </Flex>
       <Flex flexWrap="wrap" width={[1, 1, 1, 1 / 2, 1 / 2]}>
         <Flex {...stepProps}>
           <Flex {...iconProps} css={{ opacity: '0.5' }}>
