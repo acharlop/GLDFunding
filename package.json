@@ -59,6 +59,7 @@
     "react-modal": "^3.11.1",
     "react-multi-carousel": "^2.5.0",
     "react-text-mask": "^5.4.3",
+    "react-visibility-sensor": "^5.1.1",
     "rebass": "^4.0.7",
     "text-mask-addons": "^3.8.0"
   },

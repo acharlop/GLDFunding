@@ -43,7 +43,11 @@ const inputProps = {
 
 export const Message = () => (
   <Wrapper as="section">
-    <Background src="./static/images/footer-image.jpg" alt="mountains background" />
+    <Background
+      src="./static/images/footer-image.jpg"
+      alt="mountains background"
+      className="fadeIn"
+    />
     <Flex
       flexWrap="wrap"
       m="auto"

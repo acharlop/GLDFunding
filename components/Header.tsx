@@ -5,6 +5,7 @@ import { withTheme } from 'emotion-theming';
 import { IoMdArrowForward as Arrow } from 'react-icons/io';
 import MaskedInput from 'react-text-mask';
 import createNumberMask from 'text-mask-addons/dist/createNumberMask';
+import VisibilitySensor from 'react-visibility-sensor';
 
 import { Button, FancyText } from '../components';
 import { themeProptypes } from '../theme';
@@ -64,39 +65,67 @@ const Form = styled(Flex)`
   }
 `;
 
-export const Header = withTheme(({ theme }: { theme: themeProptypes }) => (
-  <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
-    <Background src="./static/images/bg-3.jpeg" alt="Hero background" className="fadeIn" />
-    <Flex
-      maxWidth={theme.breakpoints[3]}
-      width={1}
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="cebter"
-    >
-      <Text color="white300" fontSize={[3, 6]} mb={3} textAlign="center">
-        Funding Solutions for your business
-      </Text>
-      <Text as="h1" color="white" fontSize={[5, 6]} fontFamily="heading" textAlign="center">
-        We&apos;ll Help Your Business {` `}
-        <FancyText words={['Succeed', 'Grow']} />
-      </Text>
-      <Form as="form" mt={[3, 8]} fontSize={[2, 3]}>
-        <MaskedInput
-          placeholder="Requested Amount"
-          type="text"
-          required
-          mask={createNumberMask(defaultMaskOptions)}
-          inputMode="numeric"
+export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
+  const [animated, setAnimated] = useState(false);
+  const [sense, setSensor] = useState(true);
+
+  const onView = (inView: boolean) => {
+    if (sense && inView && !animated) {
+      setAnimated(true);
+      setSensor(false);
+    }
+  };
+
+  return (
+    <VisibilitySensor onChange={onView} active={sense}>
+      <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
+        <Background
+          src="./static/images/bg-3.jpeg"
+          alt="Hero background"
+          css={{
+            transition: 'all 600ms cubic-bezier(0.4, 0, 0.2, 1)',
+            opacity: animated ? '1' : '0',
+            transform: animated ? 'scale(1.05)' : 'scale(1)',
+          }}
         />
-        <Button>
-          Apply
-          <Flex as="span" className="hide-md" alignItems="center" ml="0.2em">
-            {` `}Now
-            <Box as={Arrow} ml={1} size={30} />
-          </Flex>
-        </Button>
-      </Form>
-    </Flex>
-  </Wrapper>
-));
+        <Flex
+          maxWidth={theme.breakpoints[3]}
+          width={1}
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          css={{
+            transition: 'all 600ms cubic-bezier(0.4, 0, 0.2, 1) 150ms',
+            opacity: animated ? '1' : '0',
+            transform: animated ? 'translateY(1rem)' : 'translateY(0rem)',
+          }}
+          className={animated ? 'fadeInUp' : ''}
+        >
+          <Text color="white300" fontSize={[3, 6]} mb={3} textAlign="center">
+            Funding Solutions for your business
+          </Text>
+          <Text as="h1" color="white" fontSize={[5, 6]} fontFamily="heading" textAlign="center">
+            We&apos;ll Help Your Business {` `}
+            <FancyText words={['Succeed', 'Grow']} />
+          </Text>
+          <Form as="form" mt={[3, 8]} fontSize={[2, 3]}>
+            <MaskedInput
+              placeholder="Requested Amount"
+              type="text"
+              required
+              mask={createNumberMask(defaultMaskOptions)}
+              inputMode="numeric"
+            />
+            <Button>
+              Apply
+              <Flex as="span" className="hide-md" alignItems="center" ml="0.2em">
+                {` `}Now
+                <Box as={Arrow} ml={1} size={30} />
+              </Flex>
+            </Button>
+          </Form>
+        </Flex>
+      </Wrapper>
+    </VisibilitySensor>
+  );
+});

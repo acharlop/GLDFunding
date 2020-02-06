@@ -12,21 +12,29 @@ const fadeIn = keyframes`
     transform: scale(1);
   }
 `;
-
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+`;
 const styles = (theme: import('../theme').themeProptypes): SerializedStyles => css`
   ${emotionNormalize};
   @font-face {
-    font-family: "Cerebri Sans";
-    src: url("./static/fonts/cerebri-sans.woff2") format("woff2"),
-      url("./static/fonts/cerebri-sans.woff") format("woff");
+    font-family: 'Cerebri Sans';
+    src: url('./static/fonts/cerebri-sans.woff2') format('woff2'),
+      url('./static/fonts/cerebri-sans.woff') format('woff');
     font-weight: 400;
     font-style: normal;
   }
   @font-face {
-    font-family: "neuzeit-grotesk";
-    src: url("./static/fonts/l") format("woff2"),
-      url("./static/fonts/d.woff") format("woff"),
-      url("./static/fonts/a") format("opentype");
+    font-family: 'neuzeit-grotesk';
+    src: url('./static/fonts/l') format('woff2'), url('./static/fonts/d.woff') format('woff'),
+      url('./static/fonts/a') format('opentype');
     font-display: auto;
     font-weight: 700;
     font-style: normal;
@@ -36,10 +44,10 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   #__next {
     height: 100%;
   }
-  html{
+  html {
     overflow: hidden;
   }
-  body{
+  body {
     font-family: ${theme.fonts.body};
     font-size: 1rem;
     color: ${theme.colors.gray300};
@@ -50,7 +58,7 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
     max-width: 1200px;
   }
 
-  input{
+  input {
     border: none;
   }
   .ReactModal__Overlay {
@@ -75,11 +83,14 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   .fadeIn {
     opacity: 0;
     transform: scale(1.05);
-    animation: ${fadeIn} 600ms cubic-bezier(0.4, 0, 0.2, 1) 0s 1 ;
+    animation: ${fadeIn} 600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     animation-fill-mode: forwards;
   }
-  .gradient{
-    linear-gradient(to right, ${theme.colors.blue200} 0%, ${theme.colors.green500}  100%)
+  .fadeInUp {
+    opacity: 0;
+    transform: translateY(1rem);
+    animation: ${fadeInUp} 600ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+    animation-fill-mode: forwards;
   }
   ${theme.mq[2]} {
     .hide-md {
@@ -89,12 +100,12 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
       display: inherit !important;
     }
   }
-  input{
+  input {
     color: currentColor;
     border-radius: 30px;
     min-height: 30px;
   }
-  *:focus{
+  *:focus {
     outline: none;
   }
   ::-webkit-input-placeholder {
@@ -114,11 +125,11 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   }
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
   }
-  input[type=number] {
-    -moz-appearance:textfield;
+  input[type='number'] {
+    -moz-appearance: textfield;
   }
 `;
 export const GlobalStyles = () => {
