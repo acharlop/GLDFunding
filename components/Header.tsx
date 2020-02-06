@@ -7,6 +7,7 @@ import MaskedInput from 'react-text-mask';
 import createNumberMask from 'text-mask-addons/dist/createNumberMask';
 
 import { Button, FancyText } from '../components';
+import { themeProptypes } from '../theme';
 
 const defaultMaskOptions = {
   prefix: '$',
@@ -63,7 +64,7 @@ const Form = styled(Flex)`
   }
 `;
 
-export const Header = withTheme(({ theme }) => (
+export const Header = withTheme(({ theme }: { theme: themeProptypes }) => (
   <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
     <Background src="./static/images/bg-3.jpeg" alt="Hero background" className="fadeIn" />
     <Flex

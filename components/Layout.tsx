@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, ReactNode } from 'react';
 import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
 import { Box, Image } from 'rebass';
@@ -34,32 +34,34 @@ const Wrapper = styled(Box)<{ theme: themeProptypes; open: boolean }>`
   `}
 `;
 
-export const Layout = withTheme(({ theme, children }) => {
-  const [open, setOpen] = useState(false);
+export const Layout = withTheme(
+  ({ theme, children }: { theme: themeProptypes; children: ReactNode }) => {
+    const [open, setOpen] = useState(false);
 
-  const Toggle = () => {
-    setOpen(!open);
-    if (window) {
-      window.document.body.style.overflowY = open ? 'auto' : 'hidden';
-    }
-  };
+    const Toggle = () => {
+      setOpen(!open);
+      if (window) {
+        window.document.body.style.overflowY = open ? 'auto' : 'hidden';
+      }
+    };
 
-  return (
-    <Wrapper open={open} theme={theme}>
-      <TopBar px={3} pt={2} maxWidth="1700px" open={open} theme={theme}>
-        <Image
-          src="./static/images/logo-white.svg"
-          alt="GLD Funding logo"
-          maxWidth="100px"
-          alignSelf="flex-start"
-          sx={{
-            justifySelf: 'flex-start',
-          }}
-        />
-        <Navigation open={open} toggle={Toggle} />
-      </TopBar>
-      <ModalProvider>{children}</ModalProvider>
-      <Footer />
-    </Wrapper>
-  );
-});
+    return (
+      <Wrapper open={open} theme={theme}>
+        <TopBar px={3} pt={2} maxWidth="1700px" open={open} theme={theme}>
+          <Image
+            src="./static/images/logo-white.svg"
+            alt="GLD Funding logo"
+            maxWidth="100px"
+            alignSelf="flex-start"
+            sx={{
+              justifySelf: 'flex-start',
+            }}
+          />
+          <Navigation open={open} toggle={Toggle} />
+        </TopBar>
+        <ModalProvider>{children}</ModalProvider>
+        <Footer />
+      </Wrapper>
+    );
+  }
+);

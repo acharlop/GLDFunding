@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<div>
+  <div
+    class="show-md mb-open-btn css-l6kea7-Open esgq4xm3"
+  >
+    <div
+      class="css-1s4dz1f"
+    />
+    <div
+      class="css-12ptazb"
+    />
+    <div
+      class="css-1s4dz1f"
+    />
+  </div>
+  <nav
+    class="css-1dcz2ie-Nav esgq4xm1"
+  >
+    <svg
+      class="show-md css-un36pl-Close esgq4xm2"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 512 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z"
+      />
+    </svg>
+    <div
+      class="css-4cffwv"
+    >
+      <a
+        class="esgq4xm0 css-1m8yfox-HL"
+        href="./"
+      >
+        About
+      </a>
+      <a
+        class="esgq4xm0 css-1m8yfox-HL"
+        href="./"
+      >
+         What is MCA?
+      </a>
+      <a
+        class="esgq4xm0 css-1m8yfox-HL"
+        href="./"
+      >
+        Apply
+      </a>
+      <a
+        class="esgq4xm0 css-1m8yfox-HL"
+        href="./"
+      >
+        Contact
+      </a>
+    </div>
+    <div
+      class="css-4cffwv"
+    >
+      <a
+        class="esgq4xm0 css-1m8yfox-HL"
+        href="tel:1(877)498-4344"
+      >
+        Call Now 1 (877) 498-4344
+      </a>
+      <a
+        class="show-md esgq4xm0 css-1m8yfox-HL"
+        href="tel:1(877)498-4344"
+      >
+        Login
+      </a>
+      <a
+        class="hide-md css-167ay55"
+        href="tel:1(877)498-4344"
+      >
+        Login
+      </a>
+    </div>
+  </nav>
+</div>
+`;

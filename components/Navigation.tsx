@@ -75,9 +75,14 @@ const Open = styled(Box)`
   z-index: 3;
 `;
 
-export const Navigation = withTheme(({ theme, open, toggle }) => (
+type NavigationProps = {
+  theme: themeProptypes;
+  open?: boolean;
+  toggle: (event: React.MouseEvent<HTMLElement>) => void;
+};
+export const Navigation = withTheme(({ theme, open = false, toggle }: NavigationProps) => (
   <>
-    <Open onClick={toggle} className="show-md" color="white">
+    <Open onClick={toggle} className="show-md mb-open-btn" color="white">
       <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
       <Box width="16px" mb="5px" height="2px" bg="CurrentColor" />
       <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />

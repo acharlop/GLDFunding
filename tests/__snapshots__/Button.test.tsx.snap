@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> should render properly 1`] = `
+exports[`rendering renders as expected 1`] = `
 <div>
   <button
-    class="css-uroo9i"
+    class="css-1nviw9z"
   >
     Click me!
   </button>

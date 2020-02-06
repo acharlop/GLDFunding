@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<div>
+  <div
+    class="css-86bk71-Wrapper e1jkelvh0"
+  >
+    <span
+      class="css-iifya3-FancyText"
+    >
+      longerword
+    </span>
+    <div
+      class="css-1zk1a-Animated-FancyText e1jkelvh1"
+    >
+      longerword
+    </div>
+    <div
+      class="css-ml3iyx-Animated-FancyText e1jkelvh1"
+    >
+      short
+    </div>
+  </div>
+</div>
+`;

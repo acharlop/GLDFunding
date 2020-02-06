@@ -93,7 +93,7 @@ const textContainerProps = {
   width: [10 / 12, 9 / 12],
 };
 
-export const Steps = withTheme(({ theme }) => (
+export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => (
   <Wrapper as="section" py={[5, '5rem']} theme={theme}>
     <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
       <Flex width={[1, 1, 1, 1 / 2]} alignItems="center">

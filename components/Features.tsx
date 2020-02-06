@@ -66,6 +66,7 @@ const iconProps = {
 };
 
 const animatedProps = {
+  as: 'svg' as 'svg',
   width: ['40px', '40px', '50px'],
   height: ['40px', '40px', '50px'],
   xmlns: 'http://www.w3.org/2000/svg',
@@ -75,6 +76,7 @@ const animatedProps = {
 };
 
 const titleProps = {
+  as: 'h4' as 'h4',
   color: 'gray500',
   width: 1,
   fontFamily: 'heading',
@@ -83,6 +85,7 @@ const titleProps = {
 };
 
 const descriptionProps = {
+  as: 'p' as 'p',
   fontSize: [1, 1, 2],
   mt: 1,
   width: 1,
@@ -117,12 +120,12 @@ const Item = styled(Box)<{ theme: themeProptypes }>`
   `}
 `;
 
-export const Features = withTheme(({ theme, ...etc }) => (
+export const Features = withTheme(({ theme, ...etc }, { theme: themeProptypes }) => (
   <Box as="section" {...etc}>
     <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
       <Item {...itemProps} theme={theme}>
         <Icon {...iconProps} theme={theme}>
-          <Animated as="svg" {...animatedProps}>
+          <Animated {...animatedProps}>
             <title>Timer icon</title>
             <circle cx="6.6146" cy="7.2644" r="5.6226" />
             <circle cx="6.5581" cy="7.2362" r="4.0121" />
@@ -138,16 +141,12 @@ export const Features = withTheme(({ theme, ...etc }) => (
             <rect x="5.6257" y=".34213" width="1.8365" height="1.2997" rx="0" ry=".33905" />
           </Animated>
         </Icon>
-        <Text as="h4" {...titleProps}>
-          Quick approval rates
-        </Text>
-        <Text as="p" {...descriptionProps}>
-          Funding is now faster and simpler than ever.
-        </Text>
+        <Text {...titleProps}>Quick approval rates</Text>
+        <Text {...descriptionProps}>Funding is now faster and simpler than ever.</Text>
       </Item>
       <Item {...itemProps} theme={theme}>
         <Icon {...iconProps} theme={theme}>
-          <Animated as="svg" {...animatedProps}>
+          <Animated {...animatedProps}>
             <title>Money icon</title>
             <g transform="translate(0 -283.77)">
               <circle cx="6.6146" cy="290.39" r="6.1013" />
@@ -161,16 +160,12 @@ export const Features = withTheme(({ theme, ...etc }) => (
             </g>
           </Animated>
         </Icon>
-        <Text as="h4" {...titleProps}>
-          Flexible payment plans
-        </Text>
-        <Text as="p" {...descriptionProps}>
-          We give you ultimate payment flexibility.
-        </Text>
+        <Text {...titleProps}>Flexible payment plans</Text>
+        <Text {...descriptionProps}>We give you ultimate payment flexibility.</Text>
       </Item>
       <Item {...itemProps} theme={theme}>
         <Icon {...iconProps} theme={theme}>
-          <Animated as="svg" {...animatedProps}>
+          <Animated {...animatedProps}>
             <title>Credit card icon</title>
             <rect x=".98491" y="2.9693" width="11.259" height="7.2906" rx=".89769" ry=".87407" />
             <path d="m0.98038 4.4412h11.268" />
@@ -181,16 +176,14 @@ export const Features = withTheme(({ theme, ...etc }) => (
             <path d="m0.68508 11.032 12.213-8.7879" />
           </Animated>
         </Icon>
-        <Text as="h4" {...titleProps}>
-          No credit score required
-        </Text>
-        <Text as="p" {...descriptionProps}>
+        <Text {...titleProps}>No credit score required</Text>
+        <Text {...descriptionProps}>
           Support, makes your experience faster and more accurate than ever.
         </Text>
       </Item>
       <Item {...itemProps} theme={theme}>
         <Icon {...iconProps} theme={theme}>
-          <Animated as="svg" {...animatedProps}>
+          <Animated {...animatedProps}>
             <title>Paperwork icon</title>
             <path d="m3.0474 12.591v-10.772h5.5043l2.8703 2.8703v7.9257z" />
             <path d="m2.8348 11.552h-0.8032v-10.796h8.3863v2.9293" />
@@ -202,10 +195,8 @@ export const Features = withTheme(({ theme, ...etc }) => (
             <path d="m4.3703 9.0832h5.1027" />
           </Animated>
         </Icon>
-        <Text as="h4" {...titleProps}>
-          Minimal Paperwork
-        </Text>
-        <Text as="p" {...descriptionProps}>
+        <Text {...titleProps}>Minimal Paperwork</Text>
+        <Text {...descriptionProps}>
           Tools are beyond the one-click install, async tech merges with ultimate flexibility.
         </Text>
       </Item>

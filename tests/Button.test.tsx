@@ -1,49 +1,49 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react';
+import { render } from '../utils/tests';
 
-import { render } from '@testing-library/react';
 import { Button, ButtonProps } from '../components';
 
 const setup = (props?: ButtonProps) => {
-  const onClickHandler = jest.fn();
+  const clickHandler = jest.fn();
   const utils = render(
-    <Button onClick={onClickHandler} {...props}>
+    <Button onClick={clickHandler} {...props}>
       Click me!
     </Button>
   );
   const button = utils.getByText('Click me!');
-
   return {
     ...utils,
-    onClickHandler,
+    clickHandler,
     button,
   };
 };
 
-describe('<Button />', () => {
-  test('should render properly', () => {
+describe('rendering', () => {
+  test('renders as expected', () => {
     const { container } = setup();
     expect(container).toMatchSnapshot();
   });
 
-  test('should render a button if there is no href prop', () => {
+  test('renders a button if there is no href prop', () => {
     const { button } = setup();
-
     expect(button.tagName).toBe('BUTTON');
   });
 
-  test('should render a link if href prop is set', () => {
-    const { button, onClickHandler } = setup({ href: 'test' });
+  test('renders a link if there is href prop', () => {
+    const { button, clickHandler } = setup({ href: 'test' });
 
     fireEvent.click(button);
-    expect(onClickHandler).toBeCalledTimes(1);
+    expect(clickHandler).toBeCalledTimes(1);
     expect(button.tagName).toBe('A');
   });
+});
 
-  test('should execute event handler function once on click', () => {
-    const { button, onClickHandler } = setup();
+describe('callbacks', () => {
+  test('executes click handler once when clicked', () => {
+    const { button, clickHandler } = setup();
 
     fireEvent.click(button);
-    expect(onClickHandler).toBeCalledTimes(1);
+    expect(clickHandler).toBeCalledTimes(1);
   });
 });
