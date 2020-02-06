@@ -77,5 +77,6 @@ $ npm run test:watch
 - config files.
 
 ### Todo:
+- Add reviews section.
 - Add storybook and stories.
 - Add enviroments config.
