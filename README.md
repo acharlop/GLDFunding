@@ -76,6 +76,6 @@ $ npm run test:watch
 - utils/
 - config files.
 
-### Todo:
-Add storybook and stories.
-Add enviroments config.
+##### Todo:
+- Add storybook and stories.
+- Add enviroments config.
