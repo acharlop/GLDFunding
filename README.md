@@ -75,3 +75,7 @@ $ npm run test:watch
   - images
 - utils/
 - config files.
+
+### Todo:
+Add storybook and stories.
+Add enviroments config.
