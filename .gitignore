@@ -1,12 +1,8 @@
-node_modules
+__mocks__
 .next
 .vscode
-dist
-
-# misc
+build
+node_modules
+out
 .DS_Store
 npm-debug.log*
-node_modules
-build
-out
-__mocks__
