@@ -20,6 +20,7 @@ const defaultMaskOptions = {
   allowNegative: false,
   allowLeadingZeroes: false,
 };
+
 const Wrapper = styled(Flex)`
   height: 89vh;
   position: relative;
@@ -62,42 +63,39 @@ const Form = styled(Flex)`
   }
 `;
 
-export const Header = withTheme(({ theme }) => {
-  const currencyMask = createNumberMask(defaultMaskOptions);
-  return (
-    <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
-      <Background src="./static/images/bg-3.jpeg" alt="Hero background" className="fadeIn" />
-      <Flex
-        maxWidth={theme.breakpoints[3]}
-        width={1}
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="cebter"
-      >
-        <Text color="white300" fontSize={[3, 6]} mb={3} textAlign="center">
-          Funding Solutions for your business
-        </Text>
-        <Text as="h1" color="white" fontSize={[5, 6]} fontFamily="heading" textAlign="center">
-          We&apos;ll Help Your Business {` `}
-          <FancyText words={['Succeed', 'Grow']} />
-        </Text>
-        <Form as="form" mt={[3, 8]} fontSize={[2, 3]}>
-          <MaskedInput
-            placeholder="Requested Amount"
-            type="text"
-            required
-            mask={currencyMask}
-            inputMode="numeric"
-          />
-          <Button>
-            Apply
-            <Flex as="span" className="hide-md" alignItems="center" ml="0.2em">
-              {` `}Now
-              <Box as={Arrow} ml={1} size={30} />
-            </Flex>
-          </Button>
-        </Form>
-      </Flex>
-    </Wrapper>
-  );
-});
+export const Header = withTheme(({ theme }) => (
+  <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
+    <Background src="./static/images/bg-3.jpeg" alt="Hero background" className="fadeIn" />
+    <Flex
+      maxWidth={theme.breakpoints[3]}
+      width={1}
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="cebter"
+    >
+      <Text color="white300" fontSize={[3, 6]} mb={3} textAlign="center">
+        Funding Solutions for your business
+      </Text>
+      <Text as="h1" color="white" fontSize={[5, 6]} fontFamily="heading" textAlign="center">
+        We&apos;ll Help Your Business {` `}
+        <FancyText words={['Succeed', 'Grow']} />
+      </Text>
+      <Form as="form" mt={[3, 8]} fontSize={[2, 3]}>
+        <MaskedInput
+          placeholder="Requested Amount"
+          type="text"
+          required
+          mask={createNumberMask(defaultMaskOptions)}
+          inputMode="numeric"
+        />
+        <Button>
+          Apply
+          <Flex as="span" className="hide-md" alignItems="center" ml="0.2em">
+            {` `}Now
+            <Box as={Arrow} ml={1} size={30} />
+          </Flex>
+        </Button>
+      </Form>
+    </Flex>
+  </Wrapper>
+));

@@ -44,6 +44,7 @@ const Icon = styled(Box)<{ theme: themeProptypes }>`
     }
   }
 `;
+
 const Animated = styled(Box)`
   stroke-dasharray: 36px, 38px;
   stroke: CurrentColor;
@@ -63,6 +64,7 @@ const iconProps = {
   mb: 2,
   mx: 'auto',
 };
+
 const animatedProps = {
   width: ['40px', '40px', '50px'],
   height: ['40px', '40px', '50px'],
@@ -71,6 +73,7 @@ const animatedProps = {
   version: '1.1',
   viewBox: '0 0 13.229166 13.229166',
 };
+
 const titleProps = {
   color: 'gray500',
   width: 1,
@@ -78,6 +81,7 @@ const titleProps = {
   fontSize: [2, 2, 3],
   textAlign: 'center' as 'center',
 };
+
 const descriptionProps = {
   fontSize: [1, 1, 2],
   mt: 1,
@@ -85,12 +89,14 @@ const descriptionProps = {
   mb: 3,
   textAlign: 'center' as 'center',
 };
+
 const itemProps = {
   mt: ['-50px', '-50px', '-75px'],
   width: [1 / 2, 1 / 4],
   mb: [2, 2, 0],
   p: 2,
 };
+
 const Item = styled(Box)<{ theme: themeProptypes }>`
   p {
     transition: all 300ms;

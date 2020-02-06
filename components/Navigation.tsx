@@ -54,6 +54,7 @@ const Nav = styled(Flex)<{ theme: themeProptypes; open: boolean }>`
     }            
   `}
 `;
+
 const Close = styled(Box)`
   border: 2px solid rgba(255, 255, 255, 0.28);
   border-radius: 50%;
@@ -63,6 +64,7 @@ const Close = styled(Box)`
   cursor: pointer;
   color: white;
 `;
+
 const Open = styled(Box)`
   position: absolute;
   top: 40px;
@@ -72,51 +74,50 @@ const Open = styled(Box)`
   opacity: 0.7;
   z-index: 3;
 `;
-export const Navigation = withTheme(({ theme, open, toggle }) => {
-  return (
-    <>
-      <Open onClick={toggle} className="show-md" color="white">
-        <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
-        <Box width="16px" mb="5px" height="2px" bg="CurrentColor" />
-        <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
-      </Open>
-      <Nav
-        as="nav"
-        mt="14px"
-        alignItems="center"
-        justifyContent="space-between"
-        width={1}
-        open={open}
-        theme={theme}
-        pt={['100px', '25vh', '25vh', '0']}
-      >
-        <Close as={IoIosClose} className="show-md" onClick={toggle} size={40} />
-        <Flex>
-          <Link href="./" passHref>
-            <HL color="white">About</HL>
-          </Link>
-          <Link href="./" passHref>
-            <HL color="white"> What is MCA?</HL>
-          </Link>
-          <Link href="./" passHref>
-            <HL color="white">Apply</HL>
-          </Link>
-          <Link href="./" passHref>
-            <HL color="white">Contact</HL>
-          </Link>
-        </Flex>
-        <Flex>
-          <HL href="tel:1(877)498-4344" color="white">
-            Call Now 1 (877) 498-4344
-          </HL>
-          <HL href="tel:1(877)498-4344" className="show-md" color="white">
-            Login
-          </HL>
-          <Button rounded href="tel:1(877)498-4344" ml={3} className="hide-md">
-            Login
-          </Button>
-        </Flex>
-      </Nav>
-    </>
-  );
-});
+
+export const Navigation = withTheme(({ theme, open, toggle }) => (
+  <>
+    <Open onClick={toggle} className="show-md" color="white">
+      <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
+      <Box width="16px" mb="5px" height="2px" bg="CurrentColor" />
+      <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
+    </Open>
+    <Nav
+      as="nav"
+      mt="14px"
+      alignItems="center"
+      justifyContent="space-between"
+      width={1}
+      open={open}
+      theme={theme}
+      pt={['100px', '25vh', '25vh', '0']}
+    >
+      <Close as={IoIosClose} className="show-md" onClick={toggle} size={40} />
+      <Flex>
+        <Link href="./" passHref>
+          <HL color="white">About</HL>
+        </Link>
+        <Link href="./" passHref>
+          <HL color="white"> What is MCA?</HL>
+        </Link>
+        <Link href="./" passHref>
+          <HL color="white">Apply</HL>
+        </Link>
+        <Link href="./" passHref>
+          <HL color="white">Contact</HL>
+        </Link>
+      </Flex>
+      <Flex>
+        <HL href="tel:1(877)498-4344" color="white">
+          Call Now 1 (877) 498-4344
+        </HL>
+        <HL href="tel:1(877)498-4344" className="show-md" color="white">
+          Login
+        </HL>
+        <Button rounded href="tel:1(877)498-4344" ml={3} className="hide-md">
+          Login
+        </Button>
+      </Flex>
+    </Nav>
+  </>
+));

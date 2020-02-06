@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
 import { Box, Image } from 'rebass';
-import { themeProptypes } from '../theme';
 
+import { themeProptypes } from '../theme';
 import { ModalProvider, Navigation, Footer } from './';
 
 const TopBar = styled(Box)`
@@ -43,6 +43,7 @@ export const Layout = withTheme(({ theme, children }) => {
       window.document.body.style.overflowY = open ? 'auto' : 'hidden';
     }
   };
+
   return (
     <Wrapper open={open} theme={theme}>
       <TopBar px={3} pt={2} maxWidth="1700px" open={open} theme={theme}>

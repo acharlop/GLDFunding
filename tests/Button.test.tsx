@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react';
 
-import { render } from '../utils';
+import { render } from '@testing-library/react';
 import { Button, ButtonProps } from '../components';
 
 const setup = (props?: ButtonProps) => {

@@ -11,10 +11,12 @@ const spin = keyframes`
   20%,40% { transform: translateY(0%) rotateX(1deg); opacity: 1;}
   60%,100% { transform: translateY(-65%) rotateX(95deg);opacity: 0; }
 `;
+
 const Wrapper = styled(Box)`
   position: relative;
   display: inline-block;
 `;
+
 const Animated = styled(Box)<{ theme: themeProptypes }>`
   position: absolute;
   left: 0;
@@ -34,24 +36,22 @@ export type FancyTextProps = {
   words: string[];
   theme: themeProptypes;
 };
-export const FancyText = withTheme(({ theme, words, ...etc }: FancyTextProps) => {
-  const longest = words.sort((a, b) => b.length - a.length)[0];
-  return (
-    <Wrapper {...etc}>
-      <Box as="span" css={{ opacity: '0' }}>
-        {longest}
-      </Box>
-      {words.map((el, i) => (
-        <Animated
-          key={i}
-          theme={theme}
-          css={{
-            animation: `${spin} 4s ease-in-out ${i > 0 ? '2s' : '0s'} infinite`,
-          }}
-        >
-          {el}
-        </Animated>
-      ))}
-    </Wrapper>
-  );
-});
+
+export const FancyText = withTheme(({ theme, words, ...etc }: FancyTextProps) => (
+  <Wrapper {...etc}>
+    <Box as="span" css={{ opacity: '0' }}>
+      {words.sort((a, b) => b.length - a.length)[0]}
+    </Box>
+    {words.map((el, i) => (
+      <Animated
+        key={i}
+        theme={theme}
+        css={{
+          animation: `${spin} 4s ease-in-out ${i > 0 ? '2s' : '0s'} infinite`,
+        }}
+      >
+        {el}
+      </Animated>
+    ))}
+  </Wrapper>
+));

@@ -3,7 +3,7 @@
 exports[`<Button /> should render properly 1`] = `
 <div>
   <button
-    class="css-1nviw9z"
+    class="css-uroo9i"
   >
     Click me!
   </button>

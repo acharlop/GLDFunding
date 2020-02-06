@@ -16,6 +16,7 @@ const Wrapper = styled(Box)<{ theme: themeProptypes }>`
     );
   `}
 `;
+
 const Background = styled(Image)`
   position: absolute;
   top: 0;
@@ -44,6 +45,7 @@ const VideoThumb = styled(Box)<{ theme: themeProptypes }>`
     }
   `}
 `;
+
 const PlayButton = styled(Button)`
   position: absolute;
   top: 50%;
@@ -53,6 +55,7 @@ const PlayButton = styled(Button)`
   width: 100px;
   height: 100px;
 `;
+
 const titleProps = {
   as: 'h1' as 'h1',
   fontSize: [4, 5],
@@ -67,10 +70,12 @@ const textProps = {
   lineHeight: ['auto', 'heading'],
   color: 'white500',
 };
+
 const stepProps = {
   width: [1],
   p: 2,
 };
+
 const iconProps = {
   as: 'span' as 'span',
   width: [2 / 12, 3 / 12],
@@ -78,13 +83,16 @@ const iconProps = {
   justifyContent: 'center',
   alignItems: 'center',
 };
+
 const numberProps = {
   fontSize: [7, '8rem'],
   fontFamily: 'heading',
 };
+
 const textContainerProps = {
   width: [10 / 12, 9 / 12],
 };
+
 export const Steps = withTheme(({ theme }) => (
   <Wrapper as="section" py={[5, '5rem']} theme={theme}>
     <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
