@@ -11,12 +11,12 @@ exports[`rendering renders as expected 1`] = `
       longerword
     </span>
     <div
-      class="css-1zk1a-Animated-FancyText e1jkelvh1"
+      class="css-x0wys2-Animated-FancyText e1jkelvh1"
     >
       longerword
     </div>
     <div
-      class="css-ml3iyx-Animated-FancyText e1jkelvh1"
+      class="css-x0wys2-Animated-FancyText e1jkelvh1"
     >
       short
     </div>

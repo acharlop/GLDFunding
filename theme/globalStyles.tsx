@@ -1,27 +1,7 @@
 import React from 'react';
-import { Global, css, keyframes, SerializedStyles } from '@emotion/core';
+import { Global, css, SerializedStyles } from '@emotion/core';
 import emotionNormalize from 'emotion-normalize';
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: scale(1.05);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-`;
-const fadeInUp = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-`;
 const styles = (theme: import('../theme').themeProptypes): SerializedStyles => css`
   ${emotionNormalize};
   @font-face {
@@ -79,18 +59,6 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   }
   a {
     color: inherit;
-  }
-  .fadeIn {
-    opacity: 0;
-    transform: scale(1.05);
-    animation: ${fadeIn} 600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    animation-fill-mode: forwards;
-  }
-  .fadeInUp {
-    opacity: 0;
-    transform: translateY(1rem);
-    animation: ${fadeInUp} 600ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
-    animation-fill-mode: forwards;
   }
   ${theme.mq[2]} {
     .hide-md {

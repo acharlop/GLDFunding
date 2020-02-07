@@ -55,13 +55,15 @@ const Form = styled(Flex)`
   }
   input {
     background-color: rgba(255, 255, 255, 0.3);
-    padding: 0.5em 1.5rem;
+    padding: 0 1.5rem;
     font-size: inherit;
     border-radius: 0;
+    line-height: 3;
+    width: 60%;
   }
   button {
     margin-left: -2rem;
-    border-radius: 30px 0 0 30px;
+    border-radius: 30px;
     font-size: inherit;
   }
 `;
@@ -85,7 +87,7 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
       <Background
         as="picture"
         css={{
-          transition: `all 600ms cubic-bezier(0.4, 0, 0.2, 1)`,
+          transition: 'all 600ms cubic-bezier(0.4, 0, 0.2, 1)',
           opacity: animated ? '1' : '0',
           transform: animated ? 'scale(1.05)' : 'scale(1)',
         }}
@@ -108,16 +110,15 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
         css={{
           transition: 'all 600ms cubic-bezier(0.4, 0, 0.2, 1) 150ms',
           opacity: animated ? '1' : '0',
-          transform: animated ? 'translateY(1rem)' : 'translateY(0rem)',
+          transform: animated ? 'translateY(-1rem)' : 'translateY(0rem)',
         }}
-        className={animated ? 'fadeInUp' : ''}
       >
         <Text color="white300" fontSize={[3, 6]} mb={3} textAlign="center">
           Funding Solutions for your business
         </Text>
         <Text as="h1" color="white" fontSize={[5, 6]} fontFamily="heading" textAlign="center">
           We&apos;ll Help Your Business {` `}
-          <FancyText words={['Succeed', 'Grow']} />
+          <FancyText words={['Succeed', 'Grow']} animate={animated} />
         </Text>
         <Form as="form" mt={[3, 8]} fontSize={[2, 3]}>
           <MaskedInput
@@ -126,7 +127,6 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
             required
             mask={createNumberMask(defaultMaskOptions)}
             inputMode="numeric"
-            width="60%"
           />
           <Button>
             Apply

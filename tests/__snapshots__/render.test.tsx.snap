@@ -436,7 +436,7 @@ exports[`render as espected Header 1`] = `
       />
     </picture>
     <div
-      class=" css-14qp425-Header"
+      class="css-14qp425-Header"
     >
       <div
         class="css-10gcz7t"
@@ -457,19 +457,19 @@ exports[`render as espected Header 1`] = `
             Succeed
           </span>
           <div
-            class="css-1zk1a-Animated-FancyText e1jkelvh1"
+            class="css-x0wys2-Animated-FancyText e1jkelvh1"
           >
             Succeed
           </div>
           <div
-            class="css-ml3iyx-Animated-FancyText e1jkelvh1"
+            class="css-x0wys2-Animated-FancyText e1jkelvh1"
           >
             Grow
           </div>
         </div>
       </h1>
       <form
-        class="css-mn4t1z-Form eiscj4c2"
+        class="css-13f7z00-Form eiscj4c2"
       >
         <input
           inputmode="numeric"
@@ -477,7 +477,6 @@ exports[`render as espected Header 1`] = `
           required=""
           type="text"
           value=""
-          width="60%"
         />
         <button
           class="css-1mbgdfl"
@@ -933,7 +932,7 @@ exports[`render as espected Steps 1`] = `
         >
           <img
             alt="video placeholder"
-            class="ews2q5x1 css-1gf4r9w-Background"
+            class="ews2q5x1 css-tlqqe1-Background"
             src="./static/images/demo.jpg"
           />
           <button

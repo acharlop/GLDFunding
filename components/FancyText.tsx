@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/core';
-import { withTheme } from 'emotion-theming';
 import { Box } from 'rebass';
-
-import { themeProptypes } from '../theme';
 
 const spin = keyframes`
   0%,20% { transform: translateY(65%) rotateX(-95deg); opacity: 0; }
@@ -17,7 +14,7 @@ const Wrapper = styled(Box)`
   display: inline-block;
 `;
 
-const Animated = styled(Box)<{ theme: themeProptypes }>`
+const Animated = styled(Box)`
   position: absolute;
   left: 0;
   top: 0;
@@ -25,19 +22,14 @@ const Animated = styled(Box)<{ theme: themeProptypes }>`
   backface-visibility: hidden;
   transform: translateY(65%) rotateX(-95deg);
   opacity: 0;
-  ${({ theme }) => `
-    ${theme.mq[1]}{
-      width: 100%
-    }
-  `}
 `;
 
 export type FancyTextProps = {
   words: string[];
-  theme: themeProptypes;
+  animate?: boolean;
 };
 
-export const FancyText = withTheme(({ theme, words, ...etc }: FancyTextProps) => (
+export const FancyText = ({ words, animate = false, ...etc }: FancyTextProps) => (
   <Wrapper {...etc}>
     <Box as="span" css={{ opacity: '0' }}>
       {words.sort((a, b) => b.length - a.length)[0]}
@@ -45,13 +37,12 @@ export const FancyText = withTheme(({ theme, words, ...etc }: FancyTextProps) =>
     {words.map((el, i) => (
       <Animated
         key={i}
-        theme={theme}
         css={{
-          animation: `${spin} 4s ease-in-out ${i > 0 ? '2s' : '0s'} infinite`,
+          animation: animate ? `${spin} 4s ease-in-out ${i > 0 ? '2s' : '0s'} infinite` : '',
         }}
       >
         {el}
       </Animated>
     ))}
   </Wrapper>
-));
+);
