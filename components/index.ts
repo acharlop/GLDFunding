@@ -9,6 +9,6 @@ export * from './Carousel';
 export * from './Header';
 export * from './Features';
 export * from './Steps';
-export * from './Message';
+export * from './CTA';
 export * from './Footer';
 export * from './Testimonials';

@@ -1,7 +1,7 @@
 import React from 'react';
 import dynamic, { DynamicOptions } from 'next/dynamic';
 
-import { Layout, Header, Features, Steps, Testimonials, Message } from '../components';
+import { Layout, Header, Features, Steps, Testimonials, CTA } from '../components';
 
 export const Home = () => (
   <Layout>
@@ -9,7 +9,7 @@ export const Home = () => (
     <Features />
     <Steps />
     <Testimonials />
-    <Message />
+    <CTA />
   </Layout>
 );
 export default Home;

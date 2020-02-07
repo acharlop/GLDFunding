@@ -1,5 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`render as espected CTA 1`] = `
+<div>
+  <section
+    class="edwtx840 css-1ep92rf-Wrapper"
+  >
+    <img
+      alt="mountains background"
+      class="edwtx841 css-gn5u38-Background"
+      src="./static/images/footer-image.jpg"
+    />
+    <div
+      class="css-18qnobe"
+    >
+      <div
+        class="css-13vdtok"
+      >
+        <h1
+          class="css-18bbt0z"
+        >
+          An unforgettable experience
+        </h1>
+        <p
+          class="css-vkgljw"
+        >
+          Join the community.
+        </p>
+      </div>
+      <div
+        class="css-wthx2d"
+      >
+        <button
+          class="css-182wynn"
+        >
+          CONTACT US
+        </button>
+        <p
+          class="css-c6o2eq"
+        >
+          Do you have a question? 
+          <br />
+          Contact Us.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
 exports[`render as espected Features 1`] = `
 <div>
   <section
@@ -432,7 +480,7 @@ exports[`render as espected Header 1`] = `
           width="60%"
         />
         <button
-          class="css-1nviw9z"
+          class="css-1mbgdfl"
         >
           Apply
           <span
@@ -717,7 +765,7 @@ exports[`render as espected Layout 1`] = `
             Login
           </a>
           <a
-            class="hide-md css-167ay55"
+            class="hide-md css-1bzowkf"
             href="tel:1(877)498-4344"
           >
             Login
@@ -853,87 +901,6 @@ exports[`render as espected Layout 1`] = `
 </div>
 `;
 
-exports[`render as espected Message 1`] = `
-<div>
-  <section
-    class="e7rx4o50 css-1ep92rf-Wrapper"
-  >
-    <img
-      alt="mountains background"
-      class="fadeIn e7rx4o51 css-gn5u38-Background"
-      src="./static/images/footer-image.jpg"
-    />
-    <div
-      class="css-1ne1rqj"
-    >
-      <div
-        class="css-qqmf3e"
-      >
-        <div
-          class="css-vurnku"
-        >
-          <h1
-            class="css-18bbt0z"
-          >
-            An unforgettable experience
-          </h1>
-          <p
-            class="css-vkgljw"
-          >
-            Join the community.
-          </p>
-        </div>
-      </div>
-      <div
-        class="css-1s1r0fc"
-      >
-        <form
-          class="css-148ky1p"
-        >
-          <label
-            class="css-srhed4-Message"
-            for="email"
-          >
-            email
-          </label>
-          <input
-            class="css-m3t4fg"
-            name="email"
-            placeholder="email"
-            required=""
-            type="email"
-          />
-          <label
-            class="css-srhed4-Message"
-            for="message"
-          >
-            Message
-          </label>
-          <input
-            class="css-m3t4fg"
-            name="message"
-            placeholder="message"
-            required=""
-          />
-          <button
-            class="css-ae7qj"
-          >
-            SEND MESSAGE
-          </button>
-          <p
-            class="css-c6o2eq"
-          >
-            Do you have a question? 
-            <br />
-            Contact Us.
-          </p>
-        </form>
-      </div>
-    </div>
-  </section>
-</div>
-`;
-
 exports[`render as espected Modal 1`] = `<div />`;
 
 exports[`render as espected Steps 1`] = `
@@ -970,7 +937,7 @@ exports[`render as espected Steps 1`] = `
             src="./static/images/demo.jpg"
           />
           <button
-            class="ews2q5x3 css-18obo5a-PlayButton"
+            class="ews2q5x3 css-whpzhn-PlayButton"
           >
             <svg
               fill="currentColor"
