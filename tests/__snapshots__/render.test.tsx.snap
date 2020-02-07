@@ -120,7 +120,7 @@ exports[`render as espected Features 1`] = `
           Flexible payment plans
         </h4>
         <div
-          class="css-gefdzm-Features"
+          class="css-u75tl7-Features"
         >
           We give you ultimate payment flexibility.
         </div>
@@ -177,7 +177,7 @@ exports[`render as espected Features 1`] = `
           No credit score required
         </h4>
         <div
-          class="css-u75tl7-Features"
+          class="css-nvj9rx-Features"
         >
           Support, makes your experience faster and more accurate than ever.
         </div>
@@ -227,7 +227,7 @@ exports[`render as espected Features 1`] = `
           Minimal Paperwork
         </h4>
         <div
-          class="css-khulie-Features"
+          class="css-1v0gsmt-Features"
         >
           Tools are beyond the one-click install, async tech merges with ultimate flexibility.
         </div>
@@ -851,18 +851,24 @@ exports[`render as espected Message 1`] = `
       src="./static/images/footer-image.jpg"
     />
     <div
-      class="css-12y9y0h"
+      class="css-1ne1rqj"
     >
       <div
         class="css-qqmf3e"
       >
         <div
-          class="react-multi-carousel-list   css-jpalgg-StyledCarousel e132dzpo0"
+          class="css-vurnku"
         >
-          <ul
-            class="react-multi-carousel-track "
-            style="transition: none; overflow: unset; transform: translate3d(0px,0,0);"
-          />
+          <h1
+            class="css-18bbt0z"
+          >
+            An unforgettable experience
+          </h1>
+          <p
+            class="css-vkgljw"
+          >
+            Join the community.
+          </p>
         </div>
       </div>
       <div
@@ -923,13 +929,27 @@ exports[`render as espected Steps 1`] = `
     class="css-146wbcb-Wrapper ews2q5x0"
   >
     <div
+      class="css-11csxqz-Steps"
+    >
+      <h4
+        class="css-1spt5qm"
+      >
+        How it works?
+      </h4>
+      <p
+        class="css-lgb6hf"
+      >
+        Funding has never been easier, all you have to do is follow these three steps.
+      </p>
+    </div>
+    <div
       class="css-18e384y"
     >
       <div
         class="css-kg0zaz"
       >
         <div
-          class="css-11p359h-VideoThumb ews2q5x2"
+          class="css-v65fau-VideoThumb-Steps ews2q5x2"
         >
           <img
             alt="video placeholder"
@@ -959,7 +979,7 @@ exports[`render as espected Steps 1`] = `
         class="css-1bm6goi"
       >
         <div
-          class="css-3uy3bb"
+          class="css-13qwxoy-Steps"
         >
           <span
             class="css-19uslfw-Steps"
@@ -981,15 +1001,16 @@ exports[`render as espected Steps 1`] = `
             <p
               class="css-eanlim"
             >
-              Fill out an application today with your basic information. Once filled out, submit along with your last 3 months of your business bank statements.
+              Fill out an application today with your basic information. Once filled out, submit
+    along with your last 3 months of your business bank statements.
             </p>
           </div>
         </div>
         <div
-          class="css-3uy3bb"
+          class="css-bgz1zk-Steps"
         >
           <span
-            class="css-lfc1pm-Steps"
+            class="css-hfjkk9-Steps"
           >
             <div
               class="css-1b283uw"
@@ -1008,15 +1029,18 @@ exports[`render as espected Steps 1`] = `
             <p
               class="css-eanlim"
             >
-              Our underwriting team will review your application and bank statements to develop a solution specific to your business needs. They will then contact you and discuss your offer. Repayments are flexible; there are no personal guarantees and minimal documents required.
+              Our underwriting team will review your application and bank statements to develop a
+    solution specific to your business needs. They will then contact you and discuss your
+    offer. Repayments are flexible; there are no personal guarantees and minimal documents
+    required.
             </p>
           </div>
         </div>
         <div
-          class="css-3uy3bb"
+          class="css-dd9u6u-Steps"
         >
           <span
-            class="css-1qkclsg"
+            class="css-lfc1pm-Steps"
           >
             <div
               class="css-1b283uw"
@@ -1035,9 +1059,466 @@ exports[`render as espected Steps 1`] = `
             <p
               class="css-eanlim"
             >
-              Once the contract is signed, you will receive your funds in your bank account the same day.
+              Once the contract is signed, you will receive your funds in your bank account the same
+    day.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`render as espected Testimonials 1`] = `
+<div>
+  <section
+    class="css-1fmlf4e"
+  >
+    <div
+      class="css-1sz29zm-Testimonials"
+    >
+      <h4
+        class="css-5euxzx"
+      >
+        Better service
+         
+        <span
+          class="css-15vliun"
+        >
+          starts here
+        </span>
+      </h4>
+      <p
+        class="css-65hcn1"
+      >
+        We have history with various businesses and the experience needed to make your business grow and succeed.
+      </p>
+    </div>
+    <div
+      class="css-13tbvei"
+    >
+      <div
+        class="css-1rw31bo-Testimonials"
+      >
+        <div
+          class="css-2awaa7-Card e4er3lv0"
+        >
+          <img
+            alt="Josephine"
+            class="css-1vwmfom"
+            src="./static/images/josephine.jpg"
+          />
+          <div
+            class="css-l4xhlt"
+          >
+            <h6
+              class="css-1i0bpec"
+            >
+              Josephine
+            </h6>
+            <span
+              class="css-7a615i"
+            >
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <p
+            class="css-1wtrivt"
+          >
+            <em>
+              “
+              GLD Funding came in handy when I desperately needed capital for my business expenses. The process was quick
+    and straightforward. You don't need good credit to be approved, which made everything much smoother.
+              ”
+            </em>
+          </p>
+        </div>
+      </div>
+      <div
+        class="css-3z1p2d-Testimonials"
+      >
+        <div
+          class="css-2awaa7-Card e4er3lv0"
+        >
+          <img
+            alt="Anas Iqbual"
+            class="css-1vwmfom"
+            src="./static/images/anas.jpg"
+          />
+          <div
+            class="css-l4xhlt"
+          >
+            <h6
+              class="css-1i0bpec"
+            >
+              Anas Iqbual
+            </h6>
+            <span
+              class="css-7a615i"
+            >
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <p
+            class="css-1wtrivt"
+          >
+            <em>
+              “
+              I was glad that they were there to help when my business needed them. Overall, a pleasant experience.
+              ”
+            </em>
+          </p>
+        </div>
+      </div>
+      <div
+        class="css-9dahtj-Testimonials"
+      >
+        <div
+          class="css-2awaa7-Card e4er3lv0"
+        >
+          <img
+            alt="Allina Joel"
+            class="css-1vwmfom"
+            src="./static/images/allina.jpg"
+          />
+          <div
+            class="css-l4xhlt"
+          >
+            <h6
+              class="css-1i0bpec"
+            >
+              Allina Joel
+            </h6>
+            <span
+              class="css-7a615i"
+            >
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <p
+            class="css-1wtrivt"
+          >
+            <em>
+              “
+              The people at GLD Funding are really helpful and attentive. If you need help with your cash advance, they will
+    make sure to have all of your questions answered.
+              ”
+            </em>
+          </p>
+        </div>
+      </div>
+      <div
+        class="css-1csy939-Testimonials"
+      >
+        <div
+          class="css-2awaa7-Card e4er3lv0"
+        >
+          <img
+            alt="Albert Chirls"
+            class="css-1vwmfom"
+            src="./static/images/albert.jpg"
+          />
+          <div
+            class="css-l4xhlt"
+          >
+            <h6
+              class="css-1i0bpec"
+            >
+              Albert Chirls
+            </h6>
+            <span
+              class="css-7a615i"
+            >
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <p
+            class="css-1wtrivt"
+          >
+            <em>
+              “
+              Very easy and fair. I've been working with GLD for the past three years now, and I do not have any complaints. I
+    must say they are very cooperative and understanding of your business needs.
+              ”
+            </em>
+          </p>
         </div>
       </div>
     </div>

@@ -11,3 +11,4 @@ export * from './Features';
 export * from './Steps';
 export * from './Message';
 export * from './Footer';
+export * from './Testimonials';

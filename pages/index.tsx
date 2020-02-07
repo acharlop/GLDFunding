@@ -9,12 +9,15 @@ const Features = dynamic<DynamicOptions>((() =>
 const Steps = dynamic<DynamicOptions>((() => import('../components').then(x => x.Steps)) as any);
 const Message = dynamic<DynamicOptions>((() =>
   import('../components').then(x => x.Message)) as any);
+const Testimonials = dynamic<DynamicOptions>((() =>
+  import('../components').then(x => x.Testimonials)) as any);
 
 export const Home = () => (
   <Layout>
     <Header />
     <Features />
     <Steps />
+    <Testimonials />
     <Message />
   </Layout>
 );

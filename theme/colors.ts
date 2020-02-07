@@ -8,4 +8,5 @@ export const colors = {
   white500: 'rgba(255, 255, 255, 0.8)',
   white300: 'rgba(255, 255, 255, 0.65)',
   white: '#ffffff',
+  yellow300: '#ffcc00',
 };

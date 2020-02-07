@@ -91,7 +91,7 @@ export const Features = withTheme(({ theme, ...etc }, { theme: themeProptypes })
     }
   };
   return (
-    <VisibilitySensor onChange={onView} active={sense}>
+    <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={100}>
       <Box as="section" {...etc}>
         <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
           {content.map((el, i) => (
@@ -129,7 +129,7 @@ export const Features = withTheme(({ theme, ...etc }, { theme: themeProptypes })
                 mb={3}
                 textAlign="center"
                 css={{
-                  transition: `all 300ms 0.${i}s`,
+                  transition: `all 300ms 0.${i * 2}s`,
                   opacity: animated ? '1' : '0',
                   transform: animated ? 'translateX(0px)' : 'translateX(20px)',
                 }}

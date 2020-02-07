@@ -1,7 +1,16 @@
 import React from 'react';
 
 import { render } from '../utils/tests';
-import { Footer, Header, Layout, Message, Modal, Steps, Features } from '../components';
+import {
+  Footer,
+  Header,
+  Layout,
+  Message,
+  Modal,
+  Steps,
+  Features,
+  Testimonials,
+} from '../components';
 import { IconCard, IconPaper, IconMoney, IconTimer } from '../components/icons';
 
 describe('render as espected', () => {
@@ -31,6 +40,10 @@ describe('render as espected', () => {
   });
   test('Features', () => {
     const { container } = render(<Features />);
+    expect(container).toMatchSnapshot();
+  });
+  test('Testimonials', () => {
+    const { container } = render(<Testimonials />);
     expect(container).toMatchSnapshot();
   });
   test('IconCard', () => {

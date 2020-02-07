@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { Box, Image, Text, Flex } from 'rebass';
 
-import { Button, Carousel } from '../components';
+import { Button } from '../components';
 
 const Wrapper = styled(Image)`
   position: relative;
@@ -17,19 +17,6 @@ const Background = styled(Image)`
   object-fit: cover;
   z-index: -1;
 `;
-
-const titleProps = {
-  fontSize: [4, 5, '44px'],
-  mb: [1, 2],
-  color: 'white',
-  fontFamily: 'heading',
-};
-
-const textProps = {
-  fontSize: [3, 4, '44px'],
-  color: 'green500',
-  fontFamily: 'heading',
-};
 
 const inputProps = {
   as: 'input' as 'input',
@@ -54,45 +41,17 @@ export const Message = () => (
       maxWidth="1200px"
       py={[5, 8]}
       flexDirection={['column-reverse', 'unset']}
+      alignItems="center"
     >
       <Box width={[1, 1, 8 / 12]} p={2}>
-        <Carousel
-          showDots
-          autoPlay
-          removeArrowOnDeviceType={['mobile']}
-          deviceType="mobile"
-          responsive={{
-            mobile: {
-              breakpoint: { max: 5000, min: 0 },
-              items: 1,
-            },
-          }}
-        >
-          <Box mb={8}>
-            <Text as="h1" {...titleProps}>
-              Great resource they’ve been extremely supportive
-            </Text>
-            <Text as="p" {...textProps}>
-              Fernandina N.
-            </Text>
-          </Box>
-          <Box mb={[1, 2]}>
-            <Text as="h1" {...titleProps}>
-              An unforgettable experience.
-            </Text>
-            <Text as="p" {...textProps}>
-              Michael Bartlett
-            </Text>
-          </Box>
-          <Box mb={[1, 2]}>
-            <Text as="h1" {...titleProps}>
-              They provided a line of credit for our continued growth.
-            </Text>
-            <Text as="p" {...textProps}>
-              Kyle P Hawari.
-            </Text>
-          </Box>
-        </Carousel>
+        <Box>
+          <Text as="h1" fontSize={[4, 5, '44px']} mb={[1, 2]} color="white" fontFamily="heading">
+            An unforgettable experience
+          </Text>
+          <Text as="p" fontSize={[3, 4, '44px']} color="green500" fontFamily="heading">
+            Join the community.
+          </Text>
+        </Box>
       </Box>
       <Flex
         alignItems="center"

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { Box, Image, Text, Flex } from 'rebass';
 import { withTheme } from 'emotion-theming';
 import { FaPlay } from 'react-icons/fa';
+import VisibilitySensor from 'react-visibility-sensor';
 
 import { themeProptypes } from '../theme';
 import { Button } from '../components';
@@ -56,94 +57,126 @@ const PlayButton = styled(Button)`
   height: 100px;
 `;
 
-const titleProps = {
-  as: 'h1' as 'h1',
-  fontSize: [4, 5],
-  color: 'white',
-  fontFamily: 'heading',
-  mb: [1, 2],
-};
+const content = [
+  {
+    step: 1,
+    title: 'Apply',
+    description: `Fill out an application today with your basic information. Once filled out, submit
+    along with your last 3 months of your business bank statements.`,
+  },
+  {
+    step: 2,
+    title: 'Approve',
+    description: `Our underwriting team will review your application and bank statements to develop a
+    solution specific to your business needs. They will then contact you and discuss your
+    offer. Repayments are flexible; there are no personal guarantees and minimal documents
+    required.`,
+  },
+  {
+    step: 3,
+    title: 'Get Funded',
+    description: `Once the contract is signed, you will receive your funds in your bank account the same
+    day.`,
+  },
+];
+export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => {
+  const [animated, setAnimated] = useState(false);
+  const [sense, setSensor] = useState(true);
 
-const textProps = {
-  as: 'p' as 'p',
-  fontSize: 2,
-  lineHeight: ['auto', 'heading'],
-  color: 'white500',
-};
+  const onView = (inView: boolean) => {
+    if (sense && inView && !animated) {
+      setAnimated(true);
+      setSensor(false);
+    }
+  };
 
-const stepProps = {
-  width: [1],
-  p: 2,
-};
-
-const iconProps = {
-  as: 'span' as 'span',
-  width: [2 / 12, 3 / 12],
-  mr: 2,
-  justifyContent: 'center',
-  alignItems: 'center',
-};
-
-const numberProps = {
-  fontSize: [7, '8rem'],
-  fontFamily: 'heading',
-};
-
-const textContainerProps = {
-  width: [10 / 12, 9 / 12],
-};
-
-export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => (
-  <Wrapper as="section" py={[5, '5rem']} theme={theme}>
-    <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
-      <Flex width={[1, 1, 1, 1 / 2]} alignItems="center">
-        <VideoThumb theme={theme}>
-          <Background src="./static/images/demo.jpg" alt="video placeholder" />
-          <PlayButton width={8} height={8}>
-            <FaPlay />
-          </PlayButton>
-        </VideoThumb>
-      </Flex>
-      <Flex flexWrap="wrap" width={[1, 1, 1, 1 / 2, 1 / 2]}>
-        <Flex {...stepProps}>
-          <Flex {...iconProps} css={{ opacity: '0.5' }}>
-            <Text {...numberProps}>1</Text>
+  return (
+    <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={300}>
+      <Wrapper as="section" py={[5, '5rem']} theme={theme}>
+        <Box
+          m="auto"
+          maxWidth="1200px"
+          p={2}
+          css={{
+            transition: `all 300ms`,
+            opacity: animated ? '1' : '0',
+            transform: animated ? 'translateX(0px)' : 'translateX(20px)',
+          }}
+        >
+          <Text
+            as="h4"
+            textAlign="center"
+            fontSize={[5, 6]}
+            fontFamily="heading"
+            color="white"
+            mb={2}
+          >
+            How it works?
+          </Text>
+          <Text
+            as="p"
+            fontSize={[2, 3]}
+            textAlign="center"
+            maxWidth="800px"
+            m="auto"
+            color="white500"
+          >
+            Funding has never been easier, all you have to do is follow these three steps.
+          </Text>
+        </Box>
+        <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
+          <Flex width={[1, 1, 1, 1 / 2]} alignItems="center">
+            <VideoThumb
+              theme={theme}
+              css={{
+                transition: 'all 600ms cubic-bezier(0.4, 0, 0.2, 1)',
+                opacity: animated ? '1' : '0',
+                transform: animated ? 'scale(1.05)' : 'scale(1)',
+              }}
+            >
+              <Background src="./static/images/demo.jpg" alt="video placeholder" />
+              <PlayButton width={8} height={8}>
+                <FaPlay />
+              </PlayButton>
+            </VideoThumb>
           </Flex>
-          <Box {...textContainerProps}>
-            <Text {...titleProps}>Apply</Text>
-            <Text {...textProps}>
-              Fill out an application today with your basic information. Once filled out, submit
-              along with your last 3 months of your business bank statements.
-            </Text>
-          </Box>
-        </Flex>
-        <Flex {...stepProps}>
-          <Flex {...iconProps} css={{ opacity: '0.7' }}>
-            <Text {...numberProps}>2</Text>
+          <Flex flexWrap="wrap" width={[1, 1, 1, 1 / 2, 1 / 2]}>
+            {content.map((el, i) => (
+              <Flex
+                width={1}
+                p={2}
+                css={{
+                  transition: `all 300ms 0.${i * 2}s`,
+                  opacity: animated ? '1' : '0',
+                  transform: animated ? 'translateX(0px)' : 'translateX(20px)',
+                }}
+                key={el.step}
+              >
+                <Flex
+                  as="span"
+                  width={[2 / 12, 3 / 12]}
+                  mr={2}
+                  justifyContent="center"
+                  alignItems="center"
+                  css={{ opacity: `0.${i + 1 * 5}` }}
+                >
+                  <Text fontSize={[7, '8rem']} fontFamily="heading">
+                    {el.step}
+                  </Text>
+                </Flex>
+                <Box width={[10 / 12, 9 / 12]}>
+                  <Text as="h1" fontSize={[4, 5]} color="white" fontFamily="heading" mb={[1, 2]}>
+                    {el.title}
+                  </Text>
+                  <Text as="p" fontSize={2} lineHeight={['auto', 'heading']} color="white500">
+                    {el.description}
+                  </Text>
+                </Box>
+              </Flex>
+            ))}
           </Flex>
-          <Box {...textContainerProps}>
-            <Text {...titleProps}>Approve</Text>
-            <Text {...textProps}>
-              Our underwriting team will review your application and bank statements to develop a
-              solution specific to your business needs. They will then contact you and discuss your
-              offer. Repayments are flexible; there are no personal guarantees and minimal documents
-              required.
-            </Text>
-          </Box>
         </Flex>
-        <Flex {...stepProps}>
-          <Flex {...iconProps}>
-            <Text {...numberProps}>3</Text>
-          </Flex>
-          <Box {...textContainerProps}>
-            <Text {...titleProps}>Get Funded</Text>
-            <Text {...textProps}>
-              Once the contract is signed, you will receive your funds in your bank account the same
-              day.
-            </Text>
-          </Box>
-        </Flex>
-      </Flex>
-    </Flex>
-  </Wrapper>
-));
+      </Wrapper>
+    </VisibilitySensor>
+  );
+});
