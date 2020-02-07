@@ -19,6 +19,7 @@ const Background = styled(Box)`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.5);
   }
 `;
 export type BreadCrumbProps = {
@@ -49,10 +50,10 @@ export const BreadCrumb = ({ title, src }: BreadCrumbProps) => {
       minHeight={['40vh']}
     >
       <Background as="picture">
-        <source srcSet={`./static/images/${src}-1500.png`} media="(min-width: 800px)" />
-        <source srcSet={`./static/images/${src}-800.png`} media="(max-width: 800px)" />
+        {/* <source srcSet={`./static/images/${src}-1500.png`} media="(min-width: 800px)" />
+        <source srcSet={`./static/images/${src}-800.png`} media="(max-width: 800px)" /> */}
         <Image
-          src="./static/images/bg-3-1500.png"
+          src={`./static/images/${src}`}
           alt="money background"
           onLoad={onLoad}
           ref={imageRef}

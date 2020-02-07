@@ -95,7 +95,7 @@ export const Navigation = withTheme(({ theme, open = false, toggle }: Navigation
           </Link>
         ))}
       </Flex>
-      <Flex>
+      <Flex alignItems="center">
         <Link href={callLink.href}>{callLink.name}</Link>
         <Link href={loginLink.name} className="show-md">
           {loginLink.name}
