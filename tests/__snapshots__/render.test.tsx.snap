@@ -370,11 +370,21 @@ exports[`render as espected Header 1`] = `
   <header
     class="css-1urhh2l-Wrapper eiscj4c0"
   >
-    <img
-      alt="Hero background"
-      class="eiscj4c1 css-1g0nk1n-Background-Header"
-      src="./static/images/bg-3.jpeg"
-    />
+    <picture
+      class="css-1epjqib-Background eiscj4c1"
+    >
+      <source
+        media="(min-width: 800px)"
+        srcset="./static/images/bg-3-1500.png"
+      />
+      <source
+        media="(max-width: 800px)"
+        srcset="./static/images/bg-3-800.png"
+      />
+      <img
+        src="./static/images/bg-3.png"
+      />
+    </picture>
     <div
       class=" css-14qp425-Header"
     >

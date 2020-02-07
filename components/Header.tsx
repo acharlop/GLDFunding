@@ -29,17 +29,19 @@ const Wrapper = styled(Flex)`
   overflow: hidden;
 `;
 
-const Background = styled(Image)`
+const Background = styled(Box)`
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  animation-name: fadeIn;
-  animation-duration: 450ms;
-  filter: brightness(0.3);
   z-index: -1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 const Form = styled(Flex)`
@@ -79,7 +81,12 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
   return (
     <VisibilitySensor onChange={onView} active={sense}>
       <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
-        <Background
+        <Background as="picture">
+          <source srcSet="./static/images/bg-3-1500.png" media="(min-width: 800px)" />
+          <source srcSet="./static/images/bg-3-800.png" media="(max-width: 800px)" />
+          <img src="./static/images/bg-3.png" />
+        </Background>
+        {/* <Background
           src="./static/images/bg-3.jpeg"
           alt="Hero background"
           css={{
@@ -87,7 +94,7 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
             opacity: animated ? '1' : '0',
             transform: animated ? 'scale(1.05)' : 'scale(1)',
           }}
-        />
+        /> */}
         <Flex
           maxWidth={theme.breakpoints[3]}
           width={1}
