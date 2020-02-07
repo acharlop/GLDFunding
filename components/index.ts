@@ -12,3 +12,6 @@ export * from './Steps';
 export * from './CTA';
 export * from './Footer';
 export * from './Testimonials';
+export * from './Card';
+export * from './Breadcrumb';
+export * from './Link';

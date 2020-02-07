@@ -56,7 +56,7 @@ exports[`render as espected CTA 1`] = `
         class="css-df8eea-CTA"
       >
         <button
-          class="css-sr3wyg"
+          class="css-k1y15r"
         >
           CONTACT US
         </button>
@@ -313,7 +313,7 @@ exports[`render as espected Features 1`] = `
 exports[`render as espected Footer 1`] = `
 <div>
   <div
-    class="css-jnc4ax-Wrapper e18f8y721"
+    class="css-jnc4ax-Wrapper e18f8y720"
   >
     <div
       class="css-1tar3ql"
@@ -327,32 +327,32 @@ exports[`render as espected Footer 1`] = `
           src="./static/images/mcafee.png"
         />
         <a
-          class="e18f8y720 css-nh488k-HL"
-          href="./"
-        >
-          Apply Now
-        </a>
-        <a
-          class="e18f8y720 css-nh488k-HL"
-          href="./"
-        >
-          What is MCA?
-        </a>
-        <a
-          class="e18f8y720 css-nh488k-HL"
-          href="./"
+          class="e1w12k6d0 css-3g42lr-HL-Link"
+          href="/about"
         >
           About us
         </a>
         <a
-          class="e18f8y720 css-nh488k-HL"
-          href="./"
+          class="e1w12k6d0 css-3g42lr-HL-Link"
+          href="/mca"
         >
-          Contact
+          What is MCA?
         </a>
         <a
-          class="e18f8y720 css-nh488k-HL"
-          href="./"
+          class="e1w12k6d0 css-3g42lr-HL-Link"
+          href="/apply"
+        >
+          Apply Now
+        </a>
+        <a
+          class="e1w12k6d0 css-3g42lr-HL-Link"
+          href="/contact"
+        >
+          Contact Us
+        </a>
+        <a
+          class="e1w12k6d0 css-3g42lr-HL-Link"
+          href="https://login.gldfunding.com/"
         >
           Login
         </a>
@@ -360,7 +360,7 @@ exports[`render as espected Footer 1`] = `
           class="show-md css-4cffwv"
         >
           <a
-            class="e18f8y720 css-1smhtko-HL"
+            class="e1w12k6d0 css-18de8uy-HL-Link"
             href="https://www.instagram.com/gldfunding/"
           >
             <svg
@@ -378,7 +378,7 @@ exports[`render as espected Footer 1`] = `
             </svg>
           </a>
           <a
-            class="e18f8y720 css-1smhtko-HL"
+            class="e1w12k6d0 css-18de8uy-HL-Link"
             href="https://www.facebook.com/GLD-Funding-102567247876620/"
           >
             <svg
@@ -396,7 +396,7 @@ exports[`render as espected Footer 1`] = `
             </svg>
           </a>
           <a
-            class="e18f8y720 css-1smhtko-HL"
+            class="e1w12k6d0 css-18de8uy-HL-Link"
             href="#"
           >
             <svg
@@ -414,7 +414,7 @@ exports[`render as espected Footer 1`] = `
             </svg>
           </a>
           <a
-            class="e18f8y720 css-1smhtko-HL"
+            class="e1w12k6d0 css-18de8uy-HL-Link"
             href="#"
           >
             <svg
@@ -437,7 +437,7 @@ exports[`render as espected Footer 1`] = `
         class="hide-md css-u6nmhn"
       >
         <a
-          class="e18f8y720 css-1smhtko-HL"
+          class="e1w12k6d0 css-18de8uy-HL-Link"
           href="https://www.instagram.com/gldfunding/"
         >
           <svg
@@ -455,7 +455,7 @@ exports[`render as espected Footer 1`] = `
           </svg>
         </a>
         <a
-          class="e18f8y720 css-1smhtko-HL"
+          class="e1w12k6d0 css-18de8uy-HL-Link"
           href="https://www.facebook.com/GLD-Funding-102567247876620/"
         >
           <svg
@@ -473,7 +473,7 @@ exports[`render as espected Footer 1`] = `
           </svg>
         </a>
         <a
-          class="e18f8y720 css-1smhtko-HL"
+          class="e1w12k6d0 css-18de8uy-HL-Link"
           href="#"
         >
           <svg
@@ -491,7 +491,7 @@ exports[`render as espected Footer 1`] = `
           </svg>
         </a>
         <a
-          class="e18f8y720 css-1smhtko-HL"
+          class="e1w12k6d0 css-18de8uy-HL-Link"
           href="#"
         >
           <svg
@@ -517,7 +517,7 @@ exports[`render as espected Footer 1`] = `
 exports[`render as espected Header 1`] = `
 <div>
   <header
-    class="css-1urhh2l-Wrapper eiscj4c0"
+    class="css-1ivoic6-Wrapper eiscj4c0"
   >
     <picture
       class="css-xsjem6-Background-Header eiscj4c1"
@@ -570,7 +570,7 @@ exports[`render as espected Header 1`] = `
         </div>
       </h1>
       <form
-        class="css-13f7z00-Form eiscj4c2"
+        class="css-c2cns1-Form eiscj4c2"
       >
         <input
           inputmode="numeric"
@@ -580,7 +580,7 @@ exports[`render as espected Header 1`] = `
           value=""
         />
         <button
-          class="css-1mbgdfl"
+          class="css-1gpowep"
         >
           Apply
           <span
@@ -781,18 +781,23 @@ exports[`render as espected IconTimer 1`] = `
 exports[`render as espected Layout 1`] = `
 <div>
   <div
-    class="css-1bus680-Wrapper e1txfvao1"
+    class="css-1m4cja6-Wrapper e1txfvao1"
   >
     <div
       class="css-10i4iws-TopBar e1txfvao0"
     >
-      <img
-        alt="GLD Funding logo"
-        class="css-1x09otm"
-        src="./static/images/logo-white.svg"
-      />
+      <a
+        class="e1w12k6d0 css-1hn6gyx-HL-Link"
+        href="./"
+      >
+        <img
+          alt="GLD Funding logo"
+          class="css-1efrvlf-Layout"
+          src="./static/images/logo-white.svg"
+        />
+      </a>
       <div
-        class="show-md mb-open-btn css-l6kea7-Open esgq4xm3"
+        class="show-md mb-open-btn css-l6kea7-Open esgq4xm2"
       >
         <div
           class="css-1s4dz1f"
@@ -805,10 +810,10 @@ exports[`render as espected Layout 1`] = `
         />
       </div>
       <nav
-        class="css-1dcz2ie-Nav esgq4xm1"
+        class="css-19mym3k-Nav esgq4xm0"
       >
         <svg
-          class="show-md css-un36pl-Close esgq4xm2"
+          class="show-md css-un36pl-Close esgq4xm1"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -825,57 +830,61 @@ exports[`render as espected Layout 1`] = `
           class="css-4cffwv"
         >
           <a
-            class="esgq4xm0 css-1m8yfox-HL"
-            href="./"
+            class="e1w12k6d0 css-zmiiep-HL-Link"
+            href="/about"
           >
-            About
+            About us
           </a>
           <a
-            class="esgq4xm0 css-1m8yfox-HL"
-            href="./"
+            class="e1w12k6d0 css-zmiiep-HL-Link"
+            href="/mca"
           >
-             What is MCA?
+            What is MCA?
           </a>
           <a
-            class="esgq4xm0 css-1m8yfox-HL"
-            href="./"
+            class="e1w12k6d0 css-zmiiep-HL-Link"
+            href="/apply"
           >
-            Apply
+            Apply Now
           </a>
           <a
-            class="esgq4xm0 css-1m8yfox-HL"
-            href="./"
+            class="e1w12k6d0 css-zmiiep-HL-Link"
+            href="/contact"
           >
-            Contact
+            Contact Us
           </a>
         </div>
         <div
           class="css-4cffwv"
         >
           <a
-            class="esgq4xm0 css-1m8yfox-HL"
+            class="e1w12k6d0 css-zmiiep-HL-Link"
             href="tel:1(877)498-4344"
           >
             Call Now 1 (877) 498-4344
           </a>
           <a
-            class="show-md esgq4xm0 css-1m8yfox-HL"
-            href="tel:1(877)498-4344"
+            class="show-md e1w12k6d0 css-zmiiep-HL-Link"
+            href="Login"
           >
             Login
           </a>
           <a
-            class="hide-md css-1bzowkf"
-            href="tel:1(877)498-4344"
+            class="hide-md css-f61x61"
+            href="https://login.gldfunding.com/"
           >
             Login
           </a>
         </div>
       </nav>
     </div>
-     hi 
     <div
-      class="css-jnc4ax-Wrapper e18f8y721"
+      class="css-vurnku"
+    >
+       hi 
+    </div>
+    <div
+      class="css-jnc4ax-Wrapper e18f8y720"
     >
       <div
         class="css-1tar3ql"
@@ -889,32 +898,32 @@ exports[`render as espected Layout 1`] = `
             src="./static/images/mcafee.png"
           />
           <a
-            class="e18f8y720 css-nh488k-HL"
-            href="./"
-          >
-            Apply Now
-          </a>
-          <a
-            class="e18f8y720 css-nh488k-HL"
-            href="./"
-          >
-            What is MCA?
-          </a>
-          <a
-            class="e18f8y720 css-nh488k-HL"
-            href="./"
+            class="e1w12k6d0 css-3g42lr-HL-Link"
+            href="/about"
           >
             About us
           </a>
           <a
-            class="e18f8y720 css-nh488k-HL"
-            href="./"
+            class="e1w12k6d0 css-3g42lr-HL-Link"
+            href="/mca"
           >
-            Contact
+            What is MCA?
           </a>
           <a
-            class="e18f8y720 css-nh488k-HL"
-            href="./"
+            class="e1w12k6d0 css-3g42lr-HL-Link"
+            href="/apply"
+          >
+            Apply Now
+          </a>
+          <a
+            class="e1w12k6d0 css-3g42lr-HL-Link"
+            href="/contact"
+          >
+            Contact Us
+          </a>
+          <a
+            class="e1w12k6d0 css-3g42lr-HL-Link"
+            href="https://login.gldfunding.com/"
           >
             Login
           </a>
@@ -922,7 +931,7 @@ exports[`render as espected Layout 1`] = `
             class="show-md css-4cffwv"
           >
             <a
-              class="e18f8y720 css-1smhtko-HL"
+              class="e1w12k6d0 css-18de8uy-HL-Link"
               href="https://www.instagram.com/gldfunding/"
             >
               <svg
@@ -940,7 +949,7 @@ exports[`render as espected Layout 1`] = `
               </svg>
             </a>
             <a
-              class="e18f8y720 css-1smhtko-HL"
+              class="e1w12k6d0 css-18de8uy-HL-Link"
               href="https://www.facebook.com/GLD-Funding-102567247876620/"
             >
               <svg
@@ -958,7 +967,7 @@ exports[`render as espected Layout 1`] = `
               </svg>
             </a>
             <a
-              class="e18f8y720 css-1smhtko-HL"
+              class="e1w12k6d0 css-18de8uy-HL-Link"
               href="#"
             >
               <svg
@@ -976,7 +985,7 @@ exports[`render as espected Layout 1`] = `
               </svg>
             </a>
             <a
-              class="e18f8y720 css-1smhtko-HL"
+              class="e1w12k6d0 css-18de8uy-HL-Link"
               href="#"
             >
               <svg
@@ -999,7 +1008,7 @@ exports[`render as espected Layout 1`] = `
           class="hide-md css-u6nmhn"
         >
           <a
-            class="e18f8y720 css-1smhtko-HL"
+            class="e1w12k6d0 css-18de8uy-HL-Link"
             href="https://www.instagram.com/gldfunding/"
           >
             <svg
@@ -1017,7 +1026,7 @@ exports[`render as espected Layout 1`] = `
             </svg>
           </a>
           <a
-            class="e18f8y720 css-1smhtko-HL"
+            class="e1w12k6d0 css-18de8uy-HL-Link"
             href="https://www.facebook.com/GLD-Funding-102567247876620/"
           >
             <svg
@@ -1035,7 +1044,7 @@ exports[`render as espected Layout 1`] = `
             </svg>
           </a>
           <a
-            class="e18f8y720 css-1smhtko-HL"
+            class="e1w12k6d0 css-18de8uy-HL-Link"
             href="#"
           >
             <svg
@@ -1053,7 +1062,7 @@ exports[`render as espected Layout 1`] = `
             </svg>
           </a>
           <a
-            class="e18f8y720 css-1smhtko-HL"
+            class="e1w12k6d0 css-18de8uy-HL-Link"
             href="#"
           >
             <svg
@@ -1113,7 +1122,7 @@ exports[`render as espected Steps 1`] = `
             src="./static/images/demo.jpg"
           />
           <button
-            class="ews2q5x3 css-whpzhn-PlayButton"
+            class="ews2q5x3 css-1m00c36-PlayButton"
           >
             <svg
               fill="currentColor"
@@ -1258,11 +1267,11 @@ exports[`render as espected Testimonials 1`] = `
         class="css-17tfb6m-Testimonials"
       >
         <div
-          class="css-2awaa7-Card e4er3lv0"
+          class="css-zh1xop-Wrapper ekq4b2z0"
         >
           <img
             alt="Josephine"
-            class="css-1vwmfom"
+            class="e4er3lv0 css-1ulugdh-Thumbnail"
             src="./static/images/josephine.jpg"
           />
           <div
@@ -1364,11 +1373,11 @@ exports[`render as espected Testimonials 1`] = `
         class="css-2vkh5q-Testimonials"
       >
         <div
-          class="css-2awaa7-Card e4er3lv0"
+          class="css-zh1xop-Wrapper ekq4b2z0"
         >
           <img
             alt="Anas Iqbual"
-            class="css-1vwmfom"
+            class="e4er3lv0 css-1ulugdh-Thumbnail"
             src="./static/images/anas.jpg"
           />
           <div
@@ -1469,11 +1478,11 @@ exports[`render as espected Testimonials 1`] = `
         class="css-1shzofj-Testimonials"
       >
         <div
-          class="css-2awaa7-Card e4er3lv0"
+          class="css-zh1xop-Wrapper ekq4b2z0"
         >
           <img
             alt="Allina Joel"
-            class="css-1vwmfom"
+            class="e4er3lv0 css-1ulugdh-Thumbnail"
             src="./static/images/allina.jpg"
           />
           <div
@@ -1575,11 +1584,11 @@ exports[`render as espected Testimonials 1`] = `
         class="css-1laus68-Testimonials"
       >
         <div
-          class="css-2awaa7-Card e4er3lv0"
+          class="css-zh1xop-Wrapper ekq4b2z0"
         >
           <img
             alt="Albert Chirls"
-            class="css-1vwmfom"
+            class="e4er3lv0 css-1ulugdh-Thumbnail"
             src="./static/images/albert.jpg"
           />
           <div

@@ -2,10 +2,11 @@
 
 exports[`rendering renders as expected 1`] = `
 <div>
-  <button
-    class="css-1gpowep"
+  <a
+    class="e1w12k6d0 css-zmiiep-HL-Link"
+    href="/test"
   >
-    Click me!
-  </button>
+    Hey!
+  </a>
 </div>
 `;

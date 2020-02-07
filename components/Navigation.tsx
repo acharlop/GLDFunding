@@ -1,23 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
 import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
-import { Flex, Link as RBLink, Box } from 'rebass';
+import { Flex, Box } from 'rebass';
 import { IoIosClose } from 'react-icons/io';
 
-import { Button } from './';
+import { Button, Link } from './';
 import { themeProptypes } from '../theme';
-
-const HL = styled(RBLink)`
-  opacity: 0.7;
-  text-decoration: none;
-  transition: opacity 300ms;
-  padding: 1em;
-  letter-spacing: 0.05em;
-  &:hover {
-    opacity: 1;
-  }
-`;
+import { mainLinks, loginLink, callLink } from '../constants';
 
 const Nav = styled(Flex)<{ theme: themeProptypes; open: boolean }>`
   opacity: 1;
@@ -45,8 +34,8 @@ const Nav = styled(Flex)<{ theme: themeProptypes; open: boolean }>`
       );
       & a{
         width: calc(100% - 30px);
-        opacity: 1;
         margin-left: 15px;
+        padding: 1em 0.5em;
       }
     }
     ${theme.mq[0]}{
@@ -80,6 +69,7 @@ type NavigationProps = {
   open?: boolean;
   toggle: (event: React.MouseEvent<HTMLElement>) => void;
 };
+
 export const Navigation = withTheme(({ theme, open = false, toggle }: NavigationProps) => (
   <>
     <Open onClick={toggle} className="show-md mb-open-btn" color="white">
@@ -99,28 +89,19 @@ export const Navigation = withTheme(({ theme, open = false, toggle }: Navigation
     >
       <Close as={IoIosClose} className="show-md" onClick={toggle} size={40} />
       <Flex>
-        <Link href="./" passHref>
-          <HL color="white">About</HL>
-        </Link>
-        <Link href="./" passHref>
-          <HL color="white"> What is MCA?</HL>
-        </Link>
-        <Link href="./" passHref>
-          <HL color="white">Apply</HL>
-        </Link>
-        <Link href="./" passHref>
-          <HL color="white">Contact</HL>
-        </Link>
+        {mainLinks.map(el => (
+          <Link href={el.href} local key={el.name}>
+            {el.name}
+          </Link>
+        ))}
       </Flex>
       <Flex>
-        <HL href="tel:1(877)498-4344" color="white">
-          Call Now 1 (877) 498-4344
-        </HL>
-        <HL href="tel:1(877)498-4344" className="show-md" color="white">
-          Login
-        </HL>
-        <Button rounded href="tel:1(877)498-4344" ml={3} className="hide-md">
-          Login
+        <Link href={callLink.href}>{callLink.name}</Link>
+        <Link href={loginLink.name} className="show-md">
+          {loginLink.name}
+        </Link>
+        <Button rounded href={loginLink.href} ml={3} className="hide-md">
+          {loginLink.name}
         </Button>
       </Flex>
     </Nav>

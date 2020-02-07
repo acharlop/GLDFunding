@@ -6,7 +6,7 @@ const buttonStyles = {
   transition: 'all 0.2s',
   px: '1.3em',
   py: '.7em',
-  minHeight: '35px',
+  minHeight: ['35px', '50px'],
   outline: 'none',
   color: 'white',
   fontFamily: 'body',

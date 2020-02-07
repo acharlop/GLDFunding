@@ -69,7 +69,7 @@ export const CTA = () => {
               transform: animated ? 'translateX(0px)' : 'translateX(20px)',
             }}
           >
-            <Button width={1} my={1} minHeight="45px" maxWidth="300px" m="auto" rounded>
+            <Button width={1} my={1} maxWidth="300px" m="auto" rounded>
               CONTACT US
             </Button>
             <Text

@@ -1,5 +1,4 @@
 import React from 'react';
-import dynamic, { DynamicOptions } from 'next/dynamic';
 
 import { Layout, Header, Features, Steps, Testimonials, CTA } from '../components';
 

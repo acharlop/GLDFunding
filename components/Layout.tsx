@@ -4,7 +4,7 @@ import { withTheme } from 'emotion-theming';
 import { Box, Image } from 'rebass';
 
 import { themeProptypes } from '../theme';
-import { ModalProvider, Navigation, Footer } from './';
+import { ModalProvider, Navigation, Footer, Link } from './';
 
 const TopBar = styled(Box)`
   display: grid;
@@ -24,6 +24,8 @@ const TopBar = styled(Box)`
 const Wrapper = styled(Box)<{ theme: themeProptypes; open: boolean }>`
   height: 100%;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  display: grid;
+  grid-template-rows: 1fr auto;
   ${({ theme, open }) => `
     ${theme.mq[2]}{
       transform: ${open ? 'translate(-500px,0%)' : 'translate(0%,0%)'};
@@ -48,18 +50,24 @@ export const Layout = withTheme(
     return (
       <Wrapper open={open} theme={theme}>
         <TopBar px={3} pt={2} maxWidth="1700px" open={open} theme={theme}>
-          <Image
-            src="./static/images/logo-white.svg"
-            alt="GLD Funding logo"
-            maxWidth="100px"
-            alignSelf="flex-start"
-            sx={{
-              justifySelf: 'flex-start',
-            }}
-          />
+          <Link href="./" local active>
+            <Image
+              src="./static/images/logo-white.svg"
+              alt="GLD Funding logo"
+              maxWidth="100px"
+              alignSelf="flex-start"
+              sx={{
+                justifySelf: 'flex-start',
+              }}
+              css={{ opacity: '1' }}
+            />
+          </Link>
+
           <Navigation open={open} toggle={Toggle} />
         </TopBar>
-        <ModalProvider>{children}</ModalProvider>
+        <ModalProvider>
+          <Box>{children}</Box>
+        </ModalProvider>
         <Footer />
       </Wrapper>
     );

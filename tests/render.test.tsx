@@ -4,7 +4,12 @@ import { render } from '../utils/tests';
 import { Footer, Header, Layout, CTA, Modal, Steps, Features, Testimonials } from '../components';
 import { IconCard, IconPaper, IconMoney, IconTimer } from '../components/icons';
 
+const useRouter = jest.spyOn(require('next/router'), 'useRouter');
+
 describe('render as espected', () => {
+  useRouter.mockImplementation(() => ({
+    pathName: '',
+  }));
   test('Footer', () => {
     const { container } = render(<Footer />);
     expect(container).toMatchSnapshot();

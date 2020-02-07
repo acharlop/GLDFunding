@@ -38,9 +38,6 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
     max-width: 1200px;
   }
 
-  input {
-    border: none;
-  }
   .ReactModal__Overlay {
     opacity: 0;
     transform: translateY(10px);
@@ -68,10 +65,12 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
       display: inherit !important;
     }
   }
-  input {
+  input,
+  textarea {
     color: currentColor;
-    border-radius: 30px;
-    min-height: 30px;
+    border: none;
+    min-height: 35px;
+    line-height: 1;
   }
   *:focus {
     outline: none;

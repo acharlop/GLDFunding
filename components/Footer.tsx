@@ -1,18 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import Link from 'next/link';
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
-import { Box, Image, Link as RBLink, Flex } from 'rebass';
+import { Box, Image, Flex } from 'rebass';
 
-const HL = styled(RBLink)`
-  opacity: 0.7;
-  text-decoration: none;
-  transition: opacity 300ms;
-  letter-spacing: 0.05em;
-  &:hover {
-    opacity: 1;
-  }
-`;
+import { mainLinks, loginLink } from '../constants';
+import { Link } from './';
 
 const Wrapper = styled(Box)`
   border-top: 1px solid rgb(76, 81, 90);
@@ -40,40 +32,18 @@ const socialLinks = [
     name: 'youtube',
   },
 ];
-const localLinks = [
-  {
-    href: './',
-    name: 'Apply Now',
-  },
-  {
-    href: './',
-    name: 'What is MCA?',
-  },
-  {
-    href: './',
-    name: 'About us',
-  },
-  {
-    href: './',
-    name: 'Contact',
-  },
-  {
-    href: './',
-    name: 'Login',
-  },
-];
 
 const SocialLinks = (props: any) => (
   <Flex {...props}>
     {socialLinks.map(el => (
-      <HL href={el.href} color="white" p={1} fontSize={2} key={el.name}>
+      <Link href={el.href} p={1} fontSize={2} key={el.name}>
         {el.icon}
-      </HL>
+      </Link>
     ))}
   </Flex>
 );
 
-export const Footer = () => (
+export const Footer = (props: any) => (
   <Wrapper bg="gray800">
     <Flex flexWrap="wrap" maxWidth="1200px" margin="auto" px={[1, 2]} py={4}>
       <Flex
@@ -95,13 +65,21 @@ export const Footer = () => (
           mb={[4, 4, 1, 0]}
           px={[1, 2]}
         />
-        {localLinks.map(el => (
-          <Link href={el.href} passHref key={el.name}>
-            <HL p={1} fontSize={2} color="white" width={[1 / 2, 1 / 3, 'auto']}>
-              {el.name}
-            </HL>
+        {mainLinks.map(el => (
+          <Link
+            href={el.href}
+            key={el.name}
+            local
+            p={1}
+            fontSize={2}
+            width={[1 / 2, 1 / 3, 'auto']}
+          >
+            {el.name}
           </Link>
         ))}
+        <Link href={loginLink.href} p={1} fontSize={2} color="white" width={[1 / 2, 1 / 3, 'auto']}>
+          {loginLink.name}
+        </Link>
         <SocialLinks className="show-md" />
       </Flex>
       <SocialLinks justifyContent="flex-end" className="hide-md" width={[1, 1, 2 / 12]} />

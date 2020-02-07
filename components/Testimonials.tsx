@@ -4,6 +4,8 @@ import { Box, Image, Text, Flex } from 'rebass';
 import VisibilitySensor from 'react-visibility-sensor';
 import { FaStar } from 'react-icons/fa';
 
+import { Card } from './index';
+
 const content = [
   {
     photo: './static/images/josephine.jpg',
@@ -30,17 +32,13 @@ const content = [
   },
 ];
 
-const Card = styled(Box)`
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.07);
-  position: relative;
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0 !important;
-    transform: translateX(-50%) translateY(-50%);
-    border-radius: 50%;
-  }
+const Thumbnail = styled(Image)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 !important;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
 `;
 
 export const Testimonials = () => {
@@ -104,7 +102,7 @@ export const Testimonials = () => {
               }}
             >
               <Card width={1} height="100%" p={[3, 5]}>
-                <Image
+                <Thumbnail
                   alt={el.name}
                   src={el.photo}
                   width={['50px', '70px']}

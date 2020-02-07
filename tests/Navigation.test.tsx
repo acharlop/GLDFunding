@@ -4,7 +4,12 @@ import { fireEvent } from '@testing-library/react';
 import { render } from '../utils/tests';
 import { Navigation } from '../components';
 
+const useRouter = jest.spyOn(require('next/router'), 'useRouter');
+
 const setup = () => {
+  useRouter.mockImplementation(() => ({
+    pathName: '',
+  }));
   const toggleHandler = jest.fn();
   const utils = render(<Navigation toggle={toggleHandler} />);
   return {

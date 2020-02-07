@@ -49,7 +49,6 @@ const Form = styled(Flex)`
   border: 1px solid transparent;
   overflow: hidden;
   transition: border 300ms;
-  max-width: calc(100% - 1rem);
   &:focus-within {
     border-color: #00d0b3;
   }
@@ -83,7 +82,7 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
   }, []);
 
   return (
-    <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
+    <Wrapper as="header" alignItems="center" justifyContent="center" p={3} pt="7rem">
       <Background
         as="picture"
         css={{
