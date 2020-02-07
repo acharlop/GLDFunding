@@ -87,7 +87,8 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
       <Background
         as="picture"
         css={{
-          transition: 'all 600ms cubic-bezier(0.4, 0, 0.2, 1)',
+          transition: `opacity 600ms cubic-bezier(0.4, 0, 0.2, 1),
+          transform 600ms cubic-bezier(0.4, 0, 0.2, 1)`,
           opacity: animated ? '1' : '0',
           transform: animated ? 'scale(1.05)' : 'scale(1)',
         }}
@@ -108,7 +109,8 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
         alignItems="center"
         justifyContent="center"
         css={{
-          transition: 'all 600ms cubic-bezier(0.4, 0, 0.2, 1) 150ms',
+          transition: `opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 150ms,
+          transform 600ms cubic-bezier(0.4, 0, 0.2, 1) 150ms`,
           opacity: animated ? '1' : '0',
           transform: animated ? 'translateY(-1rem)' : 'translateY(0rem)',
         }}

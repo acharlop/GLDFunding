@@ -18,71 +18,93 @@ const Wrapper = styled(Box)`
   border-top: 1px solid rgb(76, 81, 90);
 `;
 
-const linkProps = {
-  color: 'white',
-  p: 1,
-  fontSize: 2,
-  width: [1 / 2, 'auto'],
-};
+const socialLinks = [
+  {
+    icon: <FaInstagram />,
+    href: 'https://www.instagram.com/gldfunding/',
+    name: 'instagram',
+  },
+  {
+    icon: <FaFacebookF />,
+    href: 'https://www.facebook.com/GLD-Funding-102567247876620/',
+    name: 'facebook',
+  },
+  {
+    icon: <FaTwitter />,
+    href: '#',
+    name: 'twitter',
+  },
+  {
+    icon: <FaYoutube />,
+    href: '#',
+    name: 'youtube',
+  },
+];
+const localLinks = [
+  {
+    href: './',
+    name: 'Apply Now',
+  },
+  {
+    href: './',
+    name: 'What is MCA?',
+  },
+  {
+    href: './',
+    name: 'About us',
+  },
+  {
+    href: './',
+    name: 'Contact',
+  },
+  {
+    href: './',
+    name: 'Login',
+  },
+];
 
-const socialProps = {
-  color: 'white',
-  p: 1,
-  fontSize: 2,
-};
+const SocialLinks = (props: any) => (
+  <Flex {...props}>
+    {socialLinks.map(el => (
+      <HL href={el.href} color="white" p={1} fontSize={2} key={el.name}>
+        {el.icon}
+      </HL>
+    ))}
+  </Flex>
+);
 
 export const Footer = () => (
   <Wrapper bg="gray800">
     <Flex flexWrap="wrap" maxWidth="1200px" margin="auto" px={[1, 2]} py={4}>
-      <Flex width={[1, 1, 10 / 12]} alignItems="center" flexWrap="wrap">
+      <Flex
+        width={[1, 1, 1, 10 / 12]}
+        alignItems="center"
+        flexWrap="wrap"
+        justifyContent={['unset', 'unset', 'center', 'unset']}
+      >
         <Image
           src="./static/images/mcafee.png"
           alt="McAfee SECURE"
           maxHeight="32px"
-          margin={['auto', 0]}
           css={{
             objectFit: 'contain',
             verticalAlign: 'middle',
-            objectPosition: 'left',
+            opacity: '0.7',
           }}
-          width={[1, 1, 'auto']}
-          mb={[1, 0]}
+          width={[1, 1, 1, 'auto']}
+          mb={[4, 4, 1, 0]}
           px={[1, 2]}
         />
-        <Link href="./" passHref>
-          <HL {...linkProps}>Apply Now</HL>
-        </Link>
-        <Link href="./" passHref>
-          <HL {...linkProps}> What is MCA?</HL>
-        </Link>
-        <Link href="./" passHref>
-          <HL {...linkProps}>About us</HL>
-        </Link>
-        <Link href="./" passHref>
-          <HL {...linkProps}>Contact</HL>
-        </Link>
-        <Link href="./" passHref>
-          <HL {...linkProps}>Login</HL>
-        </Link>
+        {localLinks.map(el => (
+          <Link href={el.href} passHref key={el.name}>
+            <HL p={1} fontSize={2} color="white" width={[1 / 2, 1 / 3, 'auto']}>
+              {el.name}
+            </HL>
+          </Link>
+        ))}
+        <SocialLinks className="show-md" />
       </Flex>
-      <Flex width={[1, 1, 2 / 12]} justifyContent={['center', 'flex-end']}>
-        <HL href="https://www.instagram.com/gldfunding/" {...socialProps}>
-          <FaInstagram />
-        </HL>
-        <HL href="https://www.facebook.com/GLD-Funding-102567247876620/" {...socialProps}>
-          <FaFacebookF />
-        </HL>
-        <Link href="./" passHref>
-          <HL {...socialProps}>
-            <FaTwitter />
-          </HL>
-        </Link>
-        <Link href="./" passHref>
-          <HL {...socialProps}>
-            <FaYoutube />
-          </HL>
-        </Link>
-      </Flex>
+      <SocialLinks justifyContent="flex-end" className="hide-md" width={[1, 1, 2 / 12]} />
     </Flex>
   </Wrapper>
 );

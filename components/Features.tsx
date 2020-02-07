@@ -129,7 +129,8 @@ export const Features = withTheme(({ theme, ...etc }, { theme: themeProptypes })
                 mb={3}
                 textAlign="center"
                 css={{
-                  transition: `all 300ms 0.${i * 2}s`,
+                  transition: `opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0.${i * 2}s,
+                  transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0.${i * 2}s`,
                   opacity: animated ? '1' : '0',
                   transform: animated ? 'translateX(0px)' : 'translateX(20px)',
                 }}
