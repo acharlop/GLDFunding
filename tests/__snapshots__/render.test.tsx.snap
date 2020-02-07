@@ -383,7 +383,8 @@ exports[`render as espected Header 1`] = `
       />
       <img
         alt="money background"
-        src="./static/images/bg-3.png"
+        class="css-9taffg"
+        src="./static/images/bg-3-1500.png"
       />
     </picture>
     <div

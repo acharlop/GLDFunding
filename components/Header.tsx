@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { Box, Image, Text, Flex } from 'rebass';
 import { withTheme } from 'emotion-theming';
 import { IoMdArrowForward as Arrow } from 'react-icons/io';
 import MaskedInput from 'react-text-mask';
 import createNumberMask from 'text-mask-addons/dist/createNumberMask';
-import VisibilitySensor from 'react-visibility-sensor';
 
 import { Button, FancyText } from '../components';
 import { themeProptypes } from '../theme';
@@ -69,9 +68,18 @@ const Form = styled(Flex)`
 
 export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
   const [animated, setAnimated] = useState(false);
+  const imageRef = useRef<HTMLImageElement>(null);
+
   const onLoad = () => {
     setAnimated(true);
   };
+
+  useEffect(() => {
+    if (imageRef.current && imageRef.current.complete) {
+      setAnimated(true);
+    }
+  }, []);
+
   return (
     <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
       <Background
@@ -82,9 +90,14 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
           transform: animated ? 'scale(1.05)' : 'scale(1)',
         }}
       >
-        <source srcSet="./static/images/bg-3-1500.png" media="(min-width: 800px)" onLoad={onLoad} />
-        <source srcSet="./static/images/bg-3-800.png" media="(max-width: 800px)" onLoad={onLoad} />
-        <img src="./static/images/bg-3.png" alt="money background" onLoad={onLoad} />
+        <source srcSet="./static/images/bg-3-1500.png" media="(min-width: 800px)" />
+        <source srcSet="./static/images/bg-3-800.png" media="(max-width: 800px)" />
+        <Image
+          src="./static/images/bg-3-1500.png"
+          alt="money background"
+          onLoad={onLoad}
+          ref={imageRef}
+        />
       </Background>
       <Flex
         maxWidth={theme.breakpoints[3]}
