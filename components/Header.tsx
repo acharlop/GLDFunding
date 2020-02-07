@@ -81,20 +81,18 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
   return (
     <VisibilitySensor onChange={onView} active={sense}>
       <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
-        <Background as="picture">
+        <Background
+          as="picture"
+          css={{
+            transition: `all 600ms cubic-bezier(0.4, 0, 0.2, 1)`,
+            opacity: animated ? '1' : '0',
+            transform: animated ? 'scale(1.05)' : 'scale(1)',
+          }}
+        >
           <source srcSet="./static/images/bg-3-1500.png" media="(min-width: 800px)" />
           <source srcSet="./static/images/bg-3-800.png" media="(max-width: 800px)" />
           <img src="./static/images/bg-3.png" />
         </Background>
-        {/* <Background
-          src="./static/images/bg-3.jpeg"
-          alt="Hero background"
-          css={{
-            transition: 'all 600ms cubic-bezier(0.4, 0, 0.2, 1)',
-            opacity: animated ? '1' : '0',
-            transform: animated ? 'scale(1.05)' : 'scale(1)',
-          }}
-        /> */}
         <Flex
           maxWidth={theme.breakpoints[3]}
           width={1}
