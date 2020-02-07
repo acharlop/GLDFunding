@@ -78,6 +78,5 @@ $ npm run test:watch
 
 ### Todo:
 
-- Add reviews section.
 - Add storybook and stories.
 - Add enviroments config.
