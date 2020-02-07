@@ -382,6 +382,7 @@ exports[`render as espected Header 1`] = `
         srcset="./static/images/bg-3-800.png"
       />
       <img
+        alt="money background"
         src="./static/images/bg-3.png"
       />
     </picture>
@@ -427,6 +428,7 @@ exports[`render as espected Header 1`] = `
           required=""
           type="text"
           value=""
+          width="60%"
         />
         <button
           class="css-1nviw9z"

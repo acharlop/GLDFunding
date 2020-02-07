@@ -69,68 +69,61 @@ const Form = styled(Flex)`
 
 export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
   const [animated, setAnimated] = useState(false);
-  const [sense, setSensor] = useState(true);
-
-  const onView = (inView: boolean) => {
-    if (sense && inView && !animated) {
-      setAnimated(true);
-      setSensor(false);
-    }
+  const onLoad = () => {
+    setAnimated(true);
   };
-
   return (
-    <VisibilitySensor onChange={onView} active={sense}>
-      <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
-        <Background
-          as="picture"
-          css={{
-            transition: `all 600ms cubic-bezier(0.4, 0, 0.2, 1)`,
-            opacity: animated ? '1' : '0',
-            transform: animated ? 'scale(1.05)' : 'scale(1)',
-          }}
-        >
-          <source srcSet="./static/images/bg-3-1500.png" media="(min-width: 800px)" />
-          <source srcSet="./static/images/bg-3-800.png" media="(max-width: 800px)" />
-          <img src="./static/images/bg-3.png" />
-        </Background>
-        <Flex
-          maxWidth={theme.breakpoints[3]}
-          width={1}
-          flexDirection="column"
-          alignItems="center"
-          justifyContent="center"
-          css={{
-            transition: 'all 600ms cubic-bezier(0.4, 0, 0.2, 1) 150ms',
-            opacity: animated ? '1' : '0',
-            transform: animated ? 'translateY(1rem)' : 'translateY(0rem)',
-          }}
-          className={animated ? 'fadeInUp' : ''}
-        >
-          <Text color="white300" fontSize={[3, 6]} mb={3} textAlign="center">
-            Funding Solutions for your business
-          </Text>
-          <Text as="h1" color="white" fontSize={[5, 6]} fontFamily="heading" textAlign="center">
-            We&apos;ll Help Your Business {` `}
-            <FancyText words={['Succeed', 'Grow']} />
-          </Text>
-          <Form as="form" mt={[3, 8]} fontSize={[2, 3]}>
-            <MaskedInput
-              placeholder="Requested Amount"
-              type="text"
-              required
-              mask={createNumberMask(defaultMaskOptions)}
-              inputMode="numeric"
-            />
-            <Button>
-              Apply
-              <Flex as="span" className="hide-md" alignItems="center" ml="0.2em">
-                {` `}Now
-                <Box as={Arrow} ml={1} size={30} />
-              </Flex>
-            </Button>
-          </Form>
-        </Flex>
-      </Wrapper>
-    </VisibilitySensor>
+    <Wrapper as="header" alignItems="center" justifyContent="center" p={3}>
+      <Background
+        as="picture"
+        css={{
+          transition: `all 600ms cubic-bezier(0.4, 0, 0.2, 1)`,
+          opacity: animated ? '1' : '0',
+          transform: animated ? 'scale(1.05)' : 'scale(1)',
+        }}
+      >
+        <source srcSet="./static/images/bg-3-1500.png" media="(min-width: 800px)" onLoad={onLoad} />
+        <source srcSet="./static/images/bg-3-800.png" media="(max-width: 800px)" onLoad={onLoad} />
+        <img src="./static/images/bg-3.png" alt="money background" onLoad={onLoad} />
+      </Background>
+      <Flex
+        maxWidth={theme.breakpoints[3]}
+        width={1}
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        css={{
+          transition: 'all 600ms cubic-bezier(0.4, 0, 0.2, 1) 150ms',
+          opacity: animated ? '1' : '0',
+          transform: animated ? 'translateY(1rem)' : 'translateY(0rem)',
+        }}
+        className={animated ? 'fadeInUp' : ''}
+      >
+        <Text color="white300" fontSize={[3, 6]} mb={3} textAlign="center">
+          Funding Solutions for your business
+        </Text>
+        <Text as="h1" color="white" fontSize={[5, 6]} fontFamily="heading" textAlign="center">
+          We&apos;ll Help Your Business {` `}
+          <FancyText words={['Succeed', 'Grow']} />
+        </Text>
+        <Form as="form" mt={[3, 8]} fontSize={[2, 3]}>
+          <MaskedInput
+            placeholder="Requested Amount"
+            type="text"
+            required
+            mask={createNumberMask(defaultMaskOptions)}
+            inputMode="numeric"
+            width="60%"
+          />
+          <Button>
+            Apply
+            <Flex as="span" className="hide-md" alignItems="center" ml="0.2em">
+              {` `}Now
+              <Box as={Arrow} ml={1} size={30} />
+            </Flex>
+          </Button>
+        </Form>
+      </Flex>
+    </Wrapper>
   );
 });
