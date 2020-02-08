@@ -57,6 +57,11 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   a {
     color: inherit;
   }
+  ${theme.mq[1]} {
+    .hide-sm {
+      display: none !important;
+    }
+  }
   ${theme.mq[2]} {
     .hide-md {
       display: none !important;
@@ -66,7 +71,8 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
     }
   }
   input,
-  textarea {
+  textarea,
+  select {
     color: currentColor;
     border: none;
     min-height: 35px;

@@ -104,7 +104,7 @@ export const MCA = () => {
                   transform 600ms cubic-bezier(0.4, 0, 0.2, 1) 0.${i * 2}s
                   `,
                   opacity: animated ? '1' : '0',
-                  transform: animated ? 'scale(1)' : 'scale(0.95)',
+                  transform: animated ? 'scale(1)' : 'scale(1.05)',
                 }}
               >
                 <Text fontSize="50px" color="blue500">

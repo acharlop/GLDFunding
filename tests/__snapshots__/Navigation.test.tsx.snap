@@ -76,7 +76,7 @@ exports[`rendering renders as expected 1`] = `
         Login
       </a>
       <a
-        class="hide-md css-f61x61"
+        class="hide-md css-bsyusq"
         href="https://login.gldfunding.com/"
       >
         Login

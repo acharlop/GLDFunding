@@ -56,7 +56,7 @@ exports[`render as espected CTA 1`] = `
         class="css-df8eea-CTA"
       >
         <button
-          class="css-k1y15r"
+          class="css-5ywtia"
         >
           CONTACT US
         </button>
@@ -85,7 +85,7 @@ exports[`render as espected Features 1`] = `
         class="css-ji8rb1"
       >
         <div
-          class="css-g2ynd6-Icon e1jrehui0"
+          class="css-b5a0c7-Icon e1jrehui0"
         >
           <svg
             class="css-vmdvmf"
@@ -158,7 +158,7 @@ exports[`render as espected Features 1`] = `
         class="css-ji8rb1"
       >
         <div
-          class="css-g2ynd6-Icon e1jrehui0"
+          class="css-b5a0c7-Icon e1jrehui0"
         >
           <svg
             class="css-vmdvmf"
@@ -202,7 +202,7 @@ exports[`render as espected Features 1`] = `
         class="css-ji8rb1"
       >
         <div
-          class="css-g2ynd6-Icon e1jrehui0"
+          class="css-b5a0c7-Icon e1jrehui0"
         >
           <svg
             class="css-vmdvmf"
@@ -259,7 +259,7 @@ exports[`render as espected Features 1`] = `
         class="css-ji8rb1"
       >
         <div
-          class="css-g2ynd6-Icon e1jrehui0"
+          class="css-b5a0c7-Icon e1jrehui0"
         >
           <svg
             class="css-vmdvmf"
@@ -520,7 +520,7 @@ exports[`render as espected Header 1`] = `
     class="css-1ivoic6-Wrapper eiscj4c0"
   >
     <picture
-      class="css-xsjem6-Background-Header eiscj4c1"
+      class="css-1ee4441-Background-Header eiscj4c1"
     >
       <source
         media="(min-width: 800px)"
@@ -574,13 +574,14 @@ exports[`render as espected Header 1`] = `
       >
         <input
           inputmode="numeric"
+          name="amount"
           placeholder="Requested Amount"
           required=""
           type="text"
           value=""
         />
         <button
-          class="css-1gpowep"
+          class="css-8ctaua"
         >
           Apply
           <span
@@ -870,7 +871,7 @@ exports[`render as espected Layout 1`] = `
             Login
           </a>
           <a
-            class="hide-md css-f61x61"
+            class="hide-md css-bsyusq"
             href="https://login.gldfunding.com/"
           >
             Login
@@ -1114,7 +1115,7 @@ exports[`render as espected Steps 1`] = `
         class="css-kg0zaz"
       >
         <div
-          class="css-v65fau-VideoThumb-Steps ews2q5x2"
+          class="css-hagv3d-VideoThumb-Steps ews2q5x2"
         >
           <img
             alt="video placeholder"
@@ -1122,7 +1123,7 @@ exports[`render as espected Steps 1`] = `
             src="./static/images/demo.jpg"
           />
           <button
-            class="ews2q5x3 css-1m00c36-PlayButton"
+            class="ews2q5x3 css-1r6221t-PlayButton"
           >
             <svg
               fill="currentColor"
@@ -1249,7 +1250,7 @@ exports[`render as espected Testimonials 1`] = `
         Better service
          
         <span
-          class="css-15vliun"
+          class="css-1i78tal"
         >
           starts here
         </span>
@@ -1267,7 +1268,7 @@ exports[`render as espected Testimonials 1`] = `
         class="css-emtes6-Testimonials"
       >
         <div
-          class="css-zh1xop-Wrapper ekq4b2z0"
+          class="css-tq5hxx-Wrapper ekq4b2z0"
         >
           <img
             alt="Josephine"
@@ -1373,7 +1374,7 @@ exports[`render as espected Testimonials 1`] = `
         class="css-451exu-Testimonials"
       >
         <div
-          class="css-zh1xop-Wrapper ekq4b2z0"
+          class="css-tq5hxx-Wrapper ekq4b2z0"
         >
           <img
             alt="Anas Iqbual"
@@ -1478,7 +1479,7 @@ exports[`render as espected Testimonials 1`] = `
         class="css-14p65gb-Testimonials"
       >
         <div
-          class="css-zh1xop-Wrapper ekq4b2z0"
+          class="css-tq5hxx-Wrapper ekq4b2z0"
         >
           <img
             alt="Allina Joel"
@@ -1584,7 +1585,7 @@ exports[`render as espected Testimonials 1`] = `
         class="css-1126efc-Testimonials"
       >
         <div
-          class="css-zh1xop-Wrapper ekq4b2z0"
+          class="css-tq5hxx-Wrapper ekq4b2z0"
         >
           <img
             alt="Albert Chirls"

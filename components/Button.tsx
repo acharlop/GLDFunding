@@ -1,10 +1,7 @@
 import React from 'react';
 import { Button as BaseButton, ButtonProps as BaseButtonProps } from 'rebass';
 
-export type ButtonProps = Pick<
-  BaseButtonProps,
-  Exclude<keyof BaseButtonProps, 'css' | 'as' | 'variant' | 'disabled'>
-> & {
+export type ButtonProps = Pick<BaseButtonProps, Exclude<keyof BaseButtonProps, 'css' | 'as'>> & {
   rounded?: boolean;
 };
 

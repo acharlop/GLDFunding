@@ -15,11 +15,13 @@ const Background = styled(Box)`
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  background-color: rgb(45, 50, 61);
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.5);
+    background-color: rgb(45, 50, 61);
   }
 `;
 export type BreadCrumbProps = {
@@ -57,6 +59,11 @@ export const BreadCrumb = ({ title, src }: BreadCrumbProps) => {
           alt="money background"
           onLoad={onLoad}
           ref={imageRef}
+          css={{
+            transition: `opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+            transform 300ms cubic-bezier(0.4, 0, 0.2, 1)`,
+            opacity: animated ? '1' : '0',
+          }}
         />
       </Background>
       <Flex

@@ -6,6 +6,7 @@ const Wrapper = styled(Box)`
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.07);
   position: relative;
   background: white;
+  border-radius: 4px;
 `;
 
 export type CardProps = Pick<BoxProps, Exclude<keyof BoxProps, 'css'>> & {

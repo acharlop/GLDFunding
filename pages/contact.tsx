@@ -62,7 +62,7 @@ export const Contact = () => {
           transform 300ms cubic-bezier(0.4, 0, 0.2, 1)
           `,
             opacity: animated ? '1' : '0',
-            transform: animated ? 'scale(1.05)' : 'scale(1)',
+            transform: animated ? 'scale(1)' : 'scale(0.95)',
           }}
         >
           <Card

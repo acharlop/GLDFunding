@@ -4,23 +4,10 @@ import { Box, Image, Text, Flex } from 'rebass';
 import { withTheme } from 'emotion-theming';
 import { IoMdArrowForward as Arrow } from 'react-icons/io';
 import MaskedInput from 'react-text-mask';
-import createNumberMask from 'text-mask-addons/dist/createNumberMask';
 
 import { Button, FancyText } from '../components';
 import { themeProptypes } from '../theme';
-
-const defaultMaskOptions = {
-  prefix: '$',
-  suffix: '',
-  includeThousandsSeparator: true,
-  thousandsSeparatorSymbol: ',',
-  allowDecimal: true,
-  decimalSymbol: '.',
-  decimalLimit: 2,
-  integerLimit: 7,
-  allowNegative: false,
-  allowLeadingZeroes: false,
-};
+import { currencyMask } from '../constants';
 
 const Wrapper = styled(Flex)`
   height: 89vh;
@@ -89,7 +76,7 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
           transition: `opacity 600ms cubic-bezier(0.4, 0, 0.2, 1),
           transform 600ms cubic-bezier(0.4, 0, 0.2, 1)`,
           opacity: animated ? '1' : '0',
-          transform: animated ? 'scale(1.05)' : 'scale(1)',
+          transform: animated ? 'scale(1)' : 'scale(1.05)',
         }}
       >
         <source srcSet="./static/images/bg-3-1500.png" media="(min-width: 800px)" />
@@ -126,8 +113,9 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
             placeholder="Requested Amount"
             type="text"
             required
-            mask={createNumberMask(defaultMaskOptions)}
+            mask={currencyMask()}
             inputMode="numeric"
+            name="amount"
           />
           <Button>
             Apply

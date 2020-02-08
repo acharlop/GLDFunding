@@ -15,3 +15,6 @@ export * from './Testimonials';
 export * from './Card';
 export * from './Breadcrumb';
 export * from './Link';
+export * from './StepForm';
+export * from './Tabs';
+export * from './Input';

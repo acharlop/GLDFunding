@@ -3,7 +3,7 @@
 exports[`rendering renders as expected 1`] = `
 <div>
   <button
-    class="css-1gpowep"
+    class="css-8ctaua"
   >
     Click me!
   </button>
