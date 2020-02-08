@@ -10,19 +10,19 @@ const features = [
   {
     icon: <MdAttachMoney />,
     title: 'Fast money',
-    description: 'minimal paperwork, no collateral, and no credit rating score.',
+    description: 'You can usually get your money fast– in as little as a day or two.',
   },
   {
     icon: <AiOutlineUsergroupAdd />,
     title: 'Easy to qualify',
     description:
-      'We build personal relationships with our clients to be able to provide the financial tools needed.',
+      'You can still use MCA even if your business doesn’t qualify for a traditional loan.',
   },
   {
     icon: <AiOutlineAudit />,
     title: 'No collateral',
     description:
-      'We are here to assist you in every step of the way to get the working capital you deserve.',
+      'You don’t need collateral and credit score requirements are usually extremely flexible.',
   },
 ];
 export const MCA = () => {
@@ -72,10 +72,9 @@ export const MCA = () => {
                 Merchant Cash Advance
               </Text>
               <Text as="p" fontSize={2} lineHeight="heading">
-                Merchant Cash Advance are finance options characterized by short payment terms
-                (generally under 24 months) and small regular payments (typically paid each business
-                day) as opposed to the larger monthly payments and longer payment terms associated
-                with traditional bank loans.
+                Merchant Cash Advance are finance options characterized by short payment terms and
+                small regular payments as opposed to the larger monthly payments and longer payment
+                terms associated with traditional bank loans.
               </Text>
               <Text as="p" fontSize={2} lineHeight="heading" my={0}>
                 <Box as={AiOutlineCheck} color="green500" verticalAlign="middle" /> A fast and easy

@@ -24,8 +24,8 @@ const TopBar = styled(Box)`
 const Wrapper = styled(Box)<{ theme: themeProptypes; open: boolean }>`
   height: 100%;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  display: grid;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  flex-direction: column;
   ${({ theme, open }) => `
     ${theme.mq[2]}{
       transform: ${open ? 'translate(-500px,0%)' : 'translate(0%,0%)'};
@@ -66,7 +66,7 @@ export const Layout = withTheme(
           <Navigation open={open} toggle={Toggle} />
         </TopBar>
         <ModalProvider>
-          <Box>{children}</Box>
+          <Box css={{ flexGrow: 1 }}>{children}</Box>
         </ModalProvider>
         <Footer />
       </Wrapper>
