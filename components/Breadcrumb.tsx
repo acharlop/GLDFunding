@@ -52,10 +52,10 @@ export const BreadCrumb = ({ title, src }: BreadCrumbProps) => {
       minHeight={['40vh']}
     >
       <Background as="picture">
-        {/* <source srcSet={`./static/images/${src}-1500.png`} media="(min-width: 800px)" />
-        <source srcSet={`./static/images/${src}-800.png`} media="(max-width: 800px)" /> */}
+        <source srcSet={`./static/images/${src}-1500.png`} media="(min-width: 800px)" />
+        <source srcSet={`./static/images/${src}-800.png`} media="(max-width: 800px)" />
         <Image
-          src={`./static/images/${src}`}
+          src={`./static/images/${src}-1500.png`}
           alt="money background"
           onLoad={onLoad}
           ref={imageRef}

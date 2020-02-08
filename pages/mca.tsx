@@ -38,7 +38,7 @@ export const MCA = () => {
 
   return (
     <Layout>
-      <BreadCrumb src="mca.jpg" title="What is MCA?" />
+      <BreadCrumb src="mca" title="What is MCA?" />
       <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={300}>
         <Box m="auto" maxWidth="1200px" p={2}>
           <Flex flexWrap="wrap" width={1} my={4}>

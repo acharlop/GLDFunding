@@ -37,7 +37,7 @@ export const About = () => {
 
   return (
     <Layout>
-      <BreadCrumb src="about.jpg" title="About us" />
+      <BreadCrumb src="about" title="About us" />
       <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={300}>
         <Box
           m="auto"

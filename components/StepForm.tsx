@@ -39,6 +39,9 @@ export const StepForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (active < tabs.length - 1) {
+      selectTab(active + 1);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -93,6 +96,7 @@ export const StepForm = () => {
                   mb={[1, 2]}
                   mt={[0, 1]}
                   width={1}
+                  textAlign={['center', 'left', 'left']}
                 >
                   {title}
                 </Text>

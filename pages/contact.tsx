@@ -51,7 +51,7 @@ export const Contact = () => {
 
   return (
     <Layout>
-      <BreadCrumb src="contact.jpg" title="Contact Us" />
+      <BreadCrumb src="contact" title="Contact Us" />
       <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={300}>
         <Box
           m="auto"
