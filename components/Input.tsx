@@ -20,11 +20,13 @@ const Wrapper = styled(Box)<BoxProps & { mask?: any }>`
 export type inputProps = {
   tag?: string;
   label?: string;
-  name?: string;
+  name: string;
   placeholder?: string;
   mask?: (string | RegExp)[];
   type?: string;
   inputMode?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string | number | null | undefined;
   options?: {
     disabled?: boolean;
     label: string;
@@ -36,7 +38,7 @@ export type selectProps = Pick<
   BoxProps,
   Exclude<keyof BoxProps, 'css' | 'as' | 'variant' | 'disabled'>
 > & {
-  name?: string;
+  name: string;
   options?: {
     name?: string;
     label: string;
@@ -54,7 +56,7 @@ const Select = ({ name, options, ...etc }: selectProps) => (
   </Wrapper>
 );
 
-const Switcher = ({ tag, name, ...etc }: { tag?: string; name?: string }) => {
+const Switcher = ({ tag, name, ...etc }: { tag?: string; name: string }) => {
   switch (tag) {
     case 'masked':
       return <Wrapper as={MaskedInput} name={name} {...etc} />;

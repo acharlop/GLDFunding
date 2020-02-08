@@ -35,13 +35,20 @@ const columnProps = {
 };
 export const StepForm = () => {
   const { getTabProps, active, getTabListProps, selectTab } = useTabs();
-  const [data, setData] = useState({});
+  const [data, setData] = useState<{ [key: string]: number | string }>({});
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(e);
   };
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    let newData: { [key: string]: number | string } = {
+      ...data,
+    };
+    newData[name] = value;
+    setData(newData);
+  };
   const back = () => {
     if (active > 0) {
       selectTab(active - 1);
@@ -91,12 +98,24 @@ export const StepForm = () => {
                 </Text>
                 <Flex {...columnProps}>
                   {fields.slice(0, 3).map(el => (
-                    <Input {...el} key={el.name} {...fieldProps} />
+                    <Input
+                      {...el}
+                      key={el.name}
+                      {...fieldProps}
+                      onChange={handleChange}
+                      value={data[el.name] || ''}
+                    />
                   ))}
                 </Flex>
                 <Flex {...columnProps}>
                   {fields.slice(3, fields.length).map(el => (
-                    <Input {...el} key={el.name} {...fieldProps} />
+                    <Input
+                      {...el}
+                      key={el.name}
+                      {...fieldProps}
+                      onChange={handleChange}
+                      value={data[el.name] || ''}
+                    />
                   ))}
                 </Flex>
               </Flex>
