@@ -17,7 +17,7 @@ const Wrapper = styled(Box)<BoxProps & { mask?: any }>`
   }
 `;
 
-export type inputProps = {
+export type inputProps = Pick<BoxProps, Exclude<keyof BoxProps, 'css'>> & {
   tag?: string;
   label?: string;
   name: string;
@@ -34,10 +34,7 @@ export type inputProps = {
     hidden?: boolean;
   }[];
 };
-export type selectProps = Pick<
-  BoxProps,
-  Exclude<keyof BoxProps, 'css' | 'as' | 'variant' | 'disabled'>
-> & {
+export type selectProps = Pick<BoxProps, Exclude<keyof BoxProps, 'css'>> & {
   name: string;
   options?: {
     name?: string;

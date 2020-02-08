@@ -1,43 +1,42 @@
 import React, { useState } from 'react';
-import styled from '@emotion/styled';
+import { GoShield } from 'react-icons/go';
 import { Box, Flex, Text } from 'rebass';
 import VisibilitySensor from 'react-visibility-sensor';
 
-import { Layout, Card, Button, BreadCrumb } from '../components';
+import { Layout, Card, Button, BreadCrumb, Input } from '../components';
+import { phoneMask } from '../constants';
 
-const Input = styled(Box)`
-  transition: opacity 300ms;
-  border-bottom: 1px solid currentColor;
-  opacity: 0.5;
-  &:hover,
-  &:focus,
-  &:valid {
-    opacity: 1;
-  }
-`;
 const inputs = [
   {
+    label: 'Name*',
     placeholder: 'Name',
     name: 'name',
-    type: 'string',
-    required: true,
-    as: 'input' as 'input',
   },
   {
+    label: 'Email*',
     placeholder: 'Email',
     name: 'email',
     type: 'email',
-    required: true,
-    as: 'input' as 'input',
   },
   {
+    label: 'Mobile No.*',
     placeholder: 'Mobile No.',
     name: 'phone',
-    type: 'tel',
-    required: true,
-    as: 'input' as 'input',
+    tag: 'masked',
+    mask: phoneMask,
+    inputMode: 'tel' as 'tel',
   },
 ];
+const fieldProps = {
+  mb: [1, 1, 3],
+  mt: 1,
+  required: true,
+};
+const columnProps = {
+  width: [1, 1 / 2],
+  flexDirection: 'column' as 'column',
+  px: 1,
+};
 export const Contact = () => {
   const [animated, setAnimated] = useState(false);
   const [sense, setSensor] = useState(true);
@@ -73,7 +72,7 @@ export const Contact = () => {
               transform: 'translateY(-4rem)',
             }}
           >
-            <Box width={1} px={2} mx="auto" maxWidth="1000px">
+            <Box width={1} p={2} mx="auto" maxWidth="1000px">
               <Text as="h4" fontSize={[5, 6]} fontFamily="heading" color="gray500" mb={2}>
                 Drop us a line
               </Text>
@@ -81,24 +80,44 @@ export const Contact = () => {
                 We are here to answer any question you may have.
               </Text>
             </Box>
-            <Flex flexWrap="wrap" mx="auto" maxWidth="1000px">
-              <Flex width={[1, 1 / 2]} flexWrap="wrap" p={2}>
+            <Flex width={1} flexWrap="wrap" p={2} mx="auto" maxWidth="1000px">
+              <Flex {...columnProps}>
                 {inputs.map((el, i) => (
-                  <Input {...el} key={el.name} width={1} mb={i < inputs.length - 1 ? 4 : '0'} />
+                  <Input {...el} key={el.name} height={['1.5rem', '40px']} {...fieldProps} />
                 ))}
               </Flex>
-              <Flex width={[1, 1 / 2]} flexWrap="wrap" p={2}>
-                <Input as="textarea" required placeholder="message" width={1} />
+              <Flex {...columnProps}>
+                <Input
+                  tag="textarea"
+                  name="message"
+                  label="message"
+                  css={{ flexGrow: 1 }}
+                  py={1}
+                  {...fieldProps}
+                />
               </Flex>
             </Flex>
-            <Flex flexWrap="wrap" mt={1} mx="auto" maxWidth="1000px">
-              <Flex width={[1, 1 / 2]} flexWrap="wrap" p={2}>
+            <Flex
+              flexWrap="wrap"
+              mt={1}
+              mx="auto"
+              maxWidth="1000px"
+              justifyContent="flex-end"
+              p={2}
+              css={{
+                borderTop: '1px solid #e6e6e6;',
+              }}
+            >
+              <Flex width={[1, 1 / 2]} px={1} alignItems="center" className="hide-sm">
                 <Text as="p" fontSize={2}>
-                  We know how important your information is. It is always safe with us.
+                  <Box as={GoShield} verticalAlign="middle" mr={1} size={18} /> Your information is
+                  always be safe with us.
                 </Text>
               </Flex>
-              <Flex width={[1, 1 / 2]} flexWrap="wrap" p={2} justifyContent="flex-end">
-                <Button rounded>Send Message</Button>
+              <Flex width={[1, 1 / 2]} justifyContent="flex-end" px={1}>
+                <Button rounded variant="solid">
+                  Send Message
+                </Button>
               </Flex>
             </Flex>
           </Card>
