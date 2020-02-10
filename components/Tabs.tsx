@@ -43,14 +43,20 @@ const Percentage = styled(Box)`
   clip-path: polygon(0 0, calc(100% - 1.5rem) 0, 100% 100%, 0% 100%);
   background: #3cc3be;
   z-index: 0;
-  transition: width 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: calc(100% + 1.5rem);
+  transform: translateX(-100%);
 `;
 export const Tabs = ({ children, active, ...etc }: TabsProps) => {
   const completed = ((active + 1) * 100) / React.Children.count(children);
   return (
     <Wrapper as="nav" justifyContent="space-around" alignItems="stretch" {...etc}>
       {children}
-      <Percentage width={`${completed + 2.5}%`} />
+      <Percentage
+        css={{
+          transform: `translateX(-${100 - completed}%)`,
+        }}
+      />
     </Wrapper>
   );
 };

@@ -23,6 +23,7 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   html,
   #__next {
     height: 100%;
+    background-color: ${theme.colors.gray800};
   }
   html {
     overflow: hidden;

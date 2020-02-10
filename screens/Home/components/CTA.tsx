@@ -16,7 +16,7 @@ const Background = styled(Image)`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
 `;
 
 const text = ['An', 'unforgettable', 'experience', 'break', 'Join', 'the', 'community.'];
@@ -35,7 +35,14 @@ export const CTA = () => {
     <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={100}>
       <Wrapper as="section">
         <Background src="./static/images/footer-image.jpg" alt="mountains background" />
-        <Flex flexWrap="wrap" m="auto" maxWidth="1200px" py={[5, 8]} alignItems="center">
+        <Flex
+          flexWrap="wrap"
+          m="auto"
+          maxWidth="1200px"
+          py={[5, 8]}
+          alignItems="center"
+          css={{ position: 'relative' }}
+        >
           <Text
             width={[1, 8 / 12, 9 / 12]}
             px={2}

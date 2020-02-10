@@ -7,11 +7,11 @@ exports[`render as espected CTA 1`] = `
   >
     <img
       alt="mountains background"
-      class="e110hyro1 css-gn5u38-Background"
+      class="e110hyro1 css-yfs9x8-Background"
       src="./static/images/footer-image.jpg"
     />
     <div
-      class="css-18qnobe"
+      class="css-p9192q-CTA"
     >
       <div
         class="css-upiiru"
@@ -77,7 +77,7 @@ exports[`render as espected CTA 1`] = `
 exports[`render as espected Features 1`] = `
 <div>
   <section
-    class="css-vurnku"
+    class="css-1ta275q"
   >
     <div
       class="css-18e384y"
@@ -317,7 +317,7 @@ exports[`render as espected Header 1`] = `
     class="css-1ivoic6-Wrapper e16lzbl90"
   >
     <picture
-      class="css-1ee4441-Background-Header e16lzbl91"
+      class="css-1o9hww4-Background-Header e16lzbl91"
     >
       <source
         media="(min-width: 800px)"
@@ -725,7 +725,7 @@ exports[`render as espected Steps 1`] = `
 exports[`render as espected Testimonials 1`] = `
 <div>
   <section
-    class="css-1fmlf4e"
+    class="css-15m4ym1"
   >
     <div
       class="css-sd868u-Testimonials"

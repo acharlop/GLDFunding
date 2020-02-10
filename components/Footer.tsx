@@ -44,7 +44,7 @@ const SocialLinks = (props: any) => (
 );
 
 export const Footer = (props: any) => (
-  <Wrapper bg="gray800">
+  <Wrapper>
     <Flex flexWrap="wrap" maxWidth="1200px" margin="auto" p={2}>
       <Flex
         width={[1, 1, 1, 10 / 12]}

@@ -15,13 +15,11 @@ const Background = styled(Box)`
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  background-color: rgb(45, 50, 61);
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.5);
-    background-color: rgb(45, 50, 61);
   }
 `;
 export type BreadCrumbProps = {

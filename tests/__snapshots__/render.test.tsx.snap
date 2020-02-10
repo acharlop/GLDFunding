@@ -3,7 +3,7 @@
 exports[`render as espected Footer 1`] = `
 <div>
   <div
-    class="css-jnc4ax-Wrapper e18f8y720"
+    class="css-qwczg-Wrapper e18f8y720"
   >
     <div
       class="css-1tetcw9"
@@ -306,7 +306,7 @@ exports[`render as espected Layout 1`] = `
     </div>
      hi 
     <div
-      class="css-jnc4ax-Wrapper e18f8y720"
+      class="css-qwczg-Wrapper e18f8y720"
     >
       <div
         class="css-1tetcw9"
