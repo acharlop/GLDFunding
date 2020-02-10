@@ -23,7 +23,7 @@ export const Link = ({ href, local = false, active = null, children, ...etc }: l
   const router = useRouter();
   const act = active === null ? router.pathname === href : active;
   return local ? (
-    <BaseLink href={href} passHref>
+    <BaseLink href={href}>
       <HL p={1} color="white" css={{ opacity: act ? '1' : '0.7' }} {...etc}>
         {children}
       </HL>

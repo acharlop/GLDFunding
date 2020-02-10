@@ -18,25 +18,21 @@ exports[`render as espected Footer 1`] = `
         />
         <a
           class="e1w12k6d0 css-3g42lr-HL-Link"
-          href="/about"
         >
           About us
         </a>
         <a
           class="e1w12k6d0 css-3g42lr-HL-Link"
-          href="/mca"
         >
           What is MCA?
         </a>
         <a
           class="e1w12k6d0 css-3g42lr-HL-Link"
-          href="/apply"
         >
           Apply Now
         </a>
         <a
           class="e1w12k6d0 css-3g42lr-HL-Link"
-          href="/contact"
         >
           Contact Us
         </a>
@@ -217,7 +213,6 @@ exports[`render as espected Layout 1`] = `
       >
         <a
           class="e1w12k6d0 css-1hn6gyx-HL-Link"
-          href="./"
         >
           <img
             alt="GLD Funding logo"
@@ -260,25 +255,21 @@ exports[`render as espected Layout 1`] = `
           >
             <a
               class="e1w12k6d0 css-zmiiep-HL-Link"
-              href="/about"
             >
               About us
             </a>
             <a
               class="e1w12k6d0 css-zmiiep-HL-Link"
-              href="/mca"
             >
               What is MCA?
             </a>
             <a
               class="e1w12k6d0 css-zmiiep-HL-Link"
-              href="/apply"
             >
               Apply Now
             </a>
             <a
               class="e1w12k6d0 css-zmiiep-HL-Link"
-              href="/contact"
             >
               Contact Us
             </a>
@@ -324,25 +315,21 @@ exports[`render as espected Layout 1`] = `
             />
             <a
               class="e1w12k6d0 css-3g42lr-HL-Link"
-              href="/about"
             >
               About us
             </a>
             <a
               class="e1w12k6d0 css-3g42lr-HL-Link"
-              href="/mca"
             >
               What is MCA?
             </a>
             <a
               class="e1w12k6d0 css-3g42lr-HL-Link"
-              href="/apply"
             >
               Apply Now
             </a>
             <a
               class="e1w12k6d0 css-3g42lr-HL-Link"
-              href="/contact"
             >
               Contact Us
             </a>

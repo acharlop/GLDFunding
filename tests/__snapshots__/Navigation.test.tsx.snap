@@ -37,25 +37,21 @@ exports[`rendering renders as expected 1`] = `
     >
       <a
         class="e1w12k6d0 css-zmiiep-HL-Link"
-        href="/about"
       >
         About us
       </a>
       <a
         class="e1w12k6d0 css-zmiiep-HL-Link"
-        href="/mca"
       >
         What is MCA?
       </a>
       <a
         class="e1w12k6d0 css-zmiiep-HL-Link"
-        href="/apply"
       >
         Apply Now
       </a>
       <a
         class="e1w12k6d0 css-zmiiep-HL-Link"
-        href="/contact"
       >
         Contact Us
       </a>

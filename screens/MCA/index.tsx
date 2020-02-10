@@ -42,6 +42,7 @@ export const MCA = () => {
               alt="startup"
               width={1}
               css={{
+                height: 'auto',
                 borderRadius: '8px',
                 boxShadow: '0 8px 50px rgba(22,39,47,0.2)',
                 transition: `opacity 600ms cubic-bezier(0.4, 0, 0.2, 1),
