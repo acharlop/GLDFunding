@@ -119,7 +119,7 @@ export const Apply = () => {
                       mb={[1, 2]}
                       mt={[0, 1]}
                       width={1}
-                      textAlign={['center', 'left', 'left']}
+                      className="hide-sm"
                     >
                       {title}
                     </Text>

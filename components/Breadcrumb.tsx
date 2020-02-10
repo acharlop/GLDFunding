@@ -48,7 +48,7 @@ export const BreadCrumb = ({ title, src }: BreadCrumbProps) => {
       alignItems="center"
       justifyContent="center"
       p={3}
-      pt="7rem"
+      pt="5rem"
       minHeight={['40vh']}
     >
       <Background as="picture">
