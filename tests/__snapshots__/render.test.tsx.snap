@@ -6,7 +6,7 @@ exports[`render as espected Footer 1`] = `
     class="css-jnc4ax-Wrapper e18f8y720"
   >
     <div
-      class="css-1tar3ql"
+      class="css-1tetcw9"
     >
       <div
         class="css-hpath2"
@@ -207,7 +207,7 @@ exports[`render as espected Footer 1`] = `
 exports[`render as espected Layout 1`] = `
 <div>
   <div
-    class="css-1hsixk-Wrapper e1txfvao1"
+    class="css-1bus680-Wrapper e1txfvao1"
   >
     <div
       class="css-10i4iws-TopBar e1txfvao0"
@@ -304,16 +304,12 @@ exports[`render as espected Layout 1`] = `
         </div>
       </nav>
     </div>
-    <div
-      class="css-cau9h8-Layout"
-    >
-       hi 
-    </div>
+     hi 
     <div
       class="css-jnc4ax-Wrapper e18f8y720"
     >
       <div
-        class="css-1tar3ql"
+        class="css-1tetcw9"
       >
         <div
           class="css-hpath2"
