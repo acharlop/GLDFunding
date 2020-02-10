@@ -5,9 +5,9 @@ import { withTheme } from 'emotion-theming';
 import { IoMdArrowForward as Arrow } from 'react-icons/io';
 import MaskedInput from 'react-text-mask';
 
-import { Button, FancyText } from '../components';
-import { themeProptypes } from '../theme';
-import { currencyMask } from '../constants';
+import { Button, FancyText, Input } from '../../../components';
+import { themeProptypes } from '../../../theme';
+import { currencyMask } from '../../../constants';
 
 const Wrapper = styled(Flex)`
   height: 89vh;
@@ -42,10 +42,8 @@ const Form = styled(Flex)`
   input {
     background-color: rgba(255, 255, 255, 0.3);
     padding: 0 1.5rem;
-    font-size: inherit;
     border-radius: 0;
-    line-height: 3;
-    width: 60%;
+    border: none;
   }
   button {
     margin-left: -2rem;
@@ -109,13 +107,12 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
           <FancyText words={['Succeed', 'Grow']} animate={animated} />
         </Text>
         <Form as="form" mt={[3, 8]} fontSize={[2, 3]}>
-          <MaskedInput
+          <Input
             placeholder="Requested Amount"
-            type="text"
-            required
-            mask={currencyMask()}
+            tag="masked"
             inputMode="numeric"
             name="amount"
+            mask={currencyMask()}
           />
           <Button>
             Apply

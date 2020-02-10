@@ -37,12 +37,13 @@ export const steps: Array<stepProps> = [
         label: 'How did you hear about us?*',
         name: 'fromSource',
         tag: 'select',
+        value: '',
         options: [
           {
             disabled: true,
-            selected: true,
             hidden: true,
             label: 'How did you hear about us?',
+            value: '',
           },
           {
             label: 'Google',
@@ -77,12 +78,13 @@ export const steps: Array<stepProps> = [
         label: 'Purpose*',
         name: 'purpose',
         tag: 'select',
+        value: '',
         options: [
           {
             disabled: true,
-            selected: true,
             hidden: true,
             label: 'Purpose*',
+            value: '',
           },
           {
             label: 'Google',
@@ -101,12 +103,13 @@ export const steps: Array<stepProps> = [
         label: 'Category*',
         name: 'category',
         tag: 'select',
+        value: '',
         options: [
           {
             disabled: true,
-            selected: true,
             hidden: true,
             label: 'Category',
+            value: '',
           },
           {
             label: 'Google',
@@ -130,10 +133,11 @@ export const steps: Array<stepProps> = [
         label: 'State*',
         name: 'state',
         tag: 'select',
+        value: '',
         options: [
           {
             disabled: true,
-            selected: true,
+            value: '',
             hidden: true,
             label: 'State',
           },

@@ -5,8 +5,8 @@ import { withTheme } from 'emotion-theming';
 import { FaPlay } from 'react-icons/fa';
 import VisibilitySensor from 'react-visibility-sensor';
 
-import { themeProptypes } from '../theme';
-import { Button } from '../components';
+import { themeProptypes } from '../../../theme';
+import { Button } from '../../../components';
 
 const Wrapper = styled(Box)<{ theme: themeProptypes }>`
   ${({ theme }) => `
@@ -97,7 +97,7 @@ export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => {
           p={2}
           css={{
             transition: `opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
-            transform 300ms cubic-bezier(0.4, 0, 0.2, 1),`,
+            transform 300ms cubic-bezier(0.4, 0, 0.2, 1) `,
             opacity: animated ? '1' : '0',
             transform: animated ? 'translateX(0px)' : 'translateX(20px)',
           }}

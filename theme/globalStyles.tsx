@@ -28,8 +28,7 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
     overflow: hidden;
   }
   body {
-    font-family: ${theme.fonts.body};
-    font-size: 1rem;
+    font: normal normal normal 1rem ${theme.fonts.body};
     color: ${theme.colors.gray300};
     overflow-x: hidden;
     position: relative;
@@ -72,11 +71,13 @@ const styles = (theme: import('../theme').themeProptypes): SerializedStyles => c
   }
   input,
   textarea,
-  select {
-    color: currentColor;
-    border: none;
-    min-height: 35px;
-    line-height: 1;
+  select,
+  input[type='range'],
+  input,
+  input:matches([type='password'], [type='search']) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font: normal normal normal 1rem ${theme.fonts.body};
   }
   *:focus {
     outline: none;

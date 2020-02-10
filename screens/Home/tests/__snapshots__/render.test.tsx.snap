@@ -1,0 +1,1179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render as espected CTA 1`] = `
+<div>
+  <section
+    class="e110hyro0 css-1ep92rf-Wrapper"
+  >
+    <img
+      alt="mountains background"
+      class="e110hyro1 css-gn5u38-Background"
+      src="./static/images/footer-image.jpg"
+    />
+    <div
+      class="css-18qnobe"
+    >
+      <div
+        class="css-upiiru"
+      >
+        <h4
+          class="css-w5gd1b"
+        >
+          <span
+            class="css-anwcxg-CTA"
+          >
+            An 
+          </span>
+          <span
+            class="css-1ix4szz-CTA"
+          >
+            unforgettable 
+          </span>
+          <span
+            class="css-1ohwco-CTA"
+          >
+            experience 
+          </span>
+          <br />
+          <span
+            class="css-17wq4xi-CTA"
+          >
+            Join 
+          </span>
+          <span
+            class="css-193otl6-CTA"
+          >
+            the 
+          </span>
+          <span
+            class="css-g6k9pm-CTA"
+          >
+            community. 
+          </span>
+        </h4>
+      </div>
+      <div
+        class="css-df8eea-CTA"
+      >
+        <a
+          class="css-5ywtia"
+          href="/contact"
+        >
+          CONTACT US
+        </a>
+        <p
+          class="css-1amv1r1"
+        >
+          Do you have a question? 
+          <br />
+          Contact Us.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`render as espected Features 1`] = `
+<div>
+  <section
+    class="css-vurnku"
+  >
+    <div
+      class="css-18e384y"
+    >
+      <div
+        class="css-ji8rb1"
+      >
+        <div
+          class="css-b5a0c7-Icon eayq4bs0"
+        >
+          <svg
+            class="css-vmdvmf"
+            viewBox="0 0 13.229166 13.229166"
+          >
+            <title>
+              Timer icon
+            </title>
+            <circle
+              cx="6.6146"
+              cy="7.2644"
+              r="5.6226"
+            />
+            <circle
+              cx="6.5581"
+              cy="7.2362"
+              r="4.0121"
+            />
+            <circle
+              cx="6.5863"
+              cy="7.2644"
+              r=".59334"
+            />
+            <path
+              d="m6.6146 11.197v-1.0454"
+            />
+            <path
+              d="m4.4978 5.1194-0.73922-0.73922"
+            />
+            <path
+              d="m9.4423 10.064-0.73922-0.73922"
+            />
+            <path
+              d="m8.4771 5.2607 0.73922-0.73922"
+            />
+            <path
+              d="m3.8434 9.9509 0.73922-0.73922"
+            />
+            <path
+              d="m9.4824 7.2927h1.0454"
+            />
+            <path
+              d="m2.6731 7.2644h1.0454"
+            />
+            <path
+              d="m6.5581 6.5722v-2.1473"
+            />
+            <rect
+              height="1.2997"
+              rx="0"
+              ry=".33905"
+              width="1.8365"
+              x="5.6257"
+              y=".34213"
+            />
+          </svg>
+        </div>
+        <h4
+          class="css-1yu3as5"
+        >
+          Quick approval rates
+        </h4>
+        <div
+          class="css-qy4rcz-Features"
+        >
+          Funding is now faster and simpler than ever.
+        </div>
+      </div>
+      <div
+        class="css-ji8rb1"
+      >
+        <div
+          class="css-b5a0c7-Icon eayq4bs0"
+        >
+          <svg
+            class="css-vmdvmf"
+            viewBox="0 0 13.229166 13.229166"
+          >
+            <title>
+              Money icon
+            </title>
+            <g
+              transform="translate(0 -283.77)"
+            >
+              <circle
+                cx="6.6146"
+                cy="290.39"
+                r="6.1013"
+              />
+              <path
+                d="m6.5969 294.48v-1.1437"
+              />
+              <path
+                d="m8.0138 287.62-1.8095 0.0341s-1.3656-0.0342-1.4168 1.3827c0.068282 1.7241 1.7753 1.3656 1.7753 1.3656s1.9431-0.0507 1.8777 1.3827c-0.058308 1.2794-1.0413 1.4169-1.8607 1.4169h-1.451"
+              />
+              <path
+                d="m6.5969 287.44v-1.1437"
+              />
+            </g>
+          </svg>
+        </div>
+        <h4
+          class="css-1yu3as5"
+        >
+          Flexible payment plans
+        </h4>
+        <div
+          class="css-12m7cj9-Features"
+        >
+          We give you ultimate payment flexibility.
+        </div>
+      </div>
+      <div
+        class="css-ji8rb1"
+      >
+        <div
+          class="css-b5a0c7-Icon eayq4bs0"
+        >
+          <svg
+            class="css-vmdvmf"
+            viewBox="0 0 13.229166 13.229166"
+          >
+            <title>
+              Credit card icon
+            </title>
+            <rect
+              height="7.2906"
+              rx=".89769"
+              ry=".87407"
+              width="11.259"
+              x=".98491"
+              y="2.9693"
+            />
+            <path
+              d="m0.98038 4.4412h11.268"
+            />
+            <path
+              d="m0.98038 5.835h11.268"
+            />
+            <path
+              d="m2.386 7.843h2.9766"
+            />
+            <path
+              d="m2.386 8.8352h2.9766"
+            />
+            <rect
+              height="1.4324"
+              rx=".40672"
+              ry=".40672"
+              width="1.4324"
+              x="9.3356"
+              y="7.3513"
+            />
+            <path
+              d="m0.68508 11.032 12.213-8.7879"
+            />
+          </svg>
+        </div>
+        <h4
+          class="css-1yu3as5"
+        >
+          No credit score required
+        </h4>
+        <div
+          class="css-10wyfao-Features"
+        >
+          Support, makes your experience faster and more accurate than ever.
+        </div>
+      </div>
+      <div
+        class="css-ji8rb1"
+      >
+        <div
+          class="css-b5a0c7-Icon eayq4bs0"
+        >
+          <svg
+            class="css-vmdvmf"
+            viewBox="0 0 13.229166 13.229166"
+          >
+            <title>
+              Paperwork icon
+            </title>
+            <path
+              d="m3.0474 12.591v-10.772h5.5043l2.8703 2.8703v7.9257z"
+            />
+            <path
+              d="m2.8348 11.552h-0.8032v-10.796h8.3863v2.9293"
+            />
+            <path
+              d="m8.5753 1.7954v2.8112h2.764"
+            />
+            <path
+              d="m4.3703 10.725h5.1027"
+            />
+            <path
+              d="m4.3703 7.4414h5.1027"
+            />
+            <path
+              d="m4.3703 5.7996h5.1027"
+            />
+            <path
+              d="m4.3703 4.1577h3.0213"
+            />
+            <path
+              d="m4.3703 9.0832h5.1027"
+            />
+          </svg>
+        </div>
+        <h4
+          class="css-1yu3as5"
+        >
+          Minimal Paperwork
+        </h4>
+        <div
+          class="css-szy68y-Features"
+        >
+          Tools are beyond the one-click install, async tech merges with ultimate flexibility.
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`render as espected Header 1`] = `
+<div>
+  <header
+    class="css-1ivoic6-Wrapper e16lzbl90"
+  >
+    <picture
+      class="css-1ee4441-Background-Header e16lzbl91"
+    >
+      <source
+        media="(min-width: 800px)"
+        srcset="./static/images/bg-3-1500.png"
+      />
+      <source
+        media="(max-width: 800px)"
+        srcset="./static/images/bg-3-800.png"
+      />
+      <img
+        alt="money background"
+        class="css-9taffg"
+        src="./static/images/bg-3-1500.png"
+      />
+    </picture>
+    <div
+      class="css-ucakx3-Header"
+    >
+      <div
+        class="css-10gcz7t"
+      >
+        Funding Solutions for your business
+      </div>
+      <h1
+        class="css-zmrqg7"
+      >
+        We'll Help Your Business 
+         
+        <div
+          class="css-86bk71-Wrapper e1jkelvh0"
+        >
+          <span
+            class="css-iifya3-FancyText"
+          >
+            Succeed
+          </span>
+          <div
+            class="css-x0wys2-Animated-FancyText e1jkelvh1"
+          >
+            Succeed
+          </div>
+          <div
+            class="css-x0wys2-Animated-FancyText e1jkelvh1"
+          >
+            Grow
+          </div>
+        </div>
+      </h1>
+      <form
+        class="css-8i4y4z-Form e16lzbl92"
+      >
+        <input
+          class="css-1lotepu-StyledInput euq90oh0"
+          inputmode="numeric"
+          name="amount"
+          placeholder="Requested Amount"
+          value=""
+        />
+        <button
+          class="css-8ctaua"
+        >
+          Apply
+          <span
+            class="hide-md css-6g5xt6"
+          >
+             
+            Now
+            <svg
+              class="css-6832e"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"
+              />
+            </svg>
+          </span>
+        </button>
+      </form>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`render as espected IconCard 1`] = `
+<div>
+  <svg
+    class="css-vurnku"
+  >
+    <title>
+      Credit card icon
+    </title>
+    <rect
+      height="7.2906"
+      rx=".89769"
+      ry=".87407"
+      width="11.259"
+      x=".98491"
+      y="2.9693"
+    />
+    <path
+      d="m0.98038 4.4412h11.268"
+    />
+    <path
+      d="m0.98038 5.835h11.268"
+    />
+    <path
+      d="m2.386 7.843h2.9766"
+    />
+    <path
+      d="m2.386 8.8352h2.9766"
+    />
+    <rect
+      height="1.4324"
+      rx=".40672"
+      ry=".40672"
+      width="1.4324"
+      x="9.3356"
+      y="7.3513"
+    />
+    <path
+      d="m0.68508 11.032 12.213-8.7879"
+    />
+  </svg>
+</div>
+`;
+
+exports[`render as espected IconMoney 1`] = `
+<div>
+  <svg
+    class="css-vurnku"
+  >
+    <title>
+      Money icon
+    </title>
+    <g
+      transform="translate(0 -283.77)"
+    >
+      <circle
+        cx="6.6146"
+        cy="290.39"
+        r="6.1013"
+      />
+      <path
+        d="m6.5969 294.48v-1.1437"
+      />
+      <path
+        d="m8.0138 287.62-1.8095 0.0341s-1.3656-0.0342-1.4168 1.3827c0.068282 1.7241 1.7753 1.3656 1.7753 1.3656s1.9431-0.0507 1.8777 1.3827c-0.058308 1.2794-1.0413 1.4169-1.8607 1.4169h-1.451"
+      />
+      <path
+        d="m6.5969 287.44v-1.1437"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`render as espected IconPaper 1`] = `
+<div>
+  <svg
+    class="css-vurnku"
+  >
+    <title>
+      Paperwork icon
+    </title>
+    <path
+      d="m3.0474 12.591v-10.772h5.5043l2.8703 2.8703v7.9257z"
+    />
+    <path
+      d="m2.8348 11.552h-0.8032v-10.796h8.3863v2.9293"
+    />
+    <path
+      d="m8.5753 1.7954v2.8112h2.764"
+    />
+    <path
+      d="m4.3703 10.725h5.1027"
+    />
+    <path
+      d="m4.3703 7.4414h5.1027"
+    />
+    <path
+      d="m4.3703 5.7996h5.1027"
+    />
+    <path
+      d="m4.3703 4.1577h3.0213"
+    />
+    <path
+      d="m4.3703 9.0832h5.1027"
+    />
+  </svg>
+</div>
+`;
+
+exports[`render as espected IconTimer 1`] = `
+<div>
+  <svg
+    class="css-vurnku"
+  >
+    <title>
+      Timer icon
+    </title>
+    <circle
+      cx="6.6146"
+      cy="7.2644"
+      r="5.6226"
+    />
+    <circle
+      cx="6.5581"
+      cy="7.2362"
+      r="4.0121"
+    />
+    <circle
+      cx="6.5863"
+      cy="7.2644"
+      r=".59334"
+    />
+    <path
+      d="m6.6146 11.197v-1.0454"
+    />
+    <path
+      d="m4.4978 5.1194-0.73922-0.73922"
+    />
+    <path
+      d="m9.4423 10.064-0.73922-0.73922"
+    />
+    <path
+      d="m8.4771 5.2607 0.73922-0.73922"
+    />
+    <path
+      d="m3.8434 9.9509 0.73922-0.73922"
+    />
+    <path
+      d="m9.4824 7.2927h1.0454"
+    />
+    <path
+      d="m2.6731 7.2644h1.0454"
+    />
+    <path
+      d="m6.5581 6.5722v-2.1473"
+    />
+    <rect
+      height="1.2997"
+      rx="0"
+      ry=".33905"
+      width="1.8365"
+      x="5.6257"
+      y=".34213"
+    />
+  </svg>
+</div>
+`;
+
+exports[`render as espected Steps 1`] = `
+<div>
+  <section
+    class="css-146wbcb-Wrapper exlt3p60"
+  >
+    <div
+      class="css-1cuw54t-Steps"
+    >
+      <h4
+        class="css-1spt5qm"
+      >
+        How it works?
+      </h4>
+      <p
+        class="css-lgb6hf"
+      >
+        Funding has never been easier, all you have to do is follow these three steps.
+      </p>
+    </div>
+    <div
+      class="css-18e384y"
+    >
+      <div
+        class="css-kg0zaz"
+      >
+        <div
+          class="css-hagv3d-VideoThumb-Steps exlt3p62"
+        >
+          <img
+            alt="video placeholder"
+            class="exlt3p61 css-tlqqe1-Background"
+            src="./static/images/demo.jpg"
+          />
+          <button
+            class="exlt3p63 css-1r6221t-PlayButton"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="css-1bm6goi"
+      >
+        <div
+          class="css-1rz7k8q-Steps"
+        >
+          <span
+            class="css-19uslfw-Steps"
+          >
+            <div
+              class="css-1b283uw"
+            >
+              1
+            </div>
+          </span>
+          <div
+            class="css-wnoyok"
+          >
+            <h1
+              class="css-o1639m"
+            >
+              Apply
+            </h1>
+            <p
+              class="css-eanlim"
+            >
+              Fill out an application today with your basic information. Once filled out, submit
+    along with your last 3 months of your business bank statements.
+            </p>
+          </div>
+        </div>
+        <div
+          class="css-nj1osv-Steps"
+        >
+          <span
+            class="css-hfjkk9-Steps"
+          >
+            <div
+              class="css-1b283uw"
+            >
+              2
+            </div>
+          </span>
+          <div
+            class="css-wnoyok"
+          >
+            <h1
+              class="css-o1639m"
+            >
+              Approve
+            </h1>
+            <p
+              class="css-eanlim"
+            >
+              Our underwriting team will review your application and bank statements to develop a
+    solution specific to your business needs. They will then contact you and discuss your
+    offer. Repayments are flexible; there are no personal guarantees and minimal documents
+    required.
+            </p>
+          </div>
+        </div>
+        <div
+          class="css-1tiitih-Steps"
+        >
+          <span
+            class="css-lfc1pm-Steps"
+          >
+            <div
+              class="css-1b283uw"
+            >
+              3
+            </div>
+          </span>
+          <div
+            class="css-wnoyok"
+          >
+            <h1
+              class="css-o1639m"
+            >
+              Get Funded
+            </h1>
+            <p
+              class="css-eanlim"
+            >
+              Once the contract is signed, you will receive your funds in your bank account the same
+    day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`render as espected Testimonials 1`] = `
+<div>
+  <section
+    class="css-1fmlf4e"
+  >
+    <div
+      class="css-sd868u-Testimonials"
+    >
+      <h4
+        class="css-5euxzx"
+      >
+        Better service
+         
+        <span
+          class="css-1i78tal"
+        >
+          starts here
+        </span>
+      </h4>
+      <p
+        class="css-65hcn1"
+      >
+        We have history with various businesses and the experience needed to make your business grow and succeed.
+      </p>
+    </div>
+    <div
+      class="css-13tbvei"
+    >
+      <div
+        class="css-emtes6-Testimonials"
+      >
+        <div
+          class="css-tq5hxx-Wrapper ekq4b2z0"
+        >
+          <img
+            alt="Josephine"
+            class="e1q3hv6b0 css-1ulugdh-Thumbnail"
+            src="./static/images/josephine.jpg"
+          />
+          <div
+            class="css-l4xhlt"
+          >
+            <h6
+              class="css-1i0bpec"
+            >
+              Josephine
+            </h6>
+            <span
+              class="css-7a615i"
+            >
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <p
+            class="css-1wtrivt"
+          >
+            <em>
+              “
+              GLD Funding came in handy when I desperately needed capital for my business expenses. The process was quick
+    and straightforward. You don't need good credit to be approved, which made everything much smoother.
+              ”
+            </em>
+          </p>
+        </div>
+      </div>
+      <div
+        class="css-451exu-Testimonials"
+      >
+        <div
+          class="css-tq5hxx-Wrapper ekq4b2z0"
+        >
+          <img
+            alt="Anas Iqbual"
+            class="e1q3hv6b0 css-1ulugdh-Thumbnail"
+            src="./static/images/anas.jpg"
+          />
+          <div
+            class="css-l4xhlt"
+          >
+            <h6
+              class="css-1i0bpec"
+            >
+              Anas Iqbual
+            </h6>
+            <span
+              class="css-7a615i"
+            >
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <p
+            class="css-1wtrivt"
+          >
+            <em>
+              “
+              I was glad that they were there to help when my business needed them. Overall, a pleasant experience.
+              ”
+            </em>
+          </p>
+        </div>
+      </div>
+      <div
+        class="css-14p65gb-Testimonials"
+      >
+        <div
+          class="css-tq5hxx-Wrapper ekq4b2z0"
+        >
+          <img
+            alt="Allina Joel"
+            class="e1q3hv6b0 css-1ulugdh-Thumbnail"
+            src="./static/images/allina.jpg"
+          />
+          <div
+            class="css-l4xhlt"
+          >
+            <h6
+              class="css-1i0bpec"
+            >
+              Allina Joel
+            </h6>
+            <span
+              class="css-7a615i"
+            >
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <p
+            class="css-1wtrivt"
+          >
+            <em>
+              “
+              The people at GLD Funding are really helpful and attentive. If you need help with your cash advance, they will
+    make sure to have all of your questions answered.
+              ”
+            </em>
+          </p>
+        </div>
+      </div>
+      <div
+        class="css-1126efc-Testimonials"
+      >
+        <div
+          class="css-tq5hxx-Wrapper ekq4b2z0"
+        >
+          <img
+            alt="Albert Chirls"
+            class="e1q3hv6b0 css-1ulugdh-Thumbnail"
+            src="./static/images/albert.jpg"
+          />
+          <div
+            class="css-l4xhlt"
+          >
+            <h6
+              class="css-1i0bpec"
+            >
+              Albert Chirls
+            </h6>
+            <span
+              class="css-7a615i"
+            >
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+              <svg
+                class="css-8x4km5"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <p
+            class="css-1wtrivt"
+          >
+            <em>
+              “
+              Very easy and fair. I've been working with GLD for the past three years now, and I do not have any complaints. I
+    must say they are very cooperative and understanding of your business needs.
+              ”
+            </em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

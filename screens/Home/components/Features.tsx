@@ -5,8 +5,9 @@ import { withTheme } from 'emotion-theming';
 import { Box, Text, Flex } from 'rebass';
 import VisibilitySensor from 'react-visibility-sensor';
 
-import { themeProptypes } from '../theme';
-import { IconTimer, IconCard, IconMoney, IconPaper } from './icons';
+import { themeProptypes } from '../../../theme';
+import { IconCard, IconPaper, IconMoney, IconTimer } from './Icons';
+
 const dash = keyframes`
   0%{
     stroke-dashoffset: 37px;

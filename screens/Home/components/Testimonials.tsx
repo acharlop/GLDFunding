@@ -4,7 +4,7 @@ import { Box, Image, Text, Flex } from 'rebass';
 import VisibilitySensor from 'react-visibility-sensor';
 import { FaStar } from 'react-icons/fa';
 
-import { Card } from './index';
+import { Card } from '../../../components';
 
 const content = [
   {

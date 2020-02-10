@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { Box, Image, Text, Flex } from 'rebass';
 import VisibilitySensor from 'react-visibility-sensor';
 
-import { Button } from '../components';
+import { Button } from '../../../components';
 
 const Wrapper = styled(Image)`
   position: relative;
@@ -20,6 +20,7 @@ const Background = styled(Image)`
 `;
 
 const text = ['An', 'unforgettable', 'experience', 'break', 'Join', 'the', 'community.'];
+
 export const CTA = () => {
   const [animated, setAnimated] = useState(false);
   const [sense, setSensor] = useState(true);
@@ -69,7 +70,7 @@ export const CTA = () => {
               transform: animated ? 'translateX(0px)' : 'translateX(20px)',
             }}
           >
-            <Button width={1} my={1} maxWidth="300px" m="auto" rounded>
+            <Button width={1} my={1} maxWidth="300px" m="auto" rounded href="/contact">
               CONTACT US
             </Button>
             <Text
