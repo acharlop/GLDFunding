@@ -67,43 +67,51 @@ const Open = styled(Box)`
 type NavigationProps = {
   theme: themeProptypes;
   open?: boolean;
-  toggle: (event: React.MouseEvent<HTMLElement>) => void;
+  toggle: (show: boolean) => void;
 };
 
-export const Navigation = withTheme(({ theme, open = false, toggle }: NavigationProps) => (
-  <>
-    <Open onClick={toggle} className="show-md mb-open-btn" color="white">
-      <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
-      <Box width="16px" mb="5px" height="2px" bg="CurrentColor" />
-      <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
-    </Open>
-    <Nav
-      as="nav"
-      mt="14px"
-      alignItems="center"
-      justifyContent="space-between"
-      width={1}
-      open={open}
-      theme={theme}
-      pt={['100px', '25vh', '25vh', '0']}
-    >
-      <Close as={IoIosClose} className="show-md" onClick={toggle} size={40} />
-      <Flex>
-        {mainLinks.map(el => (
-          <Link href={el.href} local key={el.name}>
-            {el.name}
+export const Navigation = withTheme(({ theme, open = false, toggle }: NavigationProps) => {
+  const hide = () => {
+    toggle(false);
+  };
+  const show = () => {
+    toggle(true);
+  };
+  return (
+    <>
+      <Open onClick={show} className="show-md mb-open-btn" color="white">
+        <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
+        <Box width="16px" mb="5px" height="2px" bg="CurrentColor" />
+        <Box width="20px" mb="5px" height="2px" bg="CurrentColor" />
+      </Open>
+      <Nav
+        as="nav"
+        mt="14px"
+        alignItems="center"
+        justifyContent="space-between"
+        width={1}
+        open={open}
+        theme={theme}
+        pt={['100px', '25vh', '25vh', '0']}
+      >
+        <Close as={IoIosClose} className="show-md" onClick={hide} size={40} />
+        <Flex>
+          {mainLinks.map(el => (
+            <Link href={el.href} local key={el.name} onClick={hide}>
+              {el.name}
+            </Link>
+          ))}
+        </Flex>
+        <Flex alignItems={['flex-start', 'flex-start', 'flex-start', 'center']}>
+          <Link href={callLink.href}>{callLink.name}</Link>
+          <Link href={loginLink.name} className="show-md" onClick={hide}>
+            {loginLink.name}
           </Link>
-        ))}
-      </Flex>
-      <Flex alignItems={['flex-start', 'flex-start', 'flex-start', 'center']}>
-        <Link href={callLink.href}>{callLink.name}</Link>
-        <Link href={loginLink.name} className="show-md">
-          {loginLink.name}
-        </Link>
-        <Button rounded href={loginLink.href} ml={3} className="hide-md">
-          {loginLink.name}
-        </Button>
-      </Flex>
-    </Nav>
-  </>
-));
+          <Button rounded href={loginLink.href} ml={3} className="hide-md" onClick={hide}>
+            {loginLink.name}
+          </Button>
+        </Flex>
+      </Nav>
+    </>
+  );
+});

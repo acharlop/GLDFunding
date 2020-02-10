@@ -54,7 +54,7 @@ export const BreadCrumb = ({ title, src }: BreadCrumbProps) => {
         <source srcSet={`./static/images/${src}-800.png`} media="(max-width: 800px)" />
         <Image
           src={`./static/images/${src}-1500.png`}
-          alt="money background"
+          alt={title}
           onLoad={onLoad}
           ref={imageRef}
           css={{

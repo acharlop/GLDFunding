@@ -12,18 +12,26 @@ const TopBar = styled(Box)`
   justify-items: flex-end;
   align-items: center;
   grid-column-gap: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  left: 50%;
+  position: absolute;
   transform: translateX(-50%);
-  z-index: 3;
+  left: 50%;
+  top: 0;
+  z-index: 1;
 `;
 
-const Wrapper = styled(Box)<{ theme: themeProptypes; open: boolean }>`
+const Wrapper = styled(Box)<{ open: boolean }>`
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  ${({ open }) => `
+    overflow-y: ${open ? 'hidden' : 'auto'}
+  `}
+`;
+const Translated = styled(Box)<{ open: boolean; theme: themeProptypes }>`
   height: 100%;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
   ${({ theme, open }) => `
     ${theme.mq[2]}{
       transform: ${open ? 'translate(-500px,0%)' : 'translate(0%,0%)'};
@@ -33,38 +41,38 @@ const Wrapper = styled(Box)<{ theme: themeProptypes; open: boolean }>`
     }
   `}
 `;
-
 export const Layout = withTheme(
   ({ theme, children }: { theme: themeProptypes; children: ReactNode }) => {
     const [open, setOpen] = useState(false);
 
-    const Toggle = () => {
-      setOpen(!open);
+    const Toggle = (show: boolean) => {
+      setOpen(show);
       if (window) {
         window.document.body.style.overflowY = open ? 'auto' : 'hidden';
       }
     };
 
     return (
-      <Wrapper open={open} theme={theme}>
-        <TopBar px={3} pt={2} maxWidth="1700px" open={open} theme={theme}>
-          <Link href="./" local active>
-            <Image
-              src="./static/images/logo-white.svg"
-              alt="GLD Funding logo"
-              maxWidth="100px"
-              alignSelf="flex-start"
-              sx={{
-                justifySelf: 'flex-start',
-              }}
-              css={{ opacity: '1' }}
-            />
-          </Link>
-
-          <Navigation open={open} toggle={Toggle} />
-        </TopBar>
-        <ModalProvider>{children}</ModalProvider>
-        <Footer />
+      <Wrapper open={open}>
+        <Translated open={open} theme={theme}>
+          <TopBar px={3} pt={2} maxWidth="1700px" m="auto" open={open} theme={theme}>
+            <Link href="./" local active>
+              <Image
+                src="./static/images/logo-white.svg"
+                alt="GLD Funding logo"
+                maxWidth="100px"
+                alignSelf="flex-start"
+                sx={{
+                  justifySelf: 'flex-start',
+                }}
+                css={{ opacity: '1' }}
+              />
+            </Link>
+            <Navigation open={open} toggle={Toggle} />
+          </TopBar>
+          <ModalProvider>{children}</ModalProvider>
+          <Footer />
+        </Translated>
       </Wrapper>
     );
   }

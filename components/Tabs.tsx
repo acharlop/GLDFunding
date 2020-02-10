@@ -22,7 +22,6 @@ const Tab = styled(Flex)<TabProps>`
   position: relative;
   cursor: pointer;
   opacity: 0.5;
-  min-height: 35px;
   position: relative;
   z-index: 1;
   letter-spacing: 0.02em;
@@ -62,5 +61,5 @@ export const Tabs = ({ children, active, ...etc }: TabsProps) => {
 };
 
 Tabs.Tab = (props: TabProps) => {
-  return <Tab as="button" type="button" minHeight={['35px', '50px']} {...props} py={1} />;
+  return <Tab as="button" type="button" minHeight={['2.8rem', '50px']} {...props} py={1} />;
 };

@@ -54,7 +54,7 @@ export const Testimonials = () => {
 
   return (
     <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={300}>
-      <Box as="section" py={[5, '5rem']} bg="white">
+      <Box as="section" py={[5, '5rem']}>
         <Box
           m="auto"
           maxWidth="1200px"

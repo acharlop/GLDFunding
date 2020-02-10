@@ -10,15 +10,15 @@ import { steps } from '../../constants';
 const tabs = [
   {
     step: 1,
-    title: 'Contact information',
+    title: 'Contact info',
   },
   {
     step: 2,
-    title: 'Business Needs',
+    title: 'Business info',
   },
   {
     step: 3,
-    title: 'Business information',
+    title: 'Business addr',
   },
 ];
 
@@ -99,9 +99,9 @@ export const Apply = () => {
                     key={el.title}
                     {...getTabProps(i)}
                     color={active > i ? 'white' : 'gray300'}
-                    fontSize={[1, 2]}
+                    fontSize={2}
                   >
-                    {el.step} {el.title}
+                    {el.title}
                   </Tabs.Tab>
                 )
             )}
@@ -158,13 +158,13 @@ export const Apply = () => {
                 borderTop: '1px solid #e6e6e6;',
               }}
             >
-              <Flex width={[1, 1 / 2]} px={1} alignItems="center" className="hide-sm">
+              <Flex width={[1, 1 / 2]} alignItems="center" className="hide-sm">
                 <Text as="p" fontSize={2}>
                   <Box as={GoShield} verticalAlign="middle" mr={1} size={18} /> Your information is
                   always be safe with us.
                 </Text>
               </Flex>
-              <Flex width={[1, 1 / 2]} justifyContent="flex-end" px={1}>
+              <Flex width={[1, 1 / 2]} justifyContent="flex-end">
                 <Button
                   mr={1}
                   variant="outline"
