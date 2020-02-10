@@ -36,7 +36,7 @@ export const MCA = () => {
       <BreadCrumb src="mca" title="What is MCA?" />
       <Box m="auto" maxWidth="1200px" p={2}>
         <Flex flexWrap="wrap" width={1} my={4}>
-          <Flex width={[1, 1, 1 / 2]} flexWrap="wrap" p={2}>
+          <Flex width={[1, 1, 1 / 2]} flexWrap="wrap" p={2} className="hide-sm">
             <Image
               src="./static/images/startup.jpg"
               alt="startup"

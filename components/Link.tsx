@@ -8,6 +8,7 @@ const HL = styled(RBLink)`
   text-decoration: none;
   transition: opacity 300ms;
   letter-spacing: 0.05em;
+  cursor: pointer;
   &:hover {
     opacity: 1;
   }
