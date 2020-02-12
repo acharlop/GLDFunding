@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<div>
+  <label
+    class="hide-sm css-vurnku"
+    for="name"
+  >
+    Name*
+  </label>
+  <input
+    class="css-1lotepu-StyledInput euq90oh0"
+    name="name"
+    placeholder="Name"
+  />
+</div>
+`;

@@ -20,7 +20,7 @@ export type linkProps = Pick<baseProps, Exclude<keyof baseProps, 'css' | 'as'>> 
   children: ReactNode;
 };
 
-export const Link = ({ href, local = false, active = null, children, ...etc }: linkProps) => {
+export const Link = ({ href = '#', local = false, active = null, children, ...etc }: linkProps) => {
   const router = useRouter();
   const act = active === null ? router.pathname === href : active;
   return local ? (

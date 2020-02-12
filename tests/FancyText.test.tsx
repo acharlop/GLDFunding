@@ -19,8 +19,9 @@ describe('rendering', () => {
   test('takes longer word length', () => {
     const { container } = setup({ words });
     const hiddenText = container.querySelector('span') as HTMLSpanElement;
+    const longer = words.sort((a, b) => b.length - a.length)[0];
 
-    expect(hiddenText.textContent).toBe(words[0]);
+    expect(hiddenText.textContent).toBe(longer);
   });
 
   test('renders received words', () => {

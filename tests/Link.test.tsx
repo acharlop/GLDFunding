@@ -1,29 +1,16 @@
 import React from 'react';
 
 import { render } from '../utils/tests';
-import { Link, linkProps } from '../components';
-
-export type componentProps = Pick<linkProps, Exclude<keyof linkProps, 'children'>> & {
-  rounded?: boolean;
-};
+import { Link } from '../components';
 
 const useRouter = jest.spyOn(require('next/router'), 'useRouter');
 
-const setup = (props: componentProps) => {
+describe('rendering', () => {
   useRouter.mockImplementation(() => ({
     pathName: '',
   }));
-  const toggleHandler = jest.fn();
-  const utils = render(<Link {...props}>Hey!</Link>);
-  return {
-    ...utils,
-    toggleHandler,
-  };
-};
-
-describe('rendering', () => {
   test('renders as expected', () => {
-    const { container } = setup({ href: '/test' });
+    const { container } = render(<Link href="/test">Hey!</Link>);
     expect(container).toMatchSnapshot();
   });
 });

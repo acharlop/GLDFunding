@@ -1,5 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`render as espected BreadCrumb 1`] = `
+<div>
+  <header
+    class="css-1lo1gn8-Wrapper eawto5m0"
+  >
+    <picture
+      class="css-1aqn33o-Background eawto5m1"
+    >
+      <source
+        media="(min-width: 800px)"
+        srcset="./static/images/apply-1500.png"
+      />
+      <source
+        media="(max-width: 800px)"
+        srcset="./static/images/apply-800.png"
+      />
+      <img
+        alt="Apply Now"
+        class="css-m7l52u-BreadCrumb"
+        src="./static/images/apply-1500.png"
+      />
+    </picture>
+    <div
+      class="css-17veoyr-BreadCrumb"
+    >
+      <h1
+        class="css-zmrqg7"
+      >
+        Apply Now
+      </h1>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`render as espected Card 1`] = `
+<div>
+  <div
+    class="css-1h26zrb-Wrapper ekq4b2z0"
+  >
+     hi 
+  </div>
+</div>
+`;
+
+exports[`render as espected Carousel 1`] = `
+<div>
+  <div
+    class="react-multi-carousel-list   css-1k780mo-StyledCarousel e132dzpo0"
+  >
+    <ul
+      class="react-multi-carousel-track "
+      style="transition: none; overflow: unset; transform: translate3d(0px,0,0);"
+    />
+  </div>
+</div>
+`;
+
 exports[`render as espected Footer 1`] = `
 <div>
   <div

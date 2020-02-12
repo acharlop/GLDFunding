@@ -5,7 +5,7 @@ import { GoShield } from 'react-icons/go';
 
 import { Layout, BreadCrumb, Card, Button, Tabs, Input } from '../../components';
 import { useTabs } from '../../hooks';
-import { steps } from '../../constants';
+import { steps } from './steps';
 
 const tabs = [
   {
