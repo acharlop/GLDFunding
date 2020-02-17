@@ -1,8 +1,6 @@
-const TEST_REGEX = '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|js?|tsx?|ts?)$';
-
 module.exports = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  testRegex: TEST_REGEX,
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|js?|tsx?|ts?)$',
   transform: {
     '^.+\\.tsx?$': 'babel-jest',
   },
@@ -13,5 +11,4 @@ module.exports = {
       '<rootDir>/__mocks__/fileMock.js',
   },
 };
-
 export {};

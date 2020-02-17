@@ -92,7 +92,7 @@ export const Features = withTheme(({ theme, ...etc }, { theme: themeProptypes })
     }
   };
   return (
-    <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={100}>
+    <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={150}>
       <Box as="section" {...etc}>
         <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
           {content.map((el, i) => (

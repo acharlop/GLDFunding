@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { GoShield } from 'react-icons/go';
 import { Box, Flex, Text } from 'rebass';
 
-import { Layout, Card, Button, BreadCrumb, Input } from '../../components';
+import { Layout, Card, Button, PageTitle, Input } from '../../components';
 import { phoneMask } from '../../constants';
 
 const inputs = [
@@ -44,7 +44,7 @@ export const Contact = () => {
 
   return (
     <Layout>
-      <BreadCrumb src="contact" title="Contact Us" />
+      <PageTitle src="contact" title="Contact Us" />
       <Box
         m="auto"
         maxWidth="1200px"

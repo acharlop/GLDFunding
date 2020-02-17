@@ -8,7 +8,7 @@ exports[`render as espected CTA 1`] = `
     <img
       alt="mountains background"
       class="e110hyro1 css-yfs9x8-Background"
-      src="./static/images/footer-image.jpg"
+      src="./images/footer-image.jpg"
     />
     <div
       class="css-p9192q-CTA"
@@ -321,16 +321,16 @@ exports[`render as espected Header 1`] = `
     >
       <source
         media="(min-width: 800px)"
-        srcset="./static/images/bg-3-1500.png"
+        srcset="./images/bg-3-1500.png"
       />
       <source
         media="(max-width: 800px)"
-        srcset="./static/images/bg-3-800.png"
+        srcset="./images/bg-3-800.png"
       />
       <img
         alt="money background"
         class="css-9taffg"
-        src="./static/images/bg-3-1500.png"
+        src="./images/bg-3-1500.png"
       />
     </picture>
     <div
@@ -606,7 +606,7 @@ exports[`render as espected Steps 1`] = `
           <img
             alt="video placeholder"
             class="exlt3p61 css-tlqqe1-Background"
-            src="./static/images/demo.jpg"
+            src="./images/demo.jpg"
           />
           <button
             class="exlt3p63 css-1r6221t-PlayButton"
@@ -759,7 +759,7 @@ exports[`render as espected Testimonials 1`] = `
           <img
             alt="Josephine"
             class="e1q3hv6b0 css-1ulugdh-Thumbnail"
-            src="./static/images/josephine.jpg"
+            src="./images/josephine.jpg"
           />
           <div
             class="css-l4xhlt"
@@ -865,7 +865,7 @@ exports[`render as espected Testimonials 1`] = `
           <img
             alt="Anas Iqbual"
             class="e1q3hv6b0 css-1ulugdh-Thumbnail"
-            src="./static/images/anas.jpg"
+            src="./images/anas.jpg"
           />
           <div
             class="css-l4xhlt"
@@ -970,7 +970,7 @@ exports[`render as espected Testimonials 1`] = `
           <img
             alt="Allina Joel"
             class="e1q3hv6b0 css-1ulugdh-Thumbnail"
-            src="./static/images/allina.jpg"
+            src="./images/allina.jpg"
           />
           <div
             class="css-l4xhlt"
@@ -1076,7 +1076,7 @@ exports[`render as espected Testimonials 1`] = `
           <img
             alt="Albert Chirls"
             class="e1q3hv6b0 css-1ulugdh-Thumbnail"
-            src="./static/images/albert.jpg"
+            src="./images/albert.jpg"
           />
           <div
             class="css-l4xhlt"

@@ -14,16 +14,16 @@ export default class AppDocument extends Document {
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-title" content="GLD Funding" />
           <meta name="HandheldFriendly" content="True" />
-          <meta name="msapplication-TileImage" content="./static/app-icons/icon-152.png" />
-          <link rel="icon" type="image/png" href="./static/images/favicon.png" />
-          <link rel="icon" sizes="192x192" href="./static/app-icons/icon-192.png" />
-          <link rel="apple-touch-icon" href="./static/app-icons/icon-144.png" />
+          <meta name="msapplication-TileImage" content="./app-icons/icon-152.png" />
+          <link rel="icon" type="image/png" href="./images/favicon.png" />
+          <link rel="icon" sizes="192x192" href="./app-icons/icon-192.png" />
+          <link rel="apple-touch-icon" href="./app-icons/icon-144.png" />
           <meta name="apple-mobile-web-app-status-bar-style" content="#2D323D" />
           <meta name="theme-color" content="#2D323D" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1"
-          ></meta>
+          />
         </Head>
         <body>
           <Main />

@@ -8,24 +8,24 @@ import { Card } from '../../../components';
 
 const content = [
   {
-    photo: './static/images/josephine.jpg',
+    photo: './images/josephine.jpg',
     name: 'Josephine',
     description: `GLD Funding came in handy when I desperately needed capital for my business expenses. The process was quick
     and straightforward. You don't need good credit to be approved, which made everything much smoother.`,
   },
   {
-    photo: './static/images/anas.jpg',
+    photo: './images/anas.jpg',
     name: 'Anas Iqbual',
     description: `I was glad that they were there to help when my business needed them. Overall, a pleasant experience.`,
   },
   {
-    photo: './static/images/allina.jpg',
+    photo: './images/allina.jpg',
     name: 'Allina Joel',
     description: `The people at GLD Funding are really helpful and attentive. If you need help with your cash advance, they will
     make sure to have all of your questions answered.`,
   },
   {
-    photo: './static/images/albert.jpg',
+    photo: './images/albert.jpg',
     name: 'Albert Chirls',
     description: `Very easy and fair. I've been working with GLD for the past three years now, and I do not have any complaints. I
     must say they are very cooperative and understanding of your business needs.`,

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { render } from '../utils/tests';
-import { Footer, Layout, Modal, Card, BreadCrumb, Carousel } from '../components';
+import { Footer, Layout, Modal, Card, PageTitle, Carousel } from '../components';
 
 const useRouter = jest.spyOn(require('next/router'), 'useRouter');
 
@@ -29,8 +29,8 @@ describe('render as espected', () => {
     expect(container).toMatchSnapshot();
   });
 
-  test('BreadCrumb', () => {
-    const { container } = render(<BreadCrumb src="apply" title="Apply Now" />);
+  test('PageTitle', () => {
+    const { container } = render(<PageTitle src="apply" title="Apply Now" />);
     expect(container).toMatchSnapshot();
   });
 

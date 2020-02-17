@@ -1,40 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render as espected BreadCrumb 1`] = `
-<div>
-  <header
-    class="css-1lo1gn8-Wrapper eawto5m0"
-  >
-    <picture
-      class="css-1aqn33o-Background eawto5m1"
-    >
-      <source
-        media="(min-width: 800px)"
-        srcset="./static/images/apply-1500.png"
-      />
-      <source
-        media="(max-width: 800px)"
-        srcset="./static/images/apply-800.png"
-      />
-      <img
-        alt="Apply Now"
-        class="css-m7l52u-BreadCrumb"
-        src="./static/images/apply-1500.png"
-      />
-    </picture>
-    <div
-      class="css-17veoyr-BreadCrumb"
-    >
-      <h1
-        class="css-zmrqg7"
-      >
-        Apply Now
-      </h1>
-    </div>
-  </header>
-</div>
-`;
-
 exports[`render as espected Card 1`] = `
 <div>
   <div
@@ -48,7 +13,7 @@ exports[`render as espected Card 1`] = `
 exports[`render as espected Carousel 1`] = `
 <div>
   <div
-    class="react-multi-carousel-list   css-1k780mo-StyledCarousel e132dzpo0"
+    class="react-multi-carousel-list   css-3s79q5-StyledCarousel e132dzpo0"
   >
     <ul
       class="react-multi-carousel-track "
@@ -72,7 +37,7 @@ exports[`render as espected Footer 1`] = `
         <img
           alt="McAfee SECURE"
           class="css-1ytym9g-Footer"
-          src="./static/images/mcafee.png"
+          src="./images/mcafee.png"
         />
         <a
           class="e1w12k6d0 css-4ntln2-HL-Link"
@@ -275,7 +240,7 @@ exports[`render as espected Layout 1`] = `
           <img
             alt="GLD Funding logo"
             class="css-1efrvlf-Layout"
-            src="./static/images/logo-white.svg"
+            src="./images/logo-white.svg"
           />
         </a>
         <div
@@ -369,7 +334,7 @@ exports[`render as espected Layout 1`] = `
             <img
               alt="McAfee SECURE"
               class="css-1ytym9g-Footer"
-              src="./static/images/mcafee.png"
+              src="./images/mcafee.png"
             />
             <a
               class="e1w12k6d0 css-4ntln2-HL-Link"
@@ -558,3 +523,38 @@ exports[`render as espected Layout 1`] = `
 `;
 
 exports[`render as espected Modal 1`] = `<div />`;
+
+exports[`render as espected PageTitle 1`] = `
+<div>
+  <header
+    class="css-1lo1gn8-Wrapper e12nao7r0"
+  >
+    <picture
+      class="css-1aqn33o-Background e12nao7r1"
+    >
+      <source
+        media="(min-width: 800px)"
+        srcset="./images/apply-1500.png"
+      />
+      <source
+        media="(max-width: 800px)"
+        srcset="./images/apply-800.png"
+      />
+      <img
+        alt="Apply Now"
+        class="css-mjo4tf-PageTitle"
+        src="./images/apply-1500.png"
+      />
+    </picture>
+    <div
+      class="css-1j07g2g-PageTitle"
+    >
+      <h1
+        class="css-zmrqg7"
+      >
+        Apply Now
+      </h1>
+    </div>
+  </header>
+</div>
+`;

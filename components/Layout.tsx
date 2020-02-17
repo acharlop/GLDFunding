@@ -58,7 +58,7 @@ export const Layout = withTheme(
           <TopBar px={3} pt={2} maxWidth="1700px" m="auto" open={open} theme={theme}>
             <Link href="./" local active>
               <Image
-                src="./static/images/logo-white.svg"
+                src="./images/logo-white.svg"
                 alt="GLD Funding logo"
                 maxWidth="100px"
                 alignSelf="flex-start"

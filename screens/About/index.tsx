@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Box, Flex, Text } from 'rebass';
 import { AiOutlineExperiment, AiOutlineSmile, AiOutlineCrown } from 'react-icons/ai';
 
-import { Layout, BreadCrumb } from '../../components';
+import { Layout, PageTitle } from '../../components';
 
 const features = [
   {
@@ -30,7 +30,7 @@ export const About = () => {
   }, []);
   return (
     <Layout>
-      <BreadCrumb src="about" title="About us" />
+      <PageTitle src="about" title="About us" />
       <Box
         m="auto"
         maxWidth="1200px"

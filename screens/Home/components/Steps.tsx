@@ -133,7 +133,7 @@ export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => {
                 transform: animated ? 'scale(1)' : 'scale(0.95)',
               }}
             >
-              <Background src="./static/images/demo.jpg" alt="video placeholder" />
+              <Background src="./images/demo.jpg" alt="video placeholder" />
               <PlayButton width={8} height={8}>
                 <FaPlay />
               </PlayButton>

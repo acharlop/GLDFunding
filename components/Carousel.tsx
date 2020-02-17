@@ -1,8 +1,8 @@
 import Carousel from 'react-multi-carousel';
-import { CarouselProps } from 'react-multi-carousel/lib/types';
+import { CarouselProps, ResponsiveType } from 'react-multi-carousel/lib/types';
 import styled from '@emotion/styled';
 
-const StyledCarousel = styled(Carousel)`
+const StyledCarousel = styled(Carousel)<CarouselProps>`
   overflow: hidden;
   position: relative;
   .react-multi-carousel-track {
@@ -11,16 +11,16 @@ const StyledCarousel = styled(Carousel)`
     margin: 0;
     display: flex;
     position: relative;
-    will-change: transform, transition;
     height: 100%;
-    width: ${(props: CarouselProps) => props.children.length * 100}%;
+    will-change: transform, transition;
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 0s!important;
+    width: ${({children}) => children.length * 100}%;
   }
 
   .react-multiple-carousel__arrow {
     position: absolute;
-    outline: 0;
-    transition: all 0.5s;
-    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1000;
     border: 0;
     width: 2.3rem;
@@ -29,6 +29,8 @@ const StyledCarousel = styled(Carousel)`
     display: flex;
     align-items: center;
     justify-content: center;
+    color: currentColor;
+    cursor: pointer;
   }
 
   .react-multiple-carousel__arrow::before {
@@ -55,12 +57,15 @@ const StyledCarousel = styled(Carousel)`
   }
 
   .react-multi-carousel-dot-list {
+    position: absolute;
+    bottom: 0.8rem;
+    width: 100%;
     display: flex;
-    padding: 0;
+    padding:0;
     margin: 0;
     list-style: none;
     text-align: center;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .react-multi-carousel-dot button {
@@ -72,7 +77,7 @@ const StyledCarousel = styled(Carousel)`
     padding: 0;
     opacity: 0.5;
     border: none;
-    background: white;
+    background: currentColor;
     cursor: pointer;
   }
 
@@ -96,4 +101,26 @@ const StyledCarousel = styled(Carousel)`
   }
 `;
 
-export { StyledCarousel as Carousel };
+
+type newProps = Pick<CarouselProps, Exclude<keyof CarouselProps, 'responsive' | 'as'>> & {
+  responsive?: ResponsiveType;
+};
+
+
+const Component = ({responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+    partialVisibilityGutter: 40,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    partialVisibilityGutter: 30,
+  },
+}, children, ...etc}: newProps)=> {
+return (<StyledCarousel responsive= {responsive} {...etc}>{children}</StyledCarousel>)
+
+}
+
+export { Component as Carousel };

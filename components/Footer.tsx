@@ -53,7 +53,7 @@ export const Footer = (props: any) => (
         justifyContent={['unset', 'unset', 'center', 'unset']}
       >
         <Image
-          src="./static/images/mcafee.png"
+          src="./images/mcafee.png"
           alt="McAfee SECURE"
           maxHeight="32px"
           css={{

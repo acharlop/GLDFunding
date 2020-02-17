@@ -34,7 +34,7 @@ export const CTA = () => {
   return (
     <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={100}>
       <Wrapper as="section">
-        <Background src="./static/images/footer-image.jpg" alt="mountains background" />
+        <Background src="./images/footer-image.jpg" alt="mountains background" />
         <Flex
           flexWrap="wrap"
           m="auto"

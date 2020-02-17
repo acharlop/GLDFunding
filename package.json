@@ -20,7 +20,8 @@
     "test:watch": "jest --watch",
     "heroku-postbuild": "npm run build",
     "type-check-watch": "tsc -p ./ --watch",
-    "type-check": "tsc -p ./"
+    "type-check": "tsc -p ./",
+    "storybook": "start-storybook -s ./public -p 9001"
   },
   "husky": {
     "hooks": {
@@ -32,7 +33,11 @@
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
     "@next/bundle-analyzer": "^9.2.1",
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-links": "^5.3.13",
+    "@storybook/react": "^5.3.13",
     "axios": "^0.19.0",
+    "babel-preset-react-app": "^9.1.1",
     "emotion-normalize": "^10.1.0",
     "emotion-theming": "^10.0.27",
     "i": "^0.3.6",

@@ -69,7 +69,7 @@ $ npm run test:watch
   - global styles
   - space
   - typography
-- static/
+- public/
   - app icons
   - fonts
   - images
@@ -78,5 +78,4 @@ $ npm run test:watch
 
 ### Todo:
 
-- Add storybook and stories.
 - Add enviroments config.

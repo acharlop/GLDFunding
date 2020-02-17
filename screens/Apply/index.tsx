@@ -3,7 +3,7 @@ import { Box, Flex, Text } from 'rebass';
 import { IoMdArrowForward, IoMdArrowBack } from 'react-icons/io';
 import { GoShield } from 'react-icons/go';
 
-import { Layout, BreadCrumb, Card, Button, Tabs, Input } from '../../components';
+import { Layout, PageTitle, Card, Button, Tabs, Input } from '../../components';
 import { useTabs } from '../../hooks';
 import { steps } from './steps';
 
@@ -70,7 +70,7 @@ export const Apply = () => {
 
   return (
     <Layout>
-      <BreadCrumb src="apply" title="Apply Now" />
+      <PageTitle src="apply" title="Apply Now" />
       <Box
         m="auto"
         maxWidth="1200px"

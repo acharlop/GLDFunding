@@ -8,7 +8,7 @@ export * from './Navigation';
 export * from './Carousel';
 export * from './Footer';
 export * from './Card';
-export * from './Breadcrumb';
+export * from './PageTitle';
 export * from './Link';
 export * from './Tabs';
 export * from './Input';

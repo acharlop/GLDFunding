@@ -4,7 +4,7 @@ const SEO = {
   openGraph: {
     type: 'page',
     url: 'https://gld-funding.herokuapp.com/',
-    image: 'https://gld-funding.herokuapp.com/static/images/favicon.png',
+    image: 'https://gld-funding.herokuapp.com/public/images/favicon.png',
     title: 'GLD Funding',
     description: 'desc',
   },

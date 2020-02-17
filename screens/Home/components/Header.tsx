@@ -77,10 +77,10 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
           transform: animated ? 'scale(1)' : 'scale(1.05)',
         }}
       >
-        <source srcSet="./static/images/bg-3-1500.png" media="(min-width: 800px)" />
-        <source srcSet="./static/images/bg-3-800.png" media="(max-width: 800px)" />
+        <source srcSet="./images/bg-3-1500.png" media="(min-width: 800px)" />
+        <source srcSet="./images/bg-3-800.png" media="(max-width: 800px)" />
         <Image
-          src="./static/images/bg-3-1500.png"
+          src="./images/bg-3-1500.png"
           alt="money background"
           onLoad={onLoad}
           ref={imageRef}

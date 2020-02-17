@@ -22,12 +22,12 @@ const Background = styled(Box)`
     filter: brightness(0.5);
   }
 `;
-export type BreadCrumbProps = {
+export type PageTitleProps = {
   src: string;
   title: string;
 };
 
-export const BreadCrumb = ({ title, src }: BreadCrumbProps) => {
+export const PageTitle = ({ title, src }: PageTitleProps) => {
   const [animated, setAnimated] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const imageRef = useRef<HTMLImageElement>(null);
@@ -53,10 +53,10 @@ export const BreadCrumb = ({ title, src }: BreadCrumbProps) => {
       bg="gray800"
     >
       <Background as="picture">
-        <source srcSet={`./static/images/${src}-1500.png`} media="(min-width: 800px)" />
-        <source srcSet={`./static/images/${src}-800.png`} media="(max-width: 800px)" />
+        <source srcSet={`./images/${src}-1500.png`} media="(min-width: 800px)" />
+        <source srcSet={`./images/${src}-800.png`} media="(max-width: 800px)" />
         <Image
-          src={`./static/images/${src}-1500.png`}
+          src={`./images/${src}-1500.png`}
           alt={title}
           onLoad={onLoad}
           ref={imageRef}
