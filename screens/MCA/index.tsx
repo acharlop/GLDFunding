@@ -38,7 +38,7 @@ export const MCA = () => {
         <Flex flexWrap="wrap" width={1} my={4}>
           <Flex width={[1, 1, 1 / 2]} flexWrap="wrap" p={2} className="hide-sm">
             <Image
-              src="./images/startup.jpg"
+              src="./images/startup.png"
               alt="startup"
               width={1}
               css={{
