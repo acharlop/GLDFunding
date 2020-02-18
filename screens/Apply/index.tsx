@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Flex, Text } from 'rebass';
+import { useRouter } from 'next/router';
 import { IoMdArrowForward, IoMdArrowBack } from 'react-icons/io';
 import { GoShield } from 'react-icons/go';
 
@@ -32,10 +33,13 @@ const columnProps = {
   flexDirection: 'column' as 'column',
 };
 export const Apply = () => {
+  const router = useRouter();
   const { getTabProps, active, getTabListProps, selectTab } = useTabs();
-  const [data, setData] = useState<{ [key: string]: number | string }>({});
   const [completed, setCompleted] = useState<{ [key: string]: boolean }>({});
   const [animated, setAnimated] = useState(false);
+  const [data, setData] = useState<{ [key: string]: number | string | undefined }>({
+    amount: (router.query.amount as string) || undefined,
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,10 +52,9 @@ export const Apply = () => {
       selectTab(active + 1);
     }
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    let newData: { [key: string]: number | string } = {
+    let newData: { [key: string]: number | string | undefined } = {
       ...data,
     };
     newData[name] = value;

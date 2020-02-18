@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import styled from '@emotion/styled';
 import { Box, Image, Text, Flex } from 'rebass';
 import { withTheme } from 'emotion-theming';
 import { IoMdArrowForward as Arrow } from 'react-icons/io';
-import MaskedInput from 'react-text-mask';
 
 import { Button, FancyText, Input } from '../../../components';
 import { themeProptypes } from '../../../theme';
-import { currencyMask } from '../../../constants';
+import { currencyMask, applyLink } from '../../../constants';
 
 const Wrapper = styled(Flex)`
   height: 89vh;
@@ -54,7 +54,25 @@ const Form = styled(Flex)`
 
 export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
   const [animated, setAnimated] = useState(false);
+  const [amount, setAmount] = useState<string | undefined>(undefined);
   const imageRef = useRef<HTMLImageElement>(null);
+  const router = useRouter();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!!amount) {
+      router.push(
+        {
+          pathname: applyLink.href,
+          query: { amount },
+        },
+        applyLink.href,
+        {
+          getInitialProps: true,
+        }
+      );
+    }
+  };
 
   const onLoad = () => {
     setAnimated(true);
@@ -65,6 +83,10 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
       setAnimated(true);
     }
   }, []);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setAmount(e.target.value);
+  };
 
   return (
     <Wrapper as="header" alignItems="center" justifyContent="center" p={3} pt="7rem">
@@ -79,12 +101,7 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
       >
         <source srcSet="./images/bg-3-1500.png" media="(min-width: 800px)" />
         <source srcSet="./images/bg-3-800.png" media="(max-width: 800px)" />
-        <Image
-          src="./images/bg-3-1500.png"
-          alt="money background"
-          onLoad={onLoad}
-          ref={imageRef}
-        />
+        <Image src="./images/bg-3-1500.png" alt="money background" onLoad={onLoad} ref={imageRef} />
       </Background>
       <Flex
         maxWidth={theme.breakpoints[3]}
@@ -106,13 +123,15 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
           We&apos;ll Help Your Business {` `}
           <FancyText words={['Succeed', 'Grow']} animate={animated} />
         </Text>
-        <Form as="form" mt={[3, 8]} fontSize={[2, 3]}>
+        <Form as="form" mt={[3, 8]} fontSize={[2, 3]} onSubmit={handleSubmit}>
           <Input
             placeholder="Requested Amount"
             tag="masked"
             inputMode="numeric"
             name="amount"
             mask={currencyMask()}
+            value={amount}
+            onChange={handleChange}
           />
           <Button>
             Apply
