@@ -40,9 +40,10 @@ export const MCA = () => {
             <Image
               src="./images/startup.png"
               alt="startup"
+              height="367px"
               width={1}
               css={{
-                height: 'auto',
+                objectFit: 'cover',
                 borderRadius: '8px',
                 boxShadow: '0 8px 50px rgba(22,39,47,0.2)',
                 transition: `opacity 600ms cubic-bezier(0.4, 0, 0.2, 1),
