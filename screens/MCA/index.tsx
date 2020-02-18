@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Box, Flex, Text, Image } from 'rebass';
 import { AiOutlineCheck, AiOutlineAudit, AiOutlineUsergroupAdd } from 'react-icons/ai';
 import { MdAttachMoney } from 'react-icons/md';
@@ -26,9 +26,18 @@ const features = [
 ];
 export const MCA = () => {
   const [animated, setAnimated] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  const onLoad = () => {
+    setLoaded(true);
+  };
 
   useEffect(() => {
     setAnimated(true);
+    if (imageRef.current && imageRef.current.complete) {
+      setLoaded(true);
+    }
   }, []);
 
   return (
@@ -41,6 +50,7 @@ export const MCA = () => {
               src="./images/startup.png"
               alt="startup"
               height="367px"
+              ref={imageRef}
               width={1}
               css={{
                 objectFit: 'cover',
@@ -49,8 +59,8 @@ export const MCA = () => {
                 transition: `opacity 600ms cubic-bezier(0.4, 0, 0.2, 1),
                   transform 600ms cubic-bezier(0.4, 0, 0.2, 1)
                   `,
-                opacity: animated ? '1' : '0',
-                transform: animated ? 'scale(1)' : 'scale(0.95)',
+                opacity: loaded ? '1' : '0',
+                transform: loaded ? 'scale(1)' : 'scale(0.95)',
               }}
             />
           </Flex>
