@@ -51,6 +51,7 @@ export const MCA = () => {
               alt="startup"
               height="367px"
               ref={imageRef}
+              onLoad={onLoad}
               width={1}
               css={{
                 objectFit: 'cover',
