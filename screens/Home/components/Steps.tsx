@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import { Box, Image, Text, Flex } from 'rebass';
+import { Box, Text, Flex } from 'rebass';
 import { withTheme } from 'emotion-theming';
 import { FaPlay } from 'react-icons/fa';
 import VisibilitySensor from 'react-visibility-sensor';
+import ReactPlayer from 'react-player';
 
 import { themeProptypes } from '../../../theme';
 import { Button } from '../../../components';
@@ -18,15 +19,6 @@ const Wrapper = styled(Box)<{ theme: themeProptypes }>`
   `}
 `;
 
-const Background = styled(Image)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;
-
 const VideoThumb = styled(Box)<{ theme: themeProptypes }>`
   position: relative;
   width: 100%;
@@ -35,7 +27,8 @@ const VideoThumb = styled(Box)<{ theme: themeProptypes }>`
   overflow: hidden;
   width: 40vw;
   margin-left: -15vw;
-  padding-top: 80%;
+  padding-top: 72%;
+  cursor: pointer;
   ${({ theme }) => `
     ${theme.mq[2]}{
       padding-top: 55%;
@@ -43,6 +36,19 @@ const VideoThumb = styled(Box)<{ theme: themeProptypes }>`
       width: calc(100% - 2rem);
     }
   `}
+  & > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  & video {
+    object-fit: cover;
+  }
+  &:hover button {
+    background-position: 100% 0%;
+  }
 `;
 
 const PlayButton = styled(Button)`
@@ -53,6 +59,7 @@ const PlayButton = styled(Button)`
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  pointer-events: none;
 `;
 
 const content = [
@@ -80,6 +87,7 @@ const content = [
 export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => {
   const [animated, setAnimated] = useState(false);
   const [sense, setSensor] = useState(true);
+  const [playing, setPlaying] = useState(false);
 
   const onView = (inView: boolean) => {
     if (sense && inView && !animated) {
@@ -93,7 +101,7 @@ export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => {
       <Wrapper as="section" py={[5, '5rem']} theme={theme}>
         <Box
           m="auto"
-          maxWidth="1200px"
+          className="container"
           p={2}
           css={{
             transition: `opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -123,7 +131,7 @@ export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => {
             Funding has never been easier, all you have to do is follow these three steps.
           </Text>
         </Box>
-        <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
+        <Flex flexWrap="wrap" m="auto" className="container">
           <Flex width={[1, 1, 1, 1 / 2]} alignItems="center">
             <VideoThumb
               theme={theme}
@@ -133,10 +141,22 @@ export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => {
                 transform: animated ? 'scale(1)' : 'scale(0.95)',
               }}
             >
-              <Background src="./images/demo.jpg" alt="video placeholder" />
-              <PlayButton width={8} height={8}>
-                <FaPlay />
-              </PlayButton>
+              <ReactPlayer
+                url="./videos/description.mp4"
+                onPlay={() => {
+                  setPlaying(true);
+                }}
+                onPause={() => {
+                  setPlaying(false);
+                }}
+                controls
+              />
+
+              {!playing && (
+                <PlayButton width={8} height={8}>
+                  <FaPlay />
+                </PlayButton>
+              )}
             </VideoThumb>
           </Flex>
           <Flex flexWrap="wrap" width={[1, 1, 1, 1 / 2, 1 / 2]}>

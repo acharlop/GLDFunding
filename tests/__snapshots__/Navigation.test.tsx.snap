@@ -33,25 +33,25 @@ exports[`rendering renders as expected 1`] = `
       />
     </svg>
     <div
-      class="css-4cffwv"
+      class="css-1b1ax9f"
     >
       <a
-        class="e1w12k6d0 css-qs4vov-HL-Link"
+        class="e1w12k6d0 css-15j1a9z-HL"
       >
         About us
       </a>
       <a
-        class="e1w12k6d0 css-qs4vov-HL-Link"
+        class="e1w12k6d0 css-15j1a9z-HL"
       >
         What is MCA?
       </a>
       <a
-        class="e1w12k6d0 css-qs4vov-HL-Link"
+        class="e1w12k6d0 css-15j1a9z-HL"
       >
         Apply Now
       </a>
       <a
-        class="e1w12k6d0 css-qs4vov-HL-Link"
+        class="e1w12k6d0 css-15j1a9z-HL"
       >
         Contact Us
       </a>
@@ -60,13 +60,13 @@ exports[`rendering renders as expected 1`] = `
       class="css-wx9xxs"
     >
       <a
-        class="e1w12k6d0 css-qs4vov-HL-Link"
+        class="e1w12k6d0 css-15j1a9z-HL"
         href="tel:1(877)498-4344"
       >
         Call Now 1 (877) 498-4344
       </a>
       <a
-        class="show-md e1w12k6d0 css-qs4vov-HL-Link"
+        class="show-md e1w12k6d0 css-15j1a9z-HL"
         href="Login"
       >
         Login

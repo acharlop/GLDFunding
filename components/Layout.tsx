@@ -4,7 +4,8 @@ import { withTheme } from 'emotion-theming';
 import { Box, Image } from 'rebass';
 
 import { themeProptypes } from '../theme';
-import { ModalProvider, Navigation, Footer, Link, HelpModal } from './';
+import { Navigation, Footer, Link } from './';
+import { ModalProvider } from '../context';
 
 const TopBar = styled(Box)`
   display: grid;
@@ -57,7 +58,7 @@ export const Layout = withTheme(
         <Wrapper open={open}>
           <Translated open={open} theme={theme}>
             <TopBar px={3} pt={2} maxWidth="1700px" m="auto" open={open} theme={theme}>
-              <Link href="./" local active>
+              <Link href="./" local css={{ opacity: 1 }}>
                 <Image
                   src="./images/logo-white.svg"
                   alt="GLD Funding logo"
@@ -74,7 +75,6 @@ export const Layout = withTheme(
             {children}
             <Footer />
           </Translated>
-          <HelpModal />
         </Wrapper>
       </ModalProvider>
     );

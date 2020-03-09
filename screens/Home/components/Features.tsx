@@ -19,7 +19,6 @@ const dash = keyframes`
 
 const Icon = styled(Box)<{ theme: themeProptypes }>`
   box-shadow: 0 17px 30px rgba(0, 0, 0, 0.07);
-  transition: background-position 300ms;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -27,13 +26,19 @@ const Icon = styled(Box)<{ theme: themeProptypes }>`
   overflow: hidden;
   position: relative;
   cursor: pointer;
+
   ${({ theme }) => `
-  background: ${theme.colors.blue500};
-  color: ${theme.colors.white300};
+  background: linear-gradient(
+    to left,
+    ${theme.colors.blue200} 0%,
+    ${theme.colors.green500} 100%
+  );
+  color: ${theme.colors.blue500};
 `}
 
   & svg {
     stroke-dasharray: 36px, 38px;
+    transition: opacity 300ms;
     stroke: CurrentColor;
     fill: none;
     stroke-width: 0.52917;
@@ -42,13 +47,24 @@ const Icon = styled(Box)<{ theme: themeProptypes }>`
     paint-order: markers fill stroke;
     z-index: 4;
     stroke-dashoffset: 0px;
+    opacity: 0.5;
   }
 
-  &:hover {
-    color: white;
-    & svg {
-      animation: ${dash} 450ms linear 0s 1 alternate;
-    }
+  &:hover svg {
+    opacity: 1;
+    animation: ${dash} 450ms linear 0s 1 alternate;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 50%;
   }
 `;
 
@@ -59,22 +75,22 @@ const svgProps = {
 };
 const content = [
   {
-    title: 'Quick approval rates',
+    title: 'QUICK APROVAL RATES',
     description: 'Funding is now faster and simpler than ever.',
     icon: <IconTimer {...svgProps} />,
   },
   {
-    title: 'Flexible payment plans',
+    title: 'FLEXIBLE PAYMENT PLANS',
     description: 'We give you ultimate payment flexibility.',
     icon: <IconMoney {...svgProps} />,
   },
   {
-    title: 'No credit score required',
+    title: 'NO CREDIT SCORE REQUIRED',
     description: 'Support, makes your experience faster and more accurate than ever.',
     icon: <IconCard {...svgProps} />,
   },
   {
-    title: 'Minimal Paperwork',
+    title: 'MINIMAL PAPEWORK',
     description:
       'Tools are beyond the one-click install, async tech merges with ultimate flexibility.',
     icon: <IconPaper {...svgProps} />,
@@ -94,20 +110,14 @@ export const Features = withTheme(({ theme, ...etc }, { theme: themeProptypes })
   return (
     <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={150}>
       <Box as="section" {...etc}>
-        <Flex flexWrap="wrap" m="auto" maxWidth="1200px">
+        <Flex flexWrap="wrap" m="auto" maxWidth="1400px" py={2}>
           {content.map((el, i) => (
-            <Box
-              key={el.title}
-              mt={['-50px', '-50px', '-75px']}
-              width={[1 / 2, 1 / 4]}
-              mb={[2, 2, 0]}
-              p={2}
-            >
+            <Box key={el.title} width={[1 / 2, 1 / 4]} p={2}>
               <Icon
                 width={['70px', '70px', '150px']}
                 height={['70px', '70px', '150px']}
                 bg="white"
-                mb={2}
+                mb={4}
                 mx="auto"
                 theme={theme}
               >
@@ -118,7 +128,7 @@ export const Features = withTheme(({ theme, ...etc }, { theme: themeProptypes })
                 color="gray500"
                 fontFamily="heading"
                 width={1}
-                fontSize={[2, 2, 3]}
+                fontSize={[2, 2, '1.3rem']}
                 textAlign="center"
               >
                 {el.title}
@@ -127,7 +137,6 @@ export const Features = withTheme(({ theme, ...etc }, { theme: themeProptypes })
                 fontSize={[1, 1, 2]}
                 mt={1}
                 width={1}
-                mb={3}
                 textAlign="center"
                 css={{
                   transition: `opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0.${i * 2}s,

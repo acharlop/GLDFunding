@@ -8,18 +8,18 @@ import { phoneMask } from '../../constants';
 const inputs = [
   {
     label: 'Name*',
-    placeholder: 'Name',
+    placeholder: 'Eg. John Smith ',
     name: 'name',
   },
   {
     label: 'Email*',
-    placeholder: 'Email',
+    placeholder: 'Eg. joahsmith@gmail.com',
     name: 'email',
     type: 'email',
   },
   {
     label: 'Mobile No.*',
-    placeholder: 'Mobile No.',
+    placeholder: '(123) 456-7890',
     name: 'phone',
     tag: 'masked',
     mask: phoneMask,
@@ -47,7 +47,7 @@ export const Contact = () => {
       <PageTitle src="contact" title="Contact Us" />
       <Box
         m="auto"
-        maxWidth="1200px"
+        className="container"
         p={2}
         css={{
           transition: `opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -83,7 +83,7 @@ export const Contact = () => {
                   tag="textarea"
                   name="message"
                   label="Message*"
-                  placeholder="Message"
+                  placeholder="Eg. I would like to know more about your services..."
                   css={{ flexGrow: 1 }}
                   {...fieldProps}
                 />

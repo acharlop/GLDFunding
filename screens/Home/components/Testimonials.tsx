@@ -54,18 +54,17 @@ export const Testimonials = () => {
 
   return (
     <VisibilitySensor onChange={onView} active={sense} partialVisibility minTopValue={300}>
-      <Box as="section" py={[5, '5rem']}>
-        <Box
-          m="auto"
-          maxWidth="1200px"
-          p={2}
-          css={{
-            transition: `opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+      <Box
+        as="section"
+        py={[5, '5rem']}
+        css={{
+          transition: `opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
             transform 300ms cubic-bezier(0.4, 0, 0.2, 1) `,
-            opacity: animated ? '1' : '0',
-            transform: animated ? 'translateX(0px)' : 'translateX(20px)',
-          }}
-        >
+          opacity: animated ? '1' : '0',
+          transform: animated ? 'translateX(0px)' : 'translateX(20px)',
+        }}
+      >
+        <Box m="auto" className="container" p={2}>
           <Text
             as="h4"
             textAlign="center"
@@ -74,9 +73,9 @@ export const Testimonials = () => {
             color="gray300"
             mb={2}
           >
-            Better service{` `}
+            WE’RE HERE TO{` `}
             <Text as="span" color="blue500">
-              starts here
+              HELP!
             </Text>
           </Text>
           <Text as="p" fontSize={[2, 3]} textAlign="center" maxWidth="800px" m="auto">
@@ -85,22 +84,9 @@ export const Testimonials = () => {
           </Text>
         </Box>
 
-        <Flex flexWrap="wrap" m="auto" maxWidth="1200px" p={2} mt={5}>
+        <Flex flexWrap="wrap" m="auto" className="container" p={2} mt={5}>
           {content.map((el, i) => (
-            <Box
-              key={el.name}
-              width={[1, 1 / 2]}
-              py={5}
-              pl={[4, 5]}
-              pr={[2, 5]}
-              css={{
-                transition: `opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 0.${i * 2}s,
-                transform 600ms cubic-bezier(0.4, 0, 0.2, 1) 0.${i * 2}s
-                `,
-                opacity: animated ? '1' : '0',
-                transform: animated ? 'scale(1)' : 'scale(0.95)',
-              }}
-            >
+            <Box key={el.name} width={[1, 1 / 2]} py={5} pl={[4, 5]} pr={[2, 5]}>
               <Card width={1} height="100%" p={[3, 5]}>
                 <Thumbnail
                   alt={el.name}

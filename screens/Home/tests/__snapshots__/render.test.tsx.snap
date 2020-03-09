@@ -11,7 +11,7 @@ exports[`render as espected CTA 1`] = `
       src="./images/footer-image.jpg"
     />
     <div
-      class="css-p9192q-CTA"
+      class="container css-sx5xsl-CTA"
     >
       <div
         class="css-upiiru"
@@ -59,7 +59,7 @@ exports[`render as espected CTA 1`] = `
           class="css-5ywtia"
           href="/contact"
         >
-          CONTACT US
+          Contact Us
         </a>
         <p
           class="css-1amv1r1"
@@ -80,13 +80,13 @@ exports[`render as espected Features 1`] = `
     class="css-vurnku"
   >
     <div
-      class="css-18e384y"
+      class="css-1najfow"
     >
       <div
-        class="css-ji8rb1"
+        class="css-8npsg8"
       >
         <div
-          class="css-b5a0c7-Icon eayq4bs0"
+          class="css-1998aui-Icon eayq4bs0"
         >
           <svg
             class="css-vmdvmf"
@@ -145,21 +145,21 @@ exports[`render as espected Features 1`] = `
           </svg>
         </div>
         <h4
-          class="css-1yu3as5"
+          class="css-p7am81"
         >
-          Quick approval rates
+          QUICK APROVAL RATES
         </h4>
         <div
-          class="css-qy4rcz-Features"
+          class="css-1tiirty-Features"
         >
           Funding is now faster and simpler than ever.
         </div>
       </div>
       <div
-        class="css-ji8rb1"
+        class="css-8npsg8"
       >
         <div
-          class="css-b5a0c7-Icon eayq4bs0"
+          class="css-1998aui-Icon eayq4bs0"
         >
           <svg
             class="css-vmdvmf"
@@ -189,21 +189,21 @@ exports[`render as espected Features 1`] = `
           </svg>
         </div>
         <h4
-          class="css-1yu3as5"
+          class="css-p7am81"
         >
-          Flexible payment plans
+          FLEXIBLE PAYMENT PLANS
         </h4>
         <div
-          class="css-12m7cj9-Features"
+          class="css-1uujl1a-Features"
         >
           We give you ultimate payment flexibility.
         </div>
       </div>
       <div
-        class="css-ji8rb1"
+        class="css-8npsg8"
       >
         <div
-          class="css-b5a0c7-Icon eayq4bs0"
+          class="css-1998aui-Icon eayq4bs0"
         >
           <svg
             class="css-vmdvmf"
@@ -246,21 +246,21 @@ exports[`render as espected Features 1`] = `
           </svg>
         </div>
         <h4
-          class="css-1yu3as5"
+          class="css-p7am81"
         >
-          No credit score required
+          NO CREDIT SCORE REQUIRED
         </h4>
         <div
-          class="css-10wyfao-Features"
+          class="css-1qj35ak-Features"
         >
           Support, makes your experience faster and more accurate than ever.
         </div>
       </div>
       <div
-        class="css-ji8rb1"
+        class="css-8npsg8"
       >
         <div
-          class="css-b5a0c7-Icon eayq4bs0"
+          class="css-1998aui-Icon eayq4bs0"
         >
           <svg
             class="css-vmdvmf"
@@ -296,12 +296,12 @@ exports[`render as espected Features 1`] = `
           </svg>
         </div>
         <h4
-          class="css-1yu3as5"
+          class="css-p7am81"
         >
-          Minimal Paperwork
+          MINIMAL PAPEWORK
         </h4>
         <div
-          class="css-szy68y-Features"
+          class="css-1ehr10y-Features"
         >
           Tools are beyond the one-click install, async tech merges with ultimate flexibility.
         </div>
@@ -581,7 +581,7 @@ exports[`render as espected Steps 1`] = `
     class="css-146wbcb-Wrapper exlt3p60"
   >
     <div
-      class="css-1cuw54t-Steps"
+      class="container css-1pzxqr6-Steps"
     >
       <h4
         class="css-1spt5qm"
@@ -595,21 +595,26 @@ exports[`render as espected Steps 1`] = `
       </p>
     </div>
     <div
-      class="css-18e384y"
+      class="container css-n3b2sn"
     >
       <div
         class="css-kg0zaz"
       >
         <div
-          class="css-hagv3d-VideoThumb-Steps exlt3p62"
+          class="css-shgqeg-VideoThumb-Steps exlt3p61"
         >
-          <img
-            alt="video placeholder"
-            class="exlt3p61 css-tlqqe1-Background"
-            src="./images/demo.jpg"
-          />
+          <div
+            style="width: 640px; height: 360px;"
+          >
+            <video
+              controls=""
+              preload="auto"
+              src="./videos/description.mp4"
+              style="width: 100%; height: 100%;"
+            />
+          </div>
           <button
-            class="exlt3p63 css-1r6221t-PlayButton"
+            class="exlt3p62 css-hgfq9k-PlayButton"
           >
             <svg
               fill="currentColor"
@@ -725,20 +730,20 @@ exports[`render as espected Steps 1`] = `
 exports[`render as espected Testimonials 1`] = `
 <div>
   <section
-    class="css-1fmlf4e"
+    class="css-16knvf3-Testimonials"
   >
     <div
-      class="css-sd868u-Testimonials"
+      class="container css-tdrm9e"
     >
       <h4
         class="css-5euxzx"
       >
-        Better service
+        WE’RE HERE TO
          
         <span
           class="css-1i78tal"
         >
-          starts here
+          HELP!
         </span>
       </h4>
       <p
@@ -748,10 +753,10 @@ exports[`render as espected Testimonials 1`] = `
       </p>
     </div>
     <div
-      class="css-13tbvei"
+      class="container css-6wayjc"
     >
       <div
-        class="css-emtes6-Testimonials"
+        class="css-14gtt7u"
       >
         <div
           class="css-tq5hxx-Wrapper ekq4b2z0"
@@ -857,7 +862,7 @@ exports[`render as espected Testimonials 1`] = `
         </div>
       </div>
       <div
-        class="css-451exu-Testimonials"
+        class="css-14gtt7u"
       >
         <div
           class="css-tq5hxx-Wrapper ekq4b2z0"
@@ -962,7 +967,7 @@ exports[`render as espected Testimonials 1`] = `
         </div>
       </div>
       <div
-        class="css-14p65gb-Testimonials"
+        class="css-14gtt7u"
       >
         <div
           class="css-tq5hxx-Wrapper ekq4b2z0"
@@ -1068,7 +1073,7 @@ exports[`render as espected Testimonials 1`] = `
         </div>
       </div>
       <div
-        class="css-1126efc-Testimonials"
+        class="css-14gtt7u"
       >
         <div
           class="css-tq5hxx-Wrapper ekq4b2z0"

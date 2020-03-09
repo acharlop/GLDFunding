@@ -4,9 +4,9 @@ import { useRouter } from 'next/router';
 import { IoMdArrowForward, IoMdArrowBack } from 'react-icons/io';
 import { GoShield } from 'react-icons/go';
 
-import { Layout, PageTitle, Card, Button, Tabs, Input, ModalConsumer } from '../../components';
+import { Layout, PageTitle, Card, Button, Tabs, Input } from '../../components';
 import { useTabs } from '../../hooks';
-import { steps, HELP_MODAL_KEY } from '../../constants';
+import { steps } from '../../constants';
 
 const tabs = [
   {
@@ -19,7 +19,7 @@ const tabs = [
   },
   {
     step: 3,
-    title: 'Business addr',
+    title: 'Business address',
   },
 ];
 
@@ -74,20 +74,9 @@ export const Apply = () => {
   return (
     <Layout>
       <PageTitle src="apply" title="Apply Now" />
-      <ModalConsumer>
-        {({ openModal }) => (
-          <Button
-            onClick={() => {
-              openModal(HELP_MODAL_KEY);
-            }}
-          >
-            test
-          </Button>
-        )}
-      </ModalConsumer>
       <Box
         m="auto"
-        maxWidth="1200px"
+        className="container"
         p={[1, 2]}
         css={{
           transition: `opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -179,18 +168,15 @@ export const Apply = () => {
                 </Text>
               </Flex>
               <Flex width={[1, 1 / 2]} justifyContent="flex-end">
-                <Button
-                  mr={1}
-                  variant="outline"
-                  type="button"
-                  rounded
-                  onClick={back}
-                  disabled={active < 1}
-                >
-                  <Box as={IoMdArrowBack} mr={1} size={20} /> Back
-                </Button>
+                {active > 0 && (
+                  <Button mr={1} variant="outline" type="button" rounded onClick={back}>
+                    <Box as={IoMdArrowBack} mr={1} size={20} /> Back
+                  </Button>
+                )}
+
                 <Button rounded variant="solid">
-                  Next <Box as={IoMdArrowForward} ml={1} size={20} />
+                  {active !== 2 ? ' Next' : 'Submit'}
+                  <Box as={IoMdArrowForward} ml={1} size={20} />
                 </Button>
               </Flex>
             </Flex>

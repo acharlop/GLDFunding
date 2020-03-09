@@ -3,7 +3,7 @@
 exports[`rendering renders as expected 1`] = `
 <div>
   <a
-    class="e1w12k6d0 css-qs4vov-HL-Link"
+    class="e1w12k6d0 css-15j1a9z-HL"
     href="/test"
   >
     Hey!

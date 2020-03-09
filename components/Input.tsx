@@ -90,7 +90,7 @@ const Switcher = ({ tag, name, ...etc }: { tag?: string; name: string }) => {
 export const Input = ({ tag, label, name, ...etc }: inputProps) => (
   <>
     {label && (
-      <Box as="label" htmlFor={name} className="hide-sm">
+      <Box as="label" htmlFor={name}>
         {label}
       </Box>
     )}

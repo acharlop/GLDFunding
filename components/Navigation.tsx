@@ -95,9 +95,9 @@ export const Navigation = withTheme(({ theme, open = false, toggle }: Navigation
         pt={['100px', '25vh', '25vh', '0']}
       >
         <Close as={IoIosClose} className="show-md" onClick={hide} size={40} />
-        <Flex>
+        <Flex width={1} maxWidth="500px" justifyContent="space-between">
           {mainLinks.map(el => (
-            <Link href={el.href} local key={el.name} onClick={hide}>
+            <Link href={el.href} local key={el.name} onClick={hide} popup>
               {el.name}
             </Link>
           ))}

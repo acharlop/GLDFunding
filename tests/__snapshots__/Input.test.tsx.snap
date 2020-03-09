@@ -3,7 +3,7 @@
 exports[`rendering renders as expected 1`] = `
 <div>
   <label
-    class="hide-sm css-vurnku"
+    class="css-vurnku"
     for="name"
   >
     Name*

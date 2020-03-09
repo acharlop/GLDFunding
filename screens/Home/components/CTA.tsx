@@ -38,7 +38,7 @@ export const CTA = () => {
         <Flex
           flexWrap="wrap"
           m="auto"
-          maxWidth="1200px"
+          className="container"
           py={[5, 8]}
           alignItems="center"
           css={{ position: 'relative' }}
@@ -78,7 +78,7 @@ export const CTA = () => {
             }}
           >
             <Button width={1} my={1} maxWidth="300px" m="auto" rounded href="/contact">
-              CONTACT US
+              Contact Us
             </Button>
             <Text
               as="p"
