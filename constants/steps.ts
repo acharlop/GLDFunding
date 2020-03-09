@@ -1,5 +1,5 @@
-import { currencyMask, phoneMask, zipMask } from '../../constants';
-import { inputProps } from '../../components';
+import { currencyMask, phoneMask, zipMask } from './';
+import { inputProps } from '../components';
 
 export type stepProps = {
   title: string;

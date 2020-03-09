@@ -20,10 +20,7 @@ export default class AppDocument extends Document {
           <link rel="apple-touch-icon" href="./app-icons/icon-144.png" />
           <meta name="apple-mobile-web-app-status-bar-style" content="#2D323D" />
           <meta name="theme-color" content="#2D323D" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, maximum-scale=1"
-          />
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         </Head>
         <body>
           <Main />

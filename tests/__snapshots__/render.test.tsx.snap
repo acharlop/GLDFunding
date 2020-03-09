@@ -13,7 +13,7 @@ exports[`render as espected Card 1`] = `
 exports[`render as espected Carousel 1`] = `
 <div>
   <div
-    class="react-multi-carousel-list   css-3s79q5-StyledCarousel e132dzpo0"
+    class="react-multi-carousel-list   css-so8vqw-StyledCarousel e132dzpo0"
   >
     <ul
       class="react-multi-carousel-track "

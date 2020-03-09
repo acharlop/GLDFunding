@@ -1,7 +1,6 @@
 import React from 'react';
 import { Flex, FlexProps, Box } from 'rebass';
 import styled from '@emotion/styled';
-import { rem } from 'polished';
 
 type TabProps = Omit<FlexProps, 'css'> & {
   active?: boolean;

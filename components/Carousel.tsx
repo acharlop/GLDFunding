@@ -1,3 +1,4 @@
+import React from 'react';
 import Carousel from 'react-multi-carousel';
 import { CarouselProps, ResponsiveType } from 'react-multi-carousel/lib/types';
 import styled from '@emotion/styled';
@@ -13,8 +14,8 @@ const StyledCarousel = styled(Carousel)<CarouselProps>`
     position: relative;
     height: 100%;
     will-change: transform, transition;
-    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 0s!important;
-    width: ${({children}) => children.length * 100}%;
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 0s !important;
+    width: ${({ children }) => children.length * 100}%;
   }
 
   .react-multiple-carousel__arrow {
@@ -61,7 +62,7 @@ const StyledCarousel = styled(Carousel)<CarouselProps>`
     bottom: 0.8rem;
     width: 100%;
     display: flex;
-    padding:0;
+    padding: 0;
     margin: 0;
     list-style: none;
     text-align: center;
@@ -101,26 +102,31 @@ const StyledCarousel = styled(Carousel)<CarouselProps>`
   }
 `;
 
-
 type newProps = Pick<CarouselProps, Exclude<keyof CarouselProps, 'responsive' | 'as'>> & {
   responsive?: ResponsiveType;
 };
 
-
-const Component = ({responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1,
-    partialVisibilityGutter: 40,
+const Component = ({
+  responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      partialVisibilityGutter: 40,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      partialVisibilityGutter: 30,
+    },
   },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    partialVisibilityGutter: 30,
-  },
-}, children, ...etc}: newProps)=> {
-return (<StyledCarousel responsive= {responsive} {...etc}>{children}</StyledCarousel>)
-
-}
+  children,
+  ...etc
+}: newProps) => {
+  return (
+    <StyledCarousel responsive={responsive} {...etc}>
+      {children}
+    </StyledCarousel>
+  );
+};
 
 export { Component as Carousel };

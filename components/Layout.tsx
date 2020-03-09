@@ -4,7 +4,7 @@ import { withTheme } from 'emotion-theming';
 import { Box, Image } from 'rebass';
 
 import { themeProptypes } from '../theme';
-import { ModalProvider, Navigation, Footer, Link } from './';
+import { ModalProvider, Navigation, Footer, Link, HelpModal } from './';
 
 const TopBar = styled(Box)`
   display: grid;
@@ -53,27 +53,30 @@ export const Layout = withTheme(
     };
 
     return (
-      <Wrapper open={open}>
-        <Translated open={open} theme={theme}>
-          <TopBar px={3} pt={2} maxWidth="1700px" m="auto" open={open} theme={theme}>
-            <Link href="./" local active>
-              <Image
-                src="./images/logo-white.svg"
-                alt="GLD Funding logo"
-                maxWidth="100px"
-                alignSelf="flex-start"
-                sx={{
-                  justifySelf: 'flex-start',
-                }}
-                css={{ opacity: '1' }}
-              />
-            </Link>
-            <Navigation open={open} toggle={Toggle} />
-          </TopBar>
-          <ModalProvider>{children}</ModalProvider>
-          <Footer />
-        </Translated>
-      </Wrapper>
+      <ModalProvider>
+        <Wrapper open={open}>
+          <Translated open={open} theme={theme}>
+            <TopBar px={3} pt={2} maxWidth="1700px" m="auto" open={open} theme={theme}>
+              <Link href="./" local active>
+                <Image
+                  src="./images/logo-white.svg"
+                  alt="GLD Funding logo"
+                  maxWidth="100px"
+                  alignSelf="flex-start"
+                  sx={{
+                    justifySelf: 'flex-start',
+                  }}
+                  css={{ opacity: '1' }}
+                />
+              </Link>
+              <Navigation open={open} toggle={Toggle} />
+            </TopBar>
+            {children}
+            <Footer />
+          </Translated>
+          <HelpModal />
+        </Wrapper>
+      </ModalProvider>
     );
   }
 );

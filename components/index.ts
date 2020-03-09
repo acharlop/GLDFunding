@@ -12,3 +12,4 @@ export * from './PageTitle';
 export * from './Link';
 export * from './Tabs';
 export * from './Input';
+export * from './HelpModal';

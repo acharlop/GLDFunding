@@ -51,15 +51,16 @@ export type inputProps = Pick<BoxProps, Exclude<keyof BoxProps, 'css'>> & {
     value?: string;
   }[];
 };
+
+export type optionProps = {
+  name?: string;
+  label: string;
+  value: string;
+};
 export type selectProps = Pick<BoxProps, Exclude<keyof BoxProps, 'css'>> & {
   name: string;
-  options?: {
-    name?: string;
-    label: string;
-    value: string;
-  }[];
+  options?: optionProps[];
 };
-
 const Select = ({ name, options, ...etc }: selectProps) => (
   <Wrapper>
     <SelectArrow size={16} />
