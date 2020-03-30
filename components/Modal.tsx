@@ -3,12 +3,16 @@ import Modal, { Props as ReactModalProps } from 'react-modal';
 import { rgba } from 'polished';
 import { MdClose } from 'react-icons/md';
 
+import { useModalContext } from '../context';
+
 Modal.setAppElement('body');
 
 export type ModalProps = {
   children: ReactNode;
   showToggle?: boolean;
-} & Pick<ReactModalProps, 'isOpen' | 'onRequestClose'>;
+  modalKey: string;
+  isOpen?: boolean;
+} & Pick<ReactModalProps, 'onRequestClose'>;
 
 const styles = {
   content: {
@@ -38,14 +42,23 @@ const styles = {
   },
 };
 
-const CustomModal = ({ children, onRequestClose, showToggle = true, ...etc }: ModalProps) => {
+const CustomModal = ({
+  children,
+  onRequestClose,
+  isOpen,
+  showToggle = true,
+  modalKey,
+  ...etc
+}: ModalProps) => {
+  const { modalId, closeModal } = useModalContext();
   return (
     <Modal
+      isOpen={isOpen === undefined ? modalId === modalKey : isOpen}
       shouldFocusAfterRender
       shouldCloseOnOverlayClick
       shouldCloseOnEsc
       shouldReturnFocusAfterClose
-      onRequestClose={onRequestClose}
+      onRequestClose={onRequestClose === undefined ? closeModal : onRequestClose}
       closeTimeoutMS={300}
       style={styles}
       {...etc}
@@ -53,11 +66,12 @@ const CustomModal = ({ children, onRequestClose, showToggle = true, ...etc }: Mo
       {showToggle && (
         <MdClose
           data-name="close-button"
-          onClick={onRequestClose}
+          onClick={onRequestClose === undefined ? closeModal : onRequestClose}
           style={{
             position: 'absolute',
             top: '1rem',
             right: '1rem',
+            zIndex: 99,
           }}
           size={22}
         />

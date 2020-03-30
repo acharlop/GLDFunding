@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Box, Flex, Text } from 'rebass';
 import { AiOutlineExperiment, AiOutlineSmile, AiOutlineCrown } from 'react-icons/ai';
 
-import { Layout, PageTitle } from '../../components';
+import { Layout, PageTitle } from '../components';
 
 const features = [
   {

@@ -20,7 +20,12 @@ describe('render as espected', () => {
   });
 
   test('Modal', () => {
-    const { container } = render(<Modal isOpen> hi </Modal>);
+    const { container } = render(
+      <Modal isOpen modalKey="test">
+        {' '}
+        hi{' '}
+      </Modal>
+    );
     expect(container).toMatchSnapshot();
   });
 

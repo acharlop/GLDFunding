@@ -4,9 +4,9 @@ import { useRouter } from 'next/router';
 import { IoMdArrowForward, IoMdArrowBack } from 'react-icons/io';
 import { GoShield } from 'react-icons/go';
 
-import { Layout, PageTitle, Card, Button, Tabs, Input, ModalConsumer } from '../../components';
-import { useTabs } from '../../hooks';
-import { steps, HELP_MODAL_KEY } from '../../constants';
+import { Layout, PageTitle, Card, Button, Tabs, Input } from '../components';
+import { useTabs } from '../hooks';
+import { steps } from '../constants';
 
 const tabs = [
   {
@@ -74,17 +74,6 @@ export const Apply = () => {
   return (
     <Layout>
       <PageTitle src="apply" title="Apply Now" />
-      <ModalConsumer>
-        {({ openModal }) => (
-          <Button
-            onClick={() => {
-              openModal(HELP_MODAL_KEY);
-            }}
-          >
-            test
-          </Button>
-        )}
-      </ModalConsumer>
       <Box
         m="auto"
         maxWidth="1200px"

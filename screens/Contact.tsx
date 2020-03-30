@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { GoShield } from 'react-icons/go';
 import { Box, Flex, Text } from 'rebass';
 
-import { Layout, Card, Button, PageTitle, Input } from '../../components';
-import { phoneMask } from '../../constants';
+import { Layout, Card, Button, PageTitle, Input } from '../components';
+import { phoneMask } from '../constants';
 
 const inputs = [
   {

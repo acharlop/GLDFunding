@@ -60,7 +60,7 @@ export const Header = withTheme(({ theme }: { theme: themeProptypes }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!!amount) {
+    if (!!amount && router) {
       router.push(
         {
           pathname: applyLink.href,

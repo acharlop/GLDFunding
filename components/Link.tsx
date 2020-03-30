@@ -22,7 +22,7 @@ export type linkProps = Pick<baseProps, Exclude<keyof baseProps, 'css' | 'as'>> 
 
 export const Link = ({ href = '#', local = false, active = null, children, ...etc }: linkProps) => {
   const router = useRouter();
-  const act = active === null ? router.pathname === href : active;
+  const act = active === null ? (router ? router.pathname === href : active) : false;
   return local ? (
     <BaseLink href={href}>
       <HL p={1} color="white" css={{ opacity: act ? '1' : '0.7' }} {...etc}>

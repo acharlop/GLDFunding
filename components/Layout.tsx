@@ -4,7 +4,7 @@ import { withTheme } from 'emotion-theming';
 import { Box, Image } from 'rebass';
 
 import { themeProptypes } from '../theme';
-import { ModalProvider, Navigation, Footer, Link, HelpModal } from './';
+import { ModalProvider, Navigation, Footer, Link } from './';
 
 const TopBar = styled(Box)`
   display: grid;
@@ -74,7 +74,6 @@ export const Layout = withTheme(
             {children}
             <Footer />
           </Translated>
-          <HelpModal />
         </Wrapper>
       </ModalProvider>
     );
