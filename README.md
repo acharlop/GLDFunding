@@ -76,6 +76,3 @@ $ npm run test:watch
 - utils/
 - config files.
 
-### Todo:
-
-- Add enviroments config.
