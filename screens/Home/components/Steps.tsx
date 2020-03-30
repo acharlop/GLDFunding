@@ -66,7 +66,7 @@ const Line = styled.div`
   top: 50%;
   transform: translateY(-50%);
   height: 65%;
-  border-left: 2px dashed rgba(255, 255, 255, 0.4);
+  border-left: 2px dashed rgba(10, 91, 93, 0.28);
   left: 14.5%;
 `;
 
