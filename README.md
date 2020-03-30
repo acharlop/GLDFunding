@@ -62,6 +62,13 @@ $ npm run test:watch
 - tests/
 - stories/
 - pages/
+  - index
+  - about
+  - apply
+  - contact
+  - mca
+  - app
+  - document
 - theme/
   - breakpoints
   - buttons
@@ -73,9 +80,11 @@ $ npm run test:watch
   - app icons
   - fonts
   - images
+- screens/
+  - Home
+  - About
+  - Apply
+  - contact
+  - MCA
 - utils/
 - config files.
-
-### Todo:
-
-- Add enviroments config.
