@@ -59,6 +59,7 @@ $ npm run test:watch
 ### Project Structure
 
 - components/
+- constants/
 - tests/
 - stories/
 - pages/
