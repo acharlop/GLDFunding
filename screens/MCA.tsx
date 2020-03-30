@@ -3,7 +3,7 @@ import { Box, Flex, Text, Image } from 'rebass';
 import { AiOutlineCheck, AiOutlineAudit, AiOutlineUsergroupAdd } from 'react-icons/ai';
 import { MdAttachMoney } from 'react-icons/md';
 
-import { Layout, PageTitle, Card } from '../../components';
+import { Layout, PageTitle, Card } from '../components';
 
 const features = [
   {

@@ -91,7 +91,9 @@ export const CTA = () => {
               mx="auto"
             >
               Do you have a question? <br />
-              Contact Us.
+              <a href="tel:1(877)498-4344" style={{ textDecoration: 'none' }}>
+                1 (877) 498-4344
+              </a>
             </Text>
           </Box>
         </Flex>

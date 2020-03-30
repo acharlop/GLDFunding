@@ -61,6 +61,14 @@ const PlayButton = styled(Button)`
   height: 100px;
   pointer-events: none;
 `;
+const Line = styled.div`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 65%;
+  border-left: 2px dashed rgba(255, 255, 255, 0.4);
+  left: 14.5%;
+`;
 
 const content = [
   {
@@ -159,7 +167,13 @@ export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => {
               )}
             </VideoThumb>
           </Flex>
-          <Flex flexWrap="wrap" width={[1, 1, 1, 1 / 2, 1 / 2]}>
+          <Flex flexWrap="wrap" width={[1, 1, 1, 1 / 2, 1 / 2]} css={{ position: 'relative' }}>
+            <Line
+              css={{
+                transition: `opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) `,
+                opacity: animated ? '1' : '0',
+              }}
+            />
             {content.map((el, i) => (
               <Flex
                 width={1}
@@ -179,9 +193,8 @@ export const Steps = withTheme(({ theme }: { theme: themeProptypes }) => {
                   mr={2}
                   justifyContent="center"
                   alignItems="center"
-                  css={{ opacity: `0.${i + 1 * 5}` }}
                 >
-                  <Text fontSize={[7, '8rem']} fontFamily="heading">
+                  <Text fontSize={[7, '8rem']} fontFamily="heading" color="#0c7072">
                     {el.step}
                   </Text>
                 </Flex>

@@ -66,7 +66,12 @@ exports[`render as espected CTA 1`] = `
         >
           Do you have a question? 
           <br />
-          Contact Us.
+          <a
+            href="tel:1(877)498-4344"
+            style="text-decoration: none;"
+          >
+            1 (877) 498-4344
+          </a>
         </p>
       </div>
     </div>
@@ -145,14 +150,15 @@ exports[`render as espected Features 1`] = `
           </svg>
         </div>
         <h4
-          class="css-p7am81"
+          class="css-1yu3as5"
         >
-          QUICK APROVAL RATES
+          QUICK APROVAL & COMPETITIVE RATES
         </h4>
         <div
           class="css-1tiirty-Features"
         >
-          Funding is now faster and simpler than ever.
+          Get pre-approved in just 2-4 hours.
+    Best available rates in the industry.
         </div>
       </div>
       <div
@@ -189,14 +195,14 @@ exports[`render as espected Features 1`] = `
           </svg>
         </div>
         <h4
-          class="css-p7am81"
+          class="css-1yu3as5"
         >
-          FLEXIBLE PAYMENT PLANS
+          FLEXIBLE REPAYMENT PLANS
         </h4>
         <div
           class="css-1uujl1a-Features"
         >
-          We give you ultimate payment flexibility.
+          Repayments designed appropriately to fit your business needs.
         </div>
       </div>
       <div
@@ -246,14 +252,15 @@ exports[`render as espected Features 1`] = `
           </svg>
         </div>
         <h4
-          class="css-p7am81"
+          class="css-1yu3as5"
         >
           NO CREDIT SCORE REQUIRED
         </h4>
         <div
           class="css-1qj35ak-Features"
         >
-          Support, makes your experience faster and more accurate than ever.
+          We do not rely on credit score. Instead, we utilize banking information to understand and analyze the
+    overall fluctuation of your business.
         </div>
       </div>
       <div
@@ -296,14 +303,14 @@ exports[`render as espected Features 1`] = `
           </svg>
         </div>
         <h4
-          class="css-p7am81"
+          class="css-1yu3as5"
         >
           MINIMAL PAPEWORK
         </h4>
         <div
           class="css-1ehr10y-Features"
         >
-          Tools are beyond the one-click install, async tech merges with ultimate flexibility.
+          Unlike a traditional bank loan, we do not require any complicated documents.
         </div>
       </div>
     </div>
@@ -633,16 +640,19 @@ exports[`render as espected Steps 1`] = `
         </div>
       </div>
       <div
-        class="css-1bm6goi"
+        class="css-zy1hzm-Steps"
       >
+        <div
+          class="css-odndlt-Line-Steps exlt3p63"
+        />
         <div
           class="css-1rz7k8q-Steps"
         >
           <span
-            class="css-19uslfw-Steps"
+            class="css-1qkclsg"
           >
             <div
-              class="css-1b283uw"
+              class="css-t2adny"
             >
               1
             </div>
@@ -667,10 +677,10 @@ exports[`render as espected Steps 1`] = `
           class="css-nj1osv-Steps"
         >
           <span
-            class="css-hfjkk9-Steps"
+            class="css-1qkclsg"
           >
             <div
-              class="css-1b283uw"
+              class="css-t2adny"
             >
               2
             </div>
@@ -697,10 +707,10 @@ exports[`render as espected Steps 1`] = `
           class="css-1tiitih-Steps"
         >
           <span
-            class="css-lfc1pm-Steps"
+            class="css-1qkclsg"
           >
             <div
-              class="css-1b283uw"
+              class="css-t2adny"
             >
               3
             </div>

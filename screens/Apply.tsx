@@ -4,9 +4,9 @@ import { useRouter } from 'next/router';
 import { IoMdArrowForward, IoMdArrowBack } from 'react-icons/io';
 import { GoShield } from 'react-icons/go';
 
-import { Layout, PageTitle, Card, Button, Tabs, Input } from '../../components';
-import { useTabs } from '../../hooks';
-import { steps } from '../../constants';
+import { Layout, PageTitle, Card, Button, Tabs, Input } from '../components';
+import { useTabs } from '../hooks';
+import { steps } from '../constants';
 
 const tabs = [
   {

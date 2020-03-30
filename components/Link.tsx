@@ -7,7 +7,7 @@ import { Link as RBLink, LinkProps as baseProps } from 'rebass';
 
 import { themeProptypes } from '../theme';
 
-const HL = styled(RBLink)<{ active?: boolean; popup?: boolean; theme: themeProptypes }>`
+const HL = styled(RBLink)<{ active?: boolean; theme: themeProptypes }>`
   text-decoration: none;
   transition: opacity 300ms;
   letter-spacing: 0.05em;
@@ -16,9 +16,8 @@ const HL = styled(RBLink)<{ active?: boolean; popup?: boolean; theme: themePropt
   &:hover {
     opacity: 1;
   }
-  ${({ active, theme, popup }) =>
+  ${({ active, theme }) =>
     active &&
-    popup &&
     `
     opacity: 1;
     font-weight: 900;
@@ -28,22 +27,13 @@ const HL = styled(RBLink)<{ active?: boolean; popup?: boolean; theme: themePropt
 export type linkProps = Pick<baseProps, Exclude<keyof baseProps, 'css' | 'as'>> & {
   href: string;
   local?: boolean;
-  popup?: boolean;
   active?: boolean | null;
   children: ReactNode;
   theme: themeProptypes;
 };
 
 export const Link = withTheme(
-  ({
-    theme,
-    href = '#',
-    local = false,
-    active = null,
-    popup = false,
-    children,
-    ...etc
-  }: linkProps) => {
+  ({ theme, href = '#', local = false, active = null, children, ...etc }: linkProps) => {
     const router = useRouter();
     const act = active === null ? router.pathname === href : active;
     return local ? (

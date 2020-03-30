@@ -75,24 +75,25 @@ const svgProps = {
 };
 const content = [
   {
-    title: 'QUICK APROVAL RATES',
-    description: 'Funding is now faster and simpler than ever.',
+    title: 'QUICK APROVAL & COMPETITIVE RATES',
+    description: `Get pre-approved in just 2-4 hours.
+    Best available rates in the industry.`,
     icon: <IconTimer {...svgProps} />,
   },
   {
-    title: 'FLEXIBLE PAYMENT PLANS',
-    description: 'We give you ultimate payment flexibility.',
+    title: 'FLEXIBLE REPAYMENT PLANS',
+    description: `Repayments designed appropriately to fit your business needs.`,
     icon: <IconMoney {...svgProps} />,
   },
   {
     title: 'NO CREDIT SCORE REQUIRED',
-    description: 'Support, makes your experience faster and more accurate than ever.',
+    description: `We do not rely on credit score. Instead, we utilize banking information to understand and analyze the
+    overall fluctuation of your business.`,
     icon: <IconCard {...svgProps} />,
   },
   {
     title: 'MINIMAL PAPEWORK',
-    description:
-      'Tools are beyond the one-click install, async tech merges with ultimate flexibility.',
+    description: 'Unlike a traditional bank loan, we do not require any complicated documents.',
     icon: <IconPaper {...svgProps} />,
   },
 ];
@@ -128,7 +129,7 @@ export const Features = withTheme(({ theme, ...etc }, { theme: themeProptypes })
                 color="gray500"
                 fontFamily="heading"
                 width={1}
-                fontSize={[2, 2, '1.3rem']}
+                fontSize={[2, 2, 3]}
                 textAlign="center"
               >
                 {el.title}
