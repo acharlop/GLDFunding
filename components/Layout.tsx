@@ -4,7 +4,8 @@ import { withTheme } from 'emotion-theming';
 import { Box, Image } from 'rebass';
 
 import { themeProptypes } from '../theme';
-import { ModalProvider, Navigation, Footer, Link } from './';
+import { Navigation, Footer, Link } from './';
+import { ModalProvider } from '../context';
 
 const TopBar = styled(Box)`
   display: grid;
