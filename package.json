@@ -32,6 +32,7 @@
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@next/bundle-analyzer": "^9.3.3",
+    "@sentry/browser": "^5.15.4",
     "@storybook/addon-actions": "^5.3.17",
     "@storybook/addon-links": "^5.3.17",
     "@storybook/react": "^5.3.17",
